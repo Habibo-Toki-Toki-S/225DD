@@ -11,3 +11,16 @@ C:\Users\gerri\Desktop\#MY NWU\2017 - 2de Jaar\2de Semester\ITRW 225\Projek Kler
 C:\Users\gerri\Desktop\#MY NWU\2017 - 2de Jaar\2de Semester\ITRW 225\Projek Klerebank\Program\NG Klerebank\NG Klerebank\obj\Debug\NG_Klerebank.Kledingstuk_In.resources
 C:\Users\gerri\Desktop\#MY NWU\2017 - 2de Jaar\2de Semester\ITRW 225\Projek Klerebank\Program\NG Klerebank\NG Klerebank\bin\Debug\Kerkbank.mdb
 C:\Users\gerri\Desktop\#MY NWU\2017 - 2de Jaar\2de Semester\ITRW 225\Projek Klerebank\Program\NG Klerebank\NG Klerebank\obj\Debug\BMW_Production_Calculator.AddUser.resources
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\bin\Debug\Kerkbank.mdb
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\bin\Debug\NG Klerebank.exe.config
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\bin\Debug\NG Klerebank.exe
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\bin\Debug\NG Klerebank.pdb
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG Klerebank.csprojResolveAssemblyReference.cache
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\BMW_Production_Calculator.AddUser.resources
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG_Klerebank.Form1.resources
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG_Klerebank.Kledingstuk_In.resources
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG_Klerebank.Properties.Resources.resources
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG_Klerebank.Tuisblad.resources
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG Klerebank.csproj.GenerateResource.Cache
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG Klerebank.exe
+C:\Users\Morne\Documents\GitHub\225DD\Program\NG Klerebank\NG Klerebank\obj\Debug\NG Klerebank.pdb
