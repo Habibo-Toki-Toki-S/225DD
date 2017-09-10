@@ -16,5 +16,12 @@ namespace _225DD
         {
             InitializeComponent();
         }
+
+        private void Kledingstukke_invorder_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'kerkbankDataSet.Groottes' table. You can move, or remove it, as needed.
+            this.groottesTableAdapter.Fill(this.kerkbankDataSet.Groottes);
+
+        }
     }
 }

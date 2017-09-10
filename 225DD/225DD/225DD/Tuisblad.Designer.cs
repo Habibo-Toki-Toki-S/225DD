@@ -49,15 +49,15 @@
             this.uitgeeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.invorderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.kombersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verslagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uitgeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.invorderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kledingstukkeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.kliëntBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kledingstukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invorderToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.uitgeeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verslagToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -143,19 +143,19 @@
             // verslagToolStripMenuItem2
             // 
             this.verslagToolStripMenuItem2.Name = "verslagToolStripMenuItem2";
-            this.verslagToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
+            this.verslagToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem2.Text = "Verslag";
             // 
             // aankopeToolStripMenuItem
             // 
             this.aankopeToolStripMenuItem.Name = "aankopeToolStripMenuItem";
-            this.aankopeToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.aankopeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aankopeToolStripMenuItem.Text = "Aankope";
             // 
             // invorderToolStripMenuItem2
             // 
             this.invorderToolStripMenuItem2.Name = "invorderToolStripMenuItem2";
-            this.invorderToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
+            this.invorderToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem2.Text = "Invorder";
             // 
             // kontantToolStripMenuItem
@@ -171,19 +171,19 @@
             // verslagToolStripMenuItem1
             // 
             this.verslagToolStripMenuItem1.Name = "verslagToolStripMenuItem1";
-            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem1.Text = "Verslag";
             // 
             // uitgeeToolStripMenuItem1
             // 
             this.uitgeeToolStripMenuItem1.Name = "uitgeeToolStripMenuItem1";
-            this.uitgeeToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.uitgeeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.uitgeeToolStripMenuItem1.Text = "Uitgee";
             // 
             // invorderToolStripMenuItem1
             // 
             this.invorderToolStripMenuItem1.Name = "invorderToolStripMenuItem1";
-            this.invorderToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
+            this.invorderToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem1.Text = "Invorder";
             // 
             // kombersToolStripMenuItem
@@ -196,39 +196,9 @@
             this.kombersToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.kombersToolStripMenuItem.Text = "Kombers";
             // 
-            // verslagToolStripMenuItem
-            // 
-            this.verslagToolStripMenuItem.Name = "verslagToolStripMenuItem";
-            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.verslagToolStripMenuItem.Text = "Verslag";
-            // 
-            // uitgeeToolStripMenuItem
-            // 
-            this.uitgeeToolStripMenuItem.Name = "uitgeeToolStripMenuItem";
-            this.uitgeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.uitgeeToolStripMenuItem.Text = "Uitgee";
-            // 
-            // invorderToolStripMenuItem
-            // 
-            this.invorderToolStripMenuItem.Name = "invorderToolStripMenuItem";
-            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.invorderToolStripMenuItem.Text = "Invorder";
-            this.invorderToolStripMenuItem.Click += new System.EventHandler(this.invorderToolStripMenuItem_Click);
-            // 
-            // kledingstukkeToolStripMenuItem
-            // 
-            this.kledingstukkeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.invorderToolStripMenuItem,
-            this.uitgeeToolStripMenuItem,
-            this.verslagToolStripMenuItem});
-            this.kledingstukkeToolStripMenuItem.Name = "kledingstukkeToolStripMenuItem";
-            this.kledingstukkeToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.kledingstukkeToolStripMenuItem.Text = "Kledingstukke";
-            // 
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kledingstukkeToolStripMenuItem,
             this.kombersToolStripMenuItem,
             this.kontantToolStripMenuItem,
             this.raportToolStripMenuItem,
@@ -242,6 +212,7 @@
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
+            this.kledingstukToolStripMenuItem,
             this.klienteToolStripMenuItem,
             this.adminToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -262,6 +233,35 @@
             // kliëntBindingSource1
             // 
             this.kliëntBindingSource1.DataMember = "Kliënt";
+            // 
+            // kledingstukToolStripMenuItem
+            // 
+            this.kledingstukToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.invorderToolStripMenuItem3,
+            this.uitgeeToolStripMenuItem2,
+            this.verslagToolStripMenuItem3});
+            this.kledingstukToolStripMenuItem.Name = "kledingstukToolStripMenuItem";
+            this.kledingstukToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.kledingstukToolStripMenuItem.Text = "Kledingstuk";
+            // 
+            // invorderToolStripMenuItem3
+            // 
+            this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem3.Text = "Invorder";
+            this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
+            // 
+            // uitgeeToolStripMenuItem2
+            // 
+            this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.uitgeeToolStripMenuItem2.Text = "Uitgee";
+            // 
+            // verslagToolStripMenuItem3
+            // 
+            this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem3.Text = "Verslag";
             // 
             // Tuisblad
             // 
@@ -306,13 +306,13 @@
         private System.Windows.Forms.ToolStripMenuItem uitgeeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem invorderToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem kombersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem uitgeeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem invorderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kledingstukkeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.BindingSource kliëntBindingSource1;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem kledingstukToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invorderToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem uitgeeToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem3;
     }
 }
 

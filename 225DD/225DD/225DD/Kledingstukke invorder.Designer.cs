@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kledingstukke_invorder));
             this.label1 = new System.Windows.Forms.Label();
             this.lblOrdersPlaceds = new System.Windows.Forms.Label();
@@ -43,7 +44,12 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.kerkbankDataSet = new _225DD.KerkbankDataSet();
+            this.groottesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groottesTableAdapter = new _225DD.KerkbankDataSetTableAdapters.GroottesTableAdapter();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groottesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,6 +177,8 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DataSource = this.groottesBindingSource;
+            this.comboBox2.DisplayMember = "Size";
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(162, 78);
@@ -186,6 +194,20 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(206, 21);
             this.comboBox3.TabIndex = 5;
+            // 
+            // kerkbankDataSet
+            // 
+            this.kerkbankDataSet.DataSetName = "KerkbankDataSet";
+            this.kerkbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // groottesBindingSource
+            // 
+            this.groottesBindingSource.DataMember = "Groottes";
+            this.groottesBindingSource.DataSource = this.kerkbankDataSet;
+            // 
+            // groottesTableAdapter
+            // 
+            this.groottesTableAdapter.ClearBeforeFill = true;
             // 
             // Kledingstukke_invorder
             // 
@@ -204,8 +226,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Kledingstukke_invorder";
             this.Text = "Kledingstukke_invorder";
+            this.Load += new System.EventHandler(this.Kledingstukke_invorder_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groottesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +252,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private KerkbankDataSet kerkbankDataSet;
+        private System.Windows.Forms.BindingSource groottesBindingSource;
+        private KerkbankDataSetTableAdapters.GroottesTableAdapter groottesTableAdapter;
     }
 }

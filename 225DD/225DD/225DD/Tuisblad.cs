@@ -31,5 +31,11 @@ namespace _225DD
         {
 
         }
+
+        private void invorderToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Kledingstukke_invorder k_IN = new Kledingstukke_invorder();
+            k_IN.Show();
+        }
     }
 }
