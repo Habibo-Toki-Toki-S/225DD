@@ -63,6 +63,16 @@ namespace _225DD.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap church1600 {
+            get {
+                object obj = ResourceManager.GetObject("church1600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Eastmanville_United_Reformed_Church__URCNA__Grand_Rapids_Michigan {
             get {
                 object obj = ResourceManager.GetObject("Eastmanville United Reformed Church  URCNA  Grand Rapids Michigan", resourceCulture);

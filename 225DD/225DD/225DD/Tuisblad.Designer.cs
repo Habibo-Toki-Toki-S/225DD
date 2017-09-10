@@ -115,6 +115,7 @@
             this.nuweKlientToolStripMenuItem.Name = "nuweKlientToolStripMenuItem";
             this.nuweKlientToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.nuweKlientToolStripMenuItem.Text = "Nuwe Klient";
+            this.nuweKlientToolStripMenuItem.Click += new System.EventHandler(this.nuweKlientToolStripMenuItem_Click);
             // 
             // klienteToolStripMenuItem
             // 
@@ -131,6 +132,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // raportToolStripMenuItem
             // 
@@ -197,20 +199,21 @@
             // verslagToolStripMenuItem
             // 
             this.verslagToolStripMenuItem.Name = "verslagToolStripMenuItem";
-            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem.Text = "Verslag";
             // 
             // uitgeeToolStripMenuItem
             // 
             this.uitgeeToolStripMenuItem.Name = "uitgeeToolStripMenuItem";
-            this.uitgeeToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.uitgeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.uitgeeToolStripMenuItem.Text = "Uitgee";
             // 
             // invorderToolStripMenuItem
             // 
             this.invorderToolStripMenuItem.Name = "invorderToolStripMenuItem";
-            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem.Text = "Invorder";
+            this.invorderToolStripMenuItem.Click += new System.EventHandler(this.invorderToolStripMenuItem_Click);
             // 
             // kledingstukkeToolStripMenuItem
             // 

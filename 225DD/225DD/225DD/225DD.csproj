@@ -45,6 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KerkbankDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KerkbankDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kledingstukke invorder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kledingstukke invorder.Designer.cs">
+      <DependentUpon>Kledingstukke invorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nuwe Klient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuwe Klient.Designer.cs">
+      <DependentUpon>Nuwe Klient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tuisblad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +70,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Kledingstukke invorder.resx">
+      <DependentUpon>Kledingstukke invorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuwe Klient.resx">
+      <DependentUpon>Nuwe Klient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tuisblad.resx">
       <DependentUpon>Tuisblad.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +89,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="KerkbankDataSet.xsc">
+      <DependentUpon>KerkbankDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KerkbankDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KerkbankDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KerkbankDataSet.xss">
+      <DependentUpon>KerkbankDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -81,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Eastmanville United Reformed Church  URCNA  Grand Rapids Michigan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kerkbank.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\church1600.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

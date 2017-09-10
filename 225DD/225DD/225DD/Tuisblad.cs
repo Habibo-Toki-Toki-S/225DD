@@ -16,5 +16,20 @@ namespace _225DD
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void invorderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuweKlientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
