@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _225DD
 {
-    public partial class Form1 : Form
+    public partial class Tuisblad : Form
     {
-        public Form1()
+        public Tuisblad()
         {
             InitializeComponent();
         }
