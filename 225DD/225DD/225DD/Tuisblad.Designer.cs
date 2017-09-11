@@ -109,6 +109,7 @@
             this.verwyderKlientToolStripMenuItem.Name = "verwyderKlientToolStripMenuItem";
             this.verwyderKlientToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.verwyderKlientToolStripMenuItem.Text = "Verwyder Klient";
+            this.verwyderKlientToolStripMenuItem.Click += new System.EventHandler(this.verwyderKlientToolStripMenuItem_Click);
             // 
             // nuweKlientToolStripMenuItem
             // 
@@ -235,20 +236,20 @@
             // invorderToolStripMenuItem3
             // 
             this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
-            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem3.Text = "Invorder";
             this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
             // 
             // uitgeeToolStripMenuItem2
             // 
             this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
-            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.uitgeeToolStripMenuItem2.Text = "Uitgee";
             // 
             // verslagToolStripMenuItem3
             // 
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
-            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
             // 
             // kliëntBindingSource

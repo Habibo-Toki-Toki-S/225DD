@@ -29,7 +29,8 @@ namespace _225DD
 
         private void nuweKlientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Nuwe_Klient nuwe_k = new Nuwe_Klient();
+            nuwe_k.Show();
         }
 
         private void invorderToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -41,6 +42,13 @@ namespace _225DD
         private void Tuisblad_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void verwyderKlientToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Verwyder_Klient v_k = new Verwyder_Klient();
+            v_k.Show();
         }
     }
 }
