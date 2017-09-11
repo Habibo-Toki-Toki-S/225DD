@@ -14,10 +14,12 @@ namespace _225DD
     public partial class IntekenForm : Form
     {
         string spath;
+        
 
         public IntekenForm()
         {
             InitializeComponent();
+            txtWagwoord.PasswordChar = '*';
         }
 
         private void IntekenForm_Load(object sender, EventArgs e)
@@ -63,7 +65,7 @@ namespace _225DD
                 {
                     OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + this.spath);
                     conn.Open();
-                    OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM User WHERE Persoon_ID = '" + name + "' AND Password = '" + pass + "'", conn);
+                    OleDbDataAdapter adapt = new OleDbDataAdapter("select * from Login where Username = '" + name + "' and Password = '" + pass + "'", conn);
                     DataTable dt = new DataTable();
                     adapt.Fill(dt);
 
@@ -71,7 +73,7 @@ namespace _225DD
                     {
                         MessageBox.Show("Login successful");
                         this.Hide();
-                        Tuisblad tuisB = new Tuisblad();
+                        Tuisblad tuisB = new Tuisblad(conn, name);
                         tuisB.ShowDialog();
                         this.Close();
                     }

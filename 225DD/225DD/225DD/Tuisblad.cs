@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace _225DD
 {
     public partial class Tuisblad : Form
     {
-        public Tuisblad()
+        string username;
+        OleDbConnection conn;
+
+        public Tuisblad(OleDbConnection con, string user)
         {
             InitializeComponent();
+            username = user;
+            conn = con;
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,7 +47,12 @@ namespace _225DD
 
         private void Tuisblad_Load(object sender, EventArgs e)
         {
-            
+            adminToolStripMenuItem.Visible = false;
+            OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM Login WHERE Admin = Yes AND userName = '" + username + "'", conn);
+            DataTable ds = new DataTable();
+            adapt.Fill(ds);
+            if (ds.Rows.Count == 1)
+                adminToolStripMenuItem.Visible = true;
         }
 
         private void verwyderKlientToolStripMenuItem_Click(object sender, EventArgs e)

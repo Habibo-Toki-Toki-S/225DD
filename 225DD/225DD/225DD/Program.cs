@@ -16,7 +16,7 @@ namespace _225DD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tuisblad());
+            Application.Run(new IntekenForm());
         }
     }
 }
