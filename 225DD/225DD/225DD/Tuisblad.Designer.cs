@@ -51,13 +51,13 @@
             this.kombersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.kliëntBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.kledingstukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invorderToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.uitgeeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.verslagToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.kliëntBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -143,19 +143,19 @@
             // verslagToolStripMenuItem2
             // 
             this.verslagToolStripMenuItem2.Name = "verslagToolStripMenuItem2";
-            this.verslagToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
             this.verslagToolStripMenuItem2.Text = "Verslag";
             // 
             // aankopeToolStripMenuItem
             // 
             this.aankopeToolStripMenuItem.Name = "aankopeToolStripMenuItem";
-            this.aankopeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aankopeToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.aankopeToolStripMenuItem.Text = "Aankope";
             // 
             // invorderToolStripMenuItem2
             // 
             this.invorderToolStripMenuItem2.Name = "invorderToolStripMenuItem2";
-            this.invorderToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem2.Size = new System.Drawing.Size(121, 22);
             this.invorderToolStripMenuItem2.Text = "Invorder";
             // 
             // kontantToolStripMenuItem
@@ -171,19 +171,19 @@
             // verslagToolStripMenuItem1
             // 
             this.verslagToolStripMenuItem1.Name = "verslagToolStripMenuItem1";
-            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.verslagToolStripMenuItem1.Text = "Verslag";
             // 
             // uitgeeToolStripMenuItem1
             // 
             this.uitgeeToolStripMenuItem1.Name = "uitgeeToolStripMenuItem1";
-            this.uitgeeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.uitgeeToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.uitgeeToolStripMenuItem1.Text = "Uitgee";
             // 
             // invorderToolStripMenuItem1
             // 
             this.invorderToolStripMenuItem1.Name = "invorderToolStripMenuItem1";
-            this.invorderToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem1.Size = new System.Drawing.Size(118, 22);
             this.invorderToolStripMenuItem1.Text = "Invorder";
             // 
             // kombersToolStripMenuItem
@@ -222,18 +222,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // kliëntBindingSource
-            // 
-            this.kliëntBindingSource.DataMember = "Kliënt";
-            // 
-            // kliëntBindingSource2
-            // 
-            this.kliëntBindingSource2.DataMember = "Kliënt";
-            // 
-            // kliëntBindingSource1
-            // 
-            this.kliëntBindingSource1.DataMember = "Kliënt";
-            // 
             // kledingstukToolStripMenuItem
             // 
             this.kledingstukToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -247,21 +235,33 @@
             // invorderToolStripMenuItem3
             // 
             this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
-            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
             this.invorderToolStripMenuItem3.Text = "Invorder";
             this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
             // 
             // uitgeeToolStripMenuItem2
             // 
             this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
-            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
             this.uitgeeToolStripMenuItem2.Text = "Uitgee";
             // 
             // verslagToolStripMenuItem3
             // 
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
-            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
+            // 
+            // kliëntBindingSource
+            // 
+            this.kliëntBindingSource.DataMember = "Kliënt";
+            // 
+            // kliëntBindingSource2
+            // 
+            this.kliëntBindingSource2.DataMember = "Kliënt";
+            // 
+            // kliëntBindingSource1
+            // 
+            this.kliëntBindingSource1.DataMember = "Kliënt";
             // 
             // Tuisblad
             // 
@@ -273,6 +273,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tuisblad";
             this.Text = "Tuisblad";
+            this.Load += new System.EventHandler(this.Tuisblad_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).EndInit();

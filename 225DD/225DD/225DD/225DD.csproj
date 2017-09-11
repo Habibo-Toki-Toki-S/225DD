@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IntekenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntekenForm.Designer.cs">
+      <DependentUpon>IntekenForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KerkbankDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,6 +91,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IntekenForm.resx">
+      <DependentUpon>IntekenForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kledingstukke invorder.resx">
       <DependentUpon>Kledingstukke invorder.cs</DependentUpon>
     </EmbeddedResource>

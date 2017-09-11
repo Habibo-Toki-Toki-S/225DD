@@ -37,5 +37,10 @@ namespace _225DD
             Kledingstukke_invorder k_IN = new Kledingstukke_invorder();
             k_IN.Show();
         }
+
+        private void Tuisblad_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
