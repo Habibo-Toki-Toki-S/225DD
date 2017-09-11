@@ -58,10 +58,12 @@
             this.kliëntBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewHoof = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoof)).BeginInit();
             this.SuspendLayout();
             // 
             // helpToolStripMenuItem
@@ -105,6 +107,7 @@
             this.klienteVerslagToolStripMenuItem.Name = "klienteVerslagToolStripMenuItem";
             this.klienteVerslagToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.klienteVerslagToolStripMenuItem.Text = "Kliente Verslag";
+            this.klienteVerslagToolStripMenuItem.Click += new System.EventHandler(this.klienteVerslagToolStripMenuItem_Click);
             // 
             // verwyderKlientToolStripMenuItem
             // 
@@ -182,22 +185,23 @@
             // invorderToolStripMenuItem3
             // 
             this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
-            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem3.Text = "Invorder";
             this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
             // 
             // uitgeeToolStripMenuItem2
             // 
             this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
-            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.uitgeeToolStripMenuItem2.Text = "Uitgee";
             this.uitgeeToolStripMenuItem2.Click += new System.EventHandler(this.uitgeeToolStripMenuItem2_Click);
             // 
             // verslagToolStripMenuItem3
             // 
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
-            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
+            this.verslagToolStripMenuItem3.Click += new System.EventHandler(this.verslagToolStripMenuItem3_Click);
             // 
             // kombersToolStripMenuItem1
             // 
@@ -212,22 +216,23 @@
             // kombersInToolStripMenuItem
             // 
             this.kombersInToolStripMenuItem.Name = "kombersInToolStripMenuItem";
-            this.kombersInToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.kombersInToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.kombersInToolStripMenuItem.Text = "Kombers In";
             this.kombersInToolStripMenuItem.Click += new System.EventHandler(this.kombersInToolStripMenuItem_Click);
             // 
             // kombersUitToolStripMenuItem
             // 
             this.kombersUitToolStripMenuItem.Name = "kombersUitToolStripMenuItem";
-            this.kombersUitToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.kombersUitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.kombersUitToolStripMenuItem.Text = "Kombers Uit";
             this.kombersUitToolStripMenuItem.Click += new System.EventHandler(this.kombersUitToolStripMenuItem_Click);
             // 
             // verslagToolStripMenuItem
             // 
             this.verslagToolStripMenuItem.Name = "verslagToolStripMenuItem";
-            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem.Text = "Verslag";
+            this.verslagToolStripMenuItem.Click += new System.EventHandler(this.verslagToolStripMenuItem_Click);
             // 
             // kontantToolStripMenuItem1
             // 
@@ -242,21 +247,21 @@
             // invorderToolStripMenuItem
             // 
             this.invorderToolStripMenuItem.Name = "invorderToolStripMenuItem";
-            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem.Text = "Invorder";
             this.invorderToolStripMenuItem.Click += new System.EventHandler(this.invorderToolStripMenuItem_Click_1);
             // 
             // aankopeToolStripMenuItem1
             // 
             this.aankopeToolStripMenuItem1.Name = "aankopeToolStripMenuItem1";
-            this.aankopeToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.aankopeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aankopeToolStripMenuItem1.Text = "Aankope";
             this.aankopeToolStripMenuItem1.Click += new System.EventHandler(this.aankopeToolStripMenuItem1_Click);
             // 
             // verslagToolStripMenuItem1
             // 
             this.verslagToolStripMenuItem1.Name = "verslagToolStripMenuItem1";
-            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem1.Text = "Verslag";
             // 
             // kliëntBindingSource
@@ -271,12 +276,22 @@
             // 
             this.kliëntBindingSource1.DataMember = "Kliënt";
             // 
+            // dataGridViewHoof
+            // 
+            this.dataGridViewHoof.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHoof.Location = new System.Drawing.Point(32, 57);
+            this.dataGridViewHoof.Name = "dataGridViewHoof";
+            this.dataGridViewHoof.Size = new System.Drawing.Size(978, 534);
+            this.dataGridViewHoof.TabIndex = 2;
+            this.dataGridViewHoof.Visible = false;
+            // 
             // Tuisblad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_225DD.Properties.Resources.Eastmanville_United_Reformed_Church__URCNA__Grand_Rapids_Michigan;
             this.ClientSize = new System.Drawing.Size(1178, 701);
+            this.Controls.Add(this.dataGridViewHoof);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tuisblad";
@@ -288,6 +303,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHoof)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,6 +339,7 @@
         private System.Windows.Forms.ToolStripMenuItem invorderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aankopeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem1;
+        private System.Windows.Forms.DataGridView dataGridViewHoof;
     }
 }
 

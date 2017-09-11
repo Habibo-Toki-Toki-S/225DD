@@ -102,5 +102,49 @@ namespace _225DD
             Kontant_Aankope kontant_Aankope = new Kontant_Aankope();
             kontant_Aankope.Show();
         }
+
+        private void klienteVerslagToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            query(@"SELECT * 
+                  FROM Persoon P LEFT JOIN  Klient K
+                  ON P.Persoon_ID = K.PersoonUser_ID; ");
+
+            /*OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * 
+                                                            FROM Persoon P LEFT JOIN  Klient K
+                                                            ON P.Persoon_ID = K.PersoonUser_ID;", conn);
+
+            OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * 
+                                                            FROM Persoon P INNER JOIN User U
+                                                            ON P.User_ID = U.User_ID", conn);
+            OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * 
+                                                            FROM Kliënt K
+                                                            WHERE K.Klient_ID = 3", conn);
+            DataSet ds = new DataSet();
+            adapt.Fill(ds);
+            dataGridViewHoof.Visible = true;
+            dataGridViewHoof.DataSource = ds.Tables[0];
+            conn.Close();*/
+        }
+
+        private void verslagToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            query(@"SELECT * FROM Kledingstuk");
+        }
+
+        public void query(string sql)      //Check hier, n method om enige query te doen
+        {
+            OleDbDataAdapter adapt = new OleDbDataAdapter(@"" + sql + "", conn);
+            DataSet ds = new DataSet();
+            adapt.Fill(ds);
+            dataGridViewHoof.Visible = true;
+            dataGridViewHoof.DataSource = ds.Tables[0];
+            conn.Close();
+        }
+
+        private void verslagToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            query(@"SELECT * FROM Kledingstuk");
+        }
     }
 }
