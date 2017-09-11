@@ -22,7 +22,8 @@ namespace _225DD
 
         private void IntekenForm_Load(object sender, EventArgs e)
         {
-               
+            btnAanvaar.Visible = false;
+            btnKanseleer.Visible = false;
         }
 
         private void btnDB_Click(object sender, EventArgs e)
@@ -60,11 +61,11 @@ namespace _225DD
 
                 if (name != "" && pass != "")
                 {
-                    OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + spath);
+                    OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + this.spath);
                     conn.Open();
-                    OleDbDataAdapter adap = new OleDbDataAdapter("select * from Login where Username='" + name + "' and Password='" + pass + "'", conn);
+                    OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM User WHERE Persoon_ID = '" + name + "' AND Password = '" + pass + "'", conn);
                     DataTable dt = new DataTable();
-                    adap.Fill(dt);
+                    adapt.Fill(dt);
 
                     if (dt.Rows.Count == 1)
                     {

@@ -51,31 +51,47 @@
     <Compile Include="IntekenForm.Designer.cs">
       <DependentUpon>IntekenForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="KerkbankDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KerkbankDataSet.xsd</DependentUpon>
+    <Compile Include="Kledingstuk Uit.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KerkbankDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KerkbankDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="KerkbankDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KerkbankDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="KerkbankDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>KerkbankDataSet3.xsd</DependentUpon>
+    <Compile Include="Kledingstuk Uit.Designer.cs">
+      <DependentUpon>Kledingstuk Uit.cs</DependentUpon>
     </Compile>
     <Compile Include="Kledingstukke invorder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Kledingstukke invorder.Designer.cs">
       <DependentUpon>Kledingstukke invorder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kombers In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kombers In.Designer.cs">
+      <DependentUpon>Kombers In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kombers Uit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kombers Uit.Designer.cs">
+      <DependentUpon>Kombers Uit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontant Aankope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kontant Aankope.Designer.cs">
+      <DependentUpon>Kontant Aankope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kontant In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kontant In.Designer.cs">
+      <DependentUpon>Kontant In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nuwe Gebruiker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuwe Gebruiker.Designer.cs">
+      <DependentUpon>Nuwe Gebruiker.cs</DependentUpon>
     </Compile>
     <Compile Include="Nuwe Klient.cs">
       <SubType>Form</SubType>
@@ -91,6 +107,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verwyder Gebruiker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verwyder Gebruiker.Designer.cs">
+      <DependentUpon>Verwyder Gebruiker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Verwyder Klient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,8 +122,26 @@
     <EmbeddedResource Include="IntekenForm.resx">
       <DependentUpon>IntekenForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Kledingstuk Uit.resx">
+      <DependentUpon>Kledingstuk Uit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kledingstukke invorder.resx">
       <DependentUpon>Kledingstukke invorder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kombers In.resx">
+      <DependentUpon>Kombers In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kombers Uit.resx">
+      <DependentUpon>Kombers Uit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontant Aankope.resx">
+      <DependentUpon>Kontant Aankope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kontant In.resx">
+      <DependentUpon>Kontant In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuwe Gebruiker.resx">
+      <DependentUpon>Nuwe Gebruiker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nuwe Klient.resx">
       <DependentUpon>Nuwe Klient.cs</DependentUpon>
@@ -119,53 +159,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Verwyder Gebruiker.resx">
+      <DependentUpon>Verwyder Gebruiker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Verwyder Klient.resx">
       <DependentUpon>Verwyder Klient.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="KerkbankDataSet.xsc">
-      <DependentUpon>KerkbankDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KerkbankDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="KerkbankDataSet.xss">
-      <DependentUpon>KerkbankDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet1.xsc">
-      <DependentUpon>KerkbankDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KerkbankDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="KerkbankDataSet1.xss">
-      <DependentUpon>KerkbankDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet2.xsc">
-      <DependentUpon>KerkbankDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KerkbankDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="KerkbankDataSet2.xss">
-      <DependentUpon>KerkbankDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet3.xsc">
-      <DependentUpon>KerkbankDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="KerkbankDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>KerkbankDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="KerkbankDataSet3.xss">
-      <DependentUpon>KerkbankDataSet3.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

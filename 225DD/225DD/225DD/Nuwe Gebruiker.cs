@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace _225DD
 {
-    public partial class Nuwe_Klient : Form
+    public partial class Nuwe_Gebruiker : Form
     {
-        public Nuwe_Klient()
+        public Nuwe_Gebruiker()
         {
             InitializeComponent();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

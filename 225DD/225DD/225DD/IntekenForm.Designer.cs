@@ -68,6 +68,7 @@
             this.txtNaam.Name = "txtNaam";
             this.txtNaam.Size = new System.Drawing.Size(234, 26);
             this.txtNaam.TabIndex = 2;
+            this.txtNaam.Text = "Admin";
             // 
             // txtWagwoord
             // 
@@ -76,6 +77,7 @@
             this.txtWagwoord.Name = "txtWagwoord";
             this.txtWagwoord.Size = new System.Drawing.Size(234, 26);
             this.txtWagwoord.TabIndex = 3;
+            this.txtWagwoord.Text = "Admin";
             // 
             // label2
             // 

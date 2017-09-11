@@ -29,14 +29,14 @@ namespace _225DD
 
         private void nuweKlientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Nuwe_Klient nuwe_k = new Nuwe_Klient();
-            nuwe_k.Show();
+            Nuwe_Klient nuwe_klient = new Nuwe_Klient();
+            nuwe_klient.Show();
         }
 
         private void invorderToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Kledingstukke_invorder k_IN = new Kledingstukke_invorder();
-            k_IN.Show();
+            Kledingstukke_invorder kleding_IN = new Kledingstukke_invorder();
+            kleding_IN.Show();
         }
 
         private void Tuisblad_Load(object sender, EventArgs e)
@@ -46,9 +46,50 @@ namespace _225DD
 
         private void verwyderKlientToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Verwyder_Klient v_k = new Verwyder_Klient();
             v_k.Show();
+        }
+
+        private void uitgeeToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Kledingstuk_Uit kleding_Uit = new Kledingstuk_Uit();
+            kleding_Uit.Show();
+        }
+
+        private void nuweGebruikerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Nuwe_Gebruiker n_Gebruiker = new Nuwe_Gebruiker();
+            n_Gebruiker.Show();
+        }
+
+        private void verwyderGebruikerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Verwyder_Gebruiker v_Gebruiker = new Verwyder_Gebruiker();
+            v_Gebruiker.Show();
+        }
+
+        private void kombersInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Kombers_In kombers_IN = new Kombers_In();
+            kombers_IN.Show();
+        }
+
+        private void kombersUitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Kombers_Uit kombers_UIT = new Kombers_Uit();
+            kombers_UIT.Show();
+        }
+
+        private void invorderToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Kontant_In kontant_IN = new Kontant_In();
+            kontant_IN.Show();
+        }
+
+        private void aankopeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Kontant_Aankope kontant_Aankope = new Kontant_Aankope();
+            kontant_Aankope.Show();
         }
     }
 }

@@ -10,24 +10,29 @@ using System.Windows.Forms;
 
 namespace _225DD
 {
-    public partial class Verwyder_Klient : Form
+    public partial class Kontant_In : Form
     {
-        public Verwyder_Klient()
+        public Kontant_In()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Verwyder_Klient_Load(object sender, EventArgs e)
+        private void txtTel_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnAanvaar_Click(object sender, EventArgs e)
+        private void txtVan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
