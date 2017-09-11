@@ -146,5 +146,16 @@ namespace _225DD
         {
             query(@"SELECT * FROM Kledingstuk");
         }
+
+        private void verslagToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            query(@"SELECT * FROM [Kontant Donasies]");
+        }
+
+        private void gebruikersVerslagToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            query(@"SELECT * FROM Persoon P
+                    WHERE P.USER = true");
+        }
     }
 }

@@ -77,6 +77,7 @@
             this.gebruikersVerslagToolStripMenuItem.Name = "gebruikersVerslagToolStripMenuItem";
             this.gebruikersVerslagToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.gebruikersVerslagToolStripMenuItem.Text = "Gebruikers Verslag";
+            this.gebruikersVerslagToolStripMenuItem.Click += new System.EventHandler(this.gebruikersVerslagToolStripMenuItem_Click);
             // 
             // verwyderGebruikerToolStripMenuItem
             // 
@@ -263,6 +264,7 @@
             this.verslagToolStripMenuItem1.Name = "verslagToolStripMenuItem1";
             this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem1.Text = "Verslag";
+            this.verslagToolStripMenuItem1.Click += new System.EventHandler(this.verslagToolStripMenuItem1_Click);
             // 
             // kliëntBindingSource
             // 
