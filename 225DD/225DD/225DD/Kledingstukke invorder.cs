@@ -13,7 +13,10 @@ namespace _225DD
 {
     public partial class Kledingstukke_invorder : Form
     {
-        string user = "Gerrie";
+        static string user;
+        OleDbConnection conn;
+        DataTable ds = new DataTable();
+        int kID = 0;
 
         public Kledingstukke_invorder()
         {
@@ -23,23 +26,35 @@ namespace _225DD
         private void Kledingstukke_invorder_Load(object sender, EventArgs e)
         {
             //Set user and Date
+            user = IntekenForm.name;
             lblGebruiker.Text = user;
-            lblDatum.Text = DateTime.Now.ToString();
+            lblDatum.Text = DateTime.Now.ToString("d/MM/yyyy");
 
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM KledingstukOntvangs", conn);
+            adapt.Fill(ds);
+            kID = (ds.Rows.Count) + 1;
+            lblK_ID.Text = kID.ToString();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        public void query(string sql)      //Check hier, n method om enige query te doen
         {
-
+            
         }
 
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
-            //OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + LoginForm.spath);
-            //conn.Open();
-            //OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT TotalTime FROM BMW WHERE Code = '" + model + "'", conn);
-            //DataTable dt = new DataTable();
-            //adapt.Fill(dt);
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into KledingstukOntvangs ([KledingstukOntvangsID],[Datum],[UserUserID],[KledingstukID], [Beskrywing]) values ('" + kID + "','" + lblDatum.Text + "','" + user + "','" + kID + "','" + txtBeskrywing.Text + "')";
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            System.Windows.Forms.MessageBox.Show("An Item has been successfully added", "Caption", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            conn.Close();
+            this.Close();
         }
     }
 }

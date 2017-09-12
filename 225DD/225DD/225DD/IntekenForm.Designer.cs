@@ -69,6 +69,7 @@
             this.txtNaam.Size = new System.Drawing.Size(234, 26);
             this.txtNaam.TabIndex = 2;
             this.txtNaam.Text = "Admin";
+            this.txtNaam.TextChanged += new System.EventHandler(this.txtNaam_TextChanged);
             // 
             // txtWagwoord
             // 

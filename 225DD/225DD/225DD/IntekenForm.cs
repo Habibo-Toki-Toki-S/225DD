@@ -13,8 +13,8 @@ namespace _225DD
 {
     public partial class IntekenForm : Form
     {
-        string spath;
-        
+        public static string spath;
+        public static string name;
 
         public IntekenForm()
         {
@@ -58,12 +58,12 @@ namespace _225DD
             if (txtNaam.Text != "" || txtWagwoord.Text != "")
             {
 
-                string name = txtNaam.Text;
+                name = txtNaam.Text;
                 string pass = txtWagwoord.Text;
 
                 if (name != "" && pass != "")
                 {
-                    OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + this.spath);
+                    OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + spath);
                     conn.Open();
                     OleDbDataAdapter adapt = new OleDbDataAdapter("select * from Login where Username = '" + name + "' and Password = '" + pass + "'", conn);
                     DataTable dt = new DataTable();
@@ -87,6 +87,11 @@ namespace _225DD
                     MessageBox.Show("User name or Password is invalid.");
                 }
             }
+        }
+
+        private void txtNaam_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
