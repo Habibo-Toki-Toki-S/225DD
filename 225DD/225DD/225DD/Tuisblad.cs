@@ -53,6 +53,7 @@ namespace _225DD
             adapt.Fill(ds);
             if (ds.Rows.Count == 1)
                 adminToolStripMenuItem.Visible = true;
+            lblHeading.Visible = false;
         }
 
         private void verwyderKlientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,6 +110,8 @@ namespace _225DD
             query(@"SELECT * 
                   FROM Persoon P LEFT JOIN  Klient K
                   ON P.Persoon_ID = K.PersoonUser_ID; ");
+            lblHeading.Visible = true;
+            lblHeading.Text = "Kliënte Verslag";
 
             /*OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * 
                                                             FROM Persoon P LEFT JOIN  Klient K
@@ -130,6 +133,8 @@ namespace _225DD
         private void verslagToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             query(@"SELECT * FROM Kledingstuk");
+            lblHeading.Visible = true;
+            lblHeading.Text = "Klere Verslag";
         }
 
         public void query(string sql)      //Check hier, n method om enige query te doen
@@ -145,17 +150,34 @@ namespace _225DD
         private void verslagToolStripMenuItem_Click(object sender, EventArgs e)
         {
             query(@"SELECT * FROM Kledingstuk");
+            lblHeading.Visible = true;
+            lblHeading.Text = "Komberse Verslag";
         }
 
         private void verslagToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             query(@"SELECT * FROM [Kontant Donasies]");
+            lblHeading.Visible = true;
+            lblHeading.Text = "Kontant en Aankope Verslag";
         }
 
         private void gebruikersVerslagToolStripMenuItem_Click(object sender, EventArgs e)
         {
             query(@"SELECT * FROM Persoon P
                     WHERE P.USER = true");
+            lblHeading.Visible = true;
+            lblHeading.Text = "Gebruikers Verslag";
+        }
+
+        private void raportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dataGridViewHoof.Hide();
+            lblHeading.Visible = false;
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

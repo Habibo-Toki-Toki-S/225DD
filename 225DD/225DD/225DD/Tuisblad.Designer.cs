@@ -59,6 +59,7 @@
             this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewHoof = new System.Windows.Forms.DataGridView();
+            this.lblHeading = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -137,15 +138,16 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // raportToolStripMenuItem
             // 
             this.raportToolStripMenuItem.Name = "raportToolStripMenuItem";
-            this.raportToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.raportToolStripMenuItem.Text = "Volledige Verslag";
+            this.raportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.raportToolStripMenuItem.Text = "Tuisblad";
+            this.raportToolStripMenuItem.Click += new System.EventHandler(this.raportToolStripMenuItem_Click);
             // 
             // menuToolStripMenuItem
             // 
@@ -153,8 +155,8 @@
             this.raportToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.menuToolStripMenuItem.Text = "Kieslys";
             // 
             // menuStrip1
             // 
@@ -172,6 +174,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1178, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // kledingstukToolStripMenuItem
             // 
@@ -280,12 +283,25 @@
             // 
             // dataGridViewHoof
             // 
+            this.dataGridViewHoof.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewHoof.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridViewHoof.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHoof.Location = new System.Drawing.Point(32, 57);
+            this.dataGridViewHoof.Location = new System.Drawing.Point(26, 131);
             this.dataGridViewHoof.Name = "dataGridViewHoof";
             this.dataGridViewHoof.Size = new System.Drawing.Size(978, 534);
             this.dataGridViewHoof.TabIndex = 2;
             this.dataGridViewHoof.Visible = false;
+            // 
+            // lblHeading
+            // 
+            this.lblHeading.AutoSize = true;
+            this.lblHeading.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeading.Location = new System.Drawing.Point(18, 63);
+            this.lblHeading.Name = "lblHeading";
+            this.lblHeading.Size = new System.Drawing.Size(258, 46);
+            this.lblHeading.TabIndex = 3;
+            this.lblHeading.Text = "Klere Verslag";
             // 
             // Tuisblad
             // 
@@ -293,6 +309,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_225DD.Properties.Resources.Eastmanville_United_Reformed_Church__URCNA__Grand_Rapids_Michigan;
             this.ClientSize = new System.Drawing.Size(1178, 701);
+            this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.dataGridViewHoof);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -342,6 +359,7 @@
         private System.Windows.Forms.ToolStripMenuItem aankopeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem1;
         private System.Windows.Forms.DataGridView dataGridViewHoof;
+        private System.Windows.Forms.Label lblHeading;
     }
 }
 
