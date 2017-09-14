@@ -161,7 +161,7 @@ namespace _225DD
 
         private void verslagToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            query(@"SELECT * FROM Kledingstuk");
+            query(@"SELECT * FROM Kombers");
             lblHeading.Visible = true;
             lblHeading.Text = "Komberse Verslag";
         }
@@ -175,8 +175,10 @@ namespace _225DD
 
         private void gebruikersVerslagToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            query(@"SELECT * FROM Persoon P
-                    WHERE P.USER = true");
+            query(@"SELECT * 
+                    FROM Persoon P
+                    INNER JOIN Login L
+                    ON P.Persoon_ID = L.Persoon_ID;");
             lblHeading.Visible = true;
             lblHeading.Text = "Gebruikers Verslag";
         }
