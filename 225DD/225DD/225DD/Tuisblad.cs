@@ -109,7 +109,7 @@ namespace _225DD
 
             query(@"SELECT * 
                   FROM Persoon P LEFT JOIN  Klient K
-                  ON P.Persoon_ID = K.PersoonUser_ID; ");
+                  ON P.Persoon_ID = K.Persoon_ID; ");
             lblHeading.Visible = true;
             lblHeading.Text = "Kliënte Verslag";
 
@@ -132,14 +132,26 @@ namespace _225DD
 
         private void verslagToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            query(@"SELECT * FROM Kledingstuk");
+            //query(@"SELECT Grootte_Size FROM Grootte");
+            query(@"SELECT K.Kledingstuk_ID, K.Beskrywing, T.Tipe_Kledingstuk, G.Grootte_Naam,G.Grootte_Size, Ge.Geslag
+                  FROM (((Kledingstuk AS K
+                  INNER JOIN  Tipe_Kledingstuk AS T
+                  ON K.Tipe_Kledingstuk_ID = T.Tipe_Kledingstuk_ID)
+                  INNER JOIN  Grootte AS G
+                  ON K.Grootte_ID = G.Grootte_ID)
+                  INNER JOIN  Geslag AS Ge
+                  ON K.Geslag_ID = Ge.Geslag_ID);");
+            /*query(@"SELECT T.Tipe_Kledingstuk
+                  FROM Kledingstuk AS K, Tipe_Kledingstuk AS T, Grootte AS G
+                  WHERE K.Tipe_Kledingstuk_ID = T.Tipe_Kledingstuk_ID 
+                  AND K.Grootte_ID = G.Grootte_ID;");*/
             lblHeading.Visible = true;
             lblHeading.Text = "Klere Verslag";
         }
 
         public void query(string sql)      //Check hier, n method om enige query te doen
         {
-            OleDbDataAdapter adapt = new OleDbDataAdapter(@"" + sql + "", conn);
+            OleDbDataAdapter adapt = new OleDbDataAdapter(sql, conn);
             DataSet ds = new DataSet();
             adapt.Fill(ds);
             dataGridViewHoof.Visible = true;
@@ -156,7 +168,7 @@ namespace _225DD
 
         private void verslagToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            query(@"SELECT * FROM [Kontant Donasies]");
+            query(@"SELECT * FROM Kontant_Donasies");
             lblHeading.Visible = true;
             lblHeading.Text = "Kontant en Aankope Verslag";
         }
