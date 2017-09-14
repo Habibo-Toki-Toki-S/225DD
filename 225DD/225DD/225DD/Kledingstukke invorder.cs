@@ -38,23 +38,23 @@ namespace _225DD
             lblK_ID.Text = kID.ToString();
         }
 
-        public void query(string sql)      //Check hier, n method om enige query te doen
-        {
-            
-        }
-
-        private void btnAanvaar_Click(object sender, EventArgs e)
+        public void insert(string sql)      //Check hier, n method om enige query te doen
         {
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
             conn.Open();
             OleDbCommand cmd = new OleDbCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into KledingstukOntvangs ([KledingstukOntvangsID],[Datum],[UserUserID],[KledingstukID], [Beskrywing]) values ('" + kID + "','" + lblDatum.Text + "','" + user + "','" + kID + "','" + txtBeskrywing.Text + "')";
+            cmd.CommandText = sql;
             cmd.Connection = conn;
             cmd.ExecuteNonQuery();
-            System.Windows.Forms.MessageBox.Show("An Item has been successfully added", "Caption", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            MessageBox.Show("An Item has been successfully added");
             conn.Close();
             this.Close();
+        }
+
+        private void btnAanvaar_Click(object sender, EventArgs e)
+        {
+            insert("insert into KledingstukOntvangs ([KledingstukOntvangsID],[Datum],[UserUserID],[KledingstukID], [Beskrywing]) values ('" + kID + "','" + lblDatum.Text + "','" + user + "','" + kID + "','" + txtBeskrywing.Text + "')");
         }
     }
 }
