@@ -25,6 +25,8 @@ namespace _225DD
 
         private void Kledingstukke_invorder_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'kerkbankDataSet.Geslag' table. You can move, or remove it, as needed.
+            this.geslagTableAdapter.Fill(this.kerkbankDataSet.Geslag);
             //Set user and Date
             user = IntekenForm.name;
             lblGebruiker.Text = user;
