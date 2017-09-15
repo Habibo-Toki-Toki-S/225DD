@@ -55,6 +55,10 @@
             this.invorderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aankopeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.verslagToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byVoegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verwyderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kliëntBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -62,10 +66,6 @@
             this.lblHeading = new System.Windows.Forms.Label();
             this.lblSearch = new System.Windows.Forms.Label();
             this.cmbVerslae = new System.Windows.Forms.ComboBox();
-            this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.opToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byVoegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verwyderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -196,21 +196,21 @@
             // invorderToolStripMenuItem3
             // 
             this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
-            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
             this.invorderToolStripMenuItem3.Text = "Invorder";
             this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
             // 
             // uitgeeToolStripMenuItem2
             // 
             this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
-            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
             this.uitgeeToolStripMenuItem2.Text = "Uitgee";
             this.uitgeeToolStripMenuItem2.Click += new System.EventHandler(this.uitgeeToolStripMenuItem2_Click);
             // 
             // verslagToolStripMenuItem3
             // 
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
-            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
             this.verslagToolStripMenuItem3.Click += new System.EventHandler(this.verslagToolStripMenuItem3_Click);
             // 
@@ -276,6 +276,35 @@
             this.verslagToolStripMenuItem1.Text = "Verslag";
             this.verslagToolStripMenuItem1.Click += new System.EventHandler(this.verslagToolStripMenuItem1_Click);
             // 
+            // dataToolStripMenuItem
+            // 
+            this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.opToolStripMenuItem,
+            this.byVoegToolStripMenuItem,
+            this.verwyderToolStripMenuItem});
+            this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.dataToolStripMenuItem.Text = "Data";
+            // 
+            // opToolStripMenuItem
+            // 
+            this.opToolStripMenuItem.Name = "opToolStripMenuItem";
+            this.opToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.opToolStripMenuItem.Text = "Opdateer";
+            this.opToolStripMenuItem.Click += new System.EventHandler(this.opToolStripMenuItem_Click);
+            // 
+            // byVoegToolStripMenuItem
+            // 
+            this.byVoegToolStripMenuItem.Name = "byVoegToolStripMenuItem";
+            this.byVoegToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.byVoegToolStripMenuItem.Text = "Byvoeg";
+            // 
+            // verwyderToolStripMenuItem
+            // 
+            this.verwyderToolStripMenuItem.Name = "verwyderToolStripMenuItem";
+            this.verwyderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verwyderToolStripMenuItem.Text = "Verwyder";
+            // 
             // kliëntBindingSource
             // 
             this.kliëntBindingSource.DataMember = "Kliënt";
@@ -332,34 +361,6 @@
             this.cmbVerslae.Name = "cmbVerslae";
             this.cmbVerslae.Size = new System.Drawing.Size(187, 21);
             this.cmbVerslae.TabIndex = 5;
-            // 
-            // dataToolStripMenuItem
-            // 
-            this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opToolStripMenuItem,
-            this.byVoegToolStripMenuItem,
-            this.verwyderToolStripMenuItem});
-            this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
-            this.dataToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.dataToolStripMenuItem.Text = "Data";
-            // 
-            // opToolStripMenuItem
-            // 
-            this.opToolStripMenuItem.Name = "opToolStripMenuItem";
-            this.opToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.opToolStripMenuItem.Text = "Opdateer";
-            // 
-            // byVoegToolStripMenuItem
-            // 
-            this.byVoegToolStripMenuItem.Name = "byVoegToolStripMenuItem";
-            this.byVoegToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.byVoegToolStripMenuItem.Text = "Byvoeg";
-            // 
-            // verwyderToolStripMenuItem
-            // 
-            this.verwyderToolStripMenuItem.Name = "verwyderToolStripMenuItem";
-            this.verwyderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.verwyderToolStripMenuItem.Text = "Verwyder";
             // 
             // Tuisblad
             // 

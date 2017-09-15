@@ -16,5 +16,10 @@ namespace _225DD
         {
             InitializeComponent();
         }
+
+        private void rbGeslag_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

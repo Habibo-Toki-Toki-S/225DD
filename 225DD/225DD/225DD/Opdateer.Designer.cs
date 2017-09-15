@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Opdateer));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.rbAankope = new System.Windows.Forms.RadioButton();
             this.rbGeslag = new System.Windows.Forms.RadioButton();
-            this.rbGroottes = new System.Windows.Forms.RadioButton();
-            this.rbKombers_Trans = new System.Windows.Forms.RadioButton();
-            this.rbKledingstukke = new System.Windows.Forms.RadioButton();
-            this.rbKontantDonasies = new System.Windows.Forms.RadioButton();
-            this.rbK_Transaksies = new System.Windows.Forms.RadioButton();
-            this.rbLogin = new System.Windows.Forms.RadioButton();
-            this.rbKliente = new System.Windows.Forms.RadioButton();
-            this.rbPersoon = new System.Windows.Forms.RadioButton();
-            this.rbKomberse = new System.Windows.Forms.RadioButton();
             this.rbTipeKledingstuk = new System.Windows.Forms.RadioButton();
+            this.rbKombers_Trans = new System.Windows.Forms.RadioButton();
+            this.rbPersoon = new System.Windows.Forms.RadioButton();
+            this.rbKontantDonasies = new System.Windows.Forms.RadioButton();
+            this.rbLogin = new System.Windows.Forms.RadioButton();
+            this.rbGroottes = new System.Windows.Forms.RadioButton();
+            this.rbKledingstukke = new System.Windows.Forms.RadioButton();
+            this.rbKomberse = new System.Windows.Forms.RadioButton();
+            this.rbK_Transaksies = new System.Windows.Forms.RadioButton();
+            this.rbKliente = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblSoek = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -73,16 +73,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Data Tabelle";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Opdateer";
-            // 
             // rbAankope
             // 
             this.rbAankope.AutoSize = true;
@@ -104,17 +94,18 @@
             this.rbGeslag.TabStop = true;
             this.rbGeslag.Text = "Geslag";
             this.rbGeslag.UseVisualStyleBackColor = true;
+            this.rbGeslag.CheckedChanged += new System.EventHandler(this.rbGeslag_CheckedChanged);
             // 
-            // rbGroottes
+            // rbTipeKledingstuk
             // 
-            this.rbGroottes.AutoSize = true;
-            this.rbGroottes.Location = new System.Drawing.Point(265, 29);
-            this.rbGroottes.Name = "rbGroottes";
-            this.rbGroottes.Size = new System.Drawing.Size(65, 17);
-            this.rbGroottes.TabIndex = 4;
-            this.rbGroottes.TabStop = true;
-            this.rbGroottes.Text = "Groottes";
-            this.rbGroottes.UseVisualStyleBackColor = true;
+            this.rbTipeKledingstuk.AutoSize = true;
+            this.rbTipeKledingstuk.Location = new System.Drawing.Point(713, 70);
+            this.rbTipeKledingstuk.Name = "rbTipeKledingstuk";
+            this.rbTipeKledingstuk.Size = new System.Drawing.Size(104, 17);
+            this.rbTipeKledingstuk.TabIndex = 13;
+            this.rbTipeKledingstuk.TabStop = true;
+            this.rbTipeKledingstuk.Text = "Tipe Kledingstuk";
+            this.rbTipeKledingstuk.UseVisualStyleBackColor = true;
             // 
             // rbKombers_Trans
             // 
@@ -127,16 +118,16 @@
             this.rbKombers_Trans.Text = "Kombers Transaksies";
             this.rbKombers_Trans.UseVisualStyleBackColor = true;
             // 
-            // rbKledingstukke
+            // rbPersoon
             // 
-            this.rbKledingstukke.AutoSize = true;
-            this.rbKledingstukke.Location = new System.Drawing.Point(390, 29);
-            this.rbKledingstukke.Name = "rbKledingstukke";
-            this.rbKledingstukke.Size = new System.Drawing.Size(92, 17);
-            this.rbKledingstukke.TabIndex = 6;
-            this.rbKledingstukke.TabStop = true;
-            this.rbKledingstukke.Text = "Kledingstukke";
-            this.rbKledingstukke.UseVisualStyleBackColor = true;
+            this.rbPersoon.AutoSize = true;
+            this.rbPersoon.Location = new System.Drawing.Point(499, 70);
+            this.rbPersoon.Name = "rbPersoon";
+            this.rbPersoon.Size = new System.Drawing.Size(64, 17);
+            this.rbPersoon.TabIndex = 11;
+            this.rbPersoon.TabStop = true;
+            this.rbPersoon.Text = "Persoon";
+            this.rbPersoon.UseVisualStyleBackColor = true;
             // 
             // rbKontantDonasies
             // 
@@ -149,17 +140,6 @@
             this.rbKontantDonasies.Text = "Kontant Donasies";
             this.rbKontantDonasies.UseVisualStyleBackColor = true;
             // 
-            // rbK_Transaksies
-            // 
-            this.rbK_Transaksies.AutoSize = true;
-            this.rbK_Transaksies.Location = new System.Drawing.Point(542, 29);
-            this.rbK_Transaksies.Name = "rbK_Transaksies";
-            this.rbK_Transaksies.Size = new System.Drawing.Size(140, 17);
-            this.rbK_Transaksies.TabIndex = 8;
-            this.rbK_Transaksies.TabStop = true;
-            this.rbK_Transaksies.Text = "Kledingstuk Transaksies";
-            this.rbK_Transaksies.UseVisualStyleBackColor = true;
-            // 
             // rbLogin
             // 
             this.rbLogin.AutoSize = true;
@@ -171,27 +151,27 @@
             this.rbLogin.Text = "Aanteken Inligting";
             this.rbLogin.UseVisualStyleBackColor = true;
             // 
-            // rbKliente
+            // rbGroottes
             // 
-            this.rbKliente.AutoSize = true;
-            this.rbKliente.Location = new System.Drawing.Point(608, 70);
-            this.rbKliente.Name = "rbKliente";
-            this.rbKliente.Size = new System.Drawing.Size(57, 17);
-            this.rbKliente.TabIndex = 10;
-            this.rbKliente.TabStop = true;
-            this.rbKliente.Text = "Kliënte";
-            this.rbKliente.UseVisualStyleBackColor = true;
+            this.rbGroottes.AutoSize = true;
+            this.rbGroottes.Location = new System.Drawing.Point(265, 29);
+            this.rbGroottes.Name = "rbGroottes";
+            this.rbGroottes.Size = new System.Drawing.Size(65, 17);
+            this.rbGroottes.TabIndex = 4;
+            this.rbGroottes.TabStop = true;
+            this.rbGroottes.Text = "Groottes";
+            this.rbGroottes.UseVisualStyleBackColor = true;
             // 
-            // rbPersoon
+            // rbKledingstukke
             // 
-            this.rbPersoon.AutoSize = true;
-            this.rbPersoon.Location = new System.Drawing.Point(499, 70);
-            this.rbPersoon.Name = "rbPersoon";
-            this.rbPersoon.Size = new System.Drawing.Size(64, 17);
-            this.rbPersoon.TabIndex = 11;
-            this.rbPersoon.TabStop = true;
-            this.rbPersoon.Text = "Persoon";
-            this.rbPersoon.UseVisualStyleBackColor = true;
+            this.rbKledingstukke.AutoSize = true;
+            this.rbKledingstukke.Location = new System.Drawing.Point(390, 29);
+            this.rbKledingstukke.Name = "rbKledingstukke";
+            this.rbKledingstukke.Size = new System.Drawing.Size(92, 17);
+            this.rbKledingstukke.TabIndex = 6;
+            this.rbKledingstukke.TabStop = true;
+            this.rbKledingstukke.Text = "Kledingstukke";
+            this.rbKledingstukke.UseVisualStyleBackColor = true;
             // 
             // rbKomberse
             // 
@@ -204,16 +184,37 @@
             this.rbKomberse.Text = "Komberse";
             this.rbKomberse.UseVisualStyleBackColor = true;
             // 
-            // rbTipeKledingstuk
+            // rbK_Transaksies
             // 
-            this.rbTipeKledingstuk.AutoSize = true;
-            this.rbTipeKledingstuk.Location = new System.Drawing.Point(713, 70);
-            this.rbTipeKledingstuk.Name = "rbTipeKledingstuk";
-            this.rbTipeKledingstuk.Size = new System.Drawing.Size(104, 17);
-            this.rbTipeKledingstuk.TabIndex = 13;
-            this.rbTipeKledingstuk.TabStop = true;
-            this.rbTipeKledingstuk.Text = "Tipe Kledingstuk";
-            this.rbTipeKledingstuk.UseVisualStyleBackColor = true;
+            this.rbK_Transaksies.AutoSize = true;
+            this.rbK_Transaksies.Location = new System.Drawing.Point(542, 29);
+            this.rbK_Transaksies.Name = "rbK_Transaksies";
+            this.rbK_Transaksies.Size = new System.Drawing.Size(140, 17);
+            this.rbK_Transaksies.TabIndex = 8;
+            this.rbK_Transaksies.TabStop = true;
+            this.rbK_Transaksies.Text = "Kledingstuk Transaksies";
+            this.rbK_Transaksies.UseVisualStyleBackColor = true;
+            // 
+            // rbKliente
+            // 
+            this.rbKliente.AutoSize = true;
+            this.rbKliente.Location = new System.Drawing.Point(608, 70);
+            this.rbKliente.Name = "rbKliente";
+            this.rbKliente.Size = new System.Drawing.Size(57, 17);
+            this.rbKliente.TabIndex = 10;
+            this.rbKliente.TabStop = true;
+            this.rbKliente.Text = "Kliënte";
+            this.rbKliente.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Opdateer";
             // 
             // lblSoek
             // 
