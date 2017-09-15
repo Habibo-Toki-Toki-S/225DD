@@ -44,12 +44,21 @@
             this.rbKliente = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblSoek = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSoek = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSoek = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -83,6 +92,7 @@
             this.rbAankope.TabStop = true;
             this.rbAankope.Text = "Aankope";
             this.rbAankope.UseVisualStyleBackColor = true;
+            this.rbAankope.CheckedChanged += new System.EventHandler(this.rbAankope_CheckedChanged);
             // 
             // rbGeslag
             // 
@@ -106,6 +116,7 @@
             this.rbTipeKledingstuk.TabStop = true;
             this.rbTipeKledingstuk.Text = "Tipe Kledingstuk";
             this.rbTipeKledingstuk.UseVisualStyleBackColor = true;
+            this.rbTipeKledingstuk.CheckedChanged += new System.EventHandler(this.rbTipeKledingstuk_CheckedChanged);
             // 
             // rbKombers_Trans
             // 
@@ -117,6 +128,7 @@
             this.rbKombers_Trans.TabStop = true;
             this.rbKombers_Trans.Text = "Kombers Transaksies";
             this.rbKombers_Trans.UseVisualStyleBackColor = true;
+            this.rbKombers_Trans.CheckedChanged += new System.EventHandler(this.rbKombers_Trans_CheckedChanged);
             // 
             // rbPersoon
             // 
@@ -128,6 +140,7 @@
             this.rbPersoon.TabStop = true;
             this.rbPersoon.Text = "Persoon";
             this.rbPersoon.UseVisualStyleBackColor = true;
+            this.rbPersoon.CheckedChanged += new System.EventHandler(this.rbPersoon_CheckedChanged);
             // 
             // rbKontantDonasies
             // 
@@ -139,6 +152,7 @@
             this.rbKontantDonasies.TabStop = true;
             this.rbKontantDonasies.Text = "Kontant Donasies";
             this.rbKontantDonasies.UseVisualStyleBackColor = true;
+            this.rbKontantDonasies.CheckedChanged += new System.EventHandler(this.rbKontantDonasies_CheckedChanged);
             // 
             // rbLogin
             // 
@@ -150,6 +164,7 @@
             this.rbLogin.TabStop = true;
             this.rbLogin.Text = "Aanteken Inligting";
             this.rbLogin.UseVisualStyleBackColor = true;
+            this.rbLogin.CheckedChanged += new System.EventHandler(this.rbLogin_CheckedChanged);
             // 
             // rbGroottes
             // 
@@ -161,6 +176,7 @@
             this.rbGroottes.TabStop = true;
             this.rbGroottes.Text = "Groottes";
             this.rbGroottes.UseVisualStyleBackColor = true;
+            this.rbGroottes.CheckedChanged += new System.EventHandler(this.rbGroottes_CheckedChanged);
             // 
             // rbKledingstukke
             // 
@@ -172,6 +188,7 @@
             this.rbKledingstukke.TabStop = true;
             this.rbKledingstukke.Text = "Kledingstukke";
             this.rbKledingstukke.UseVisualStyleBackColor = true;
+            this.rbKledingstukke.CheckedChanged += new System.EventHandler(this.rbKledingstukke_CheckedChanged);
             // 
             // rbKomberse
             // 
@@ -183,6 +200,7 @@
             this.rbKomberse.TabStop = true;
             this.rbKomberse.Text = "Komberse";
             this.rbKomberse.UseVisualStyleBackColor = true;
+            this.rbKomberse.CheckedChanged += new System.EventHandler(this.rbKomberse_CheckedChanged);
             // 
             // rbK_Transaksies
             // 
@@ -194,6 +212,7 @@
             this.rbK_Transaksies.TabStop = true;
             this.rbK_Transaksies.Text = "Kledingstuk Transaksies";
             this.rbK_Transaksies.UseVisualStyleBackColor = true;
+            this.rbK_Transaksies.CheckedChanged += new System.EventHandler(this.rbK_Transaksies_CheckedChanged);
             // 
             // rbKliente
             // 
@@ -205,6 +224,7 @@
             this.rbKliente.TabStop = true;
             this.rbKliente.Text = "Kliënte";
             this.rbKliente.UseVisualStyleBackColor = true;
+            this.rbKliente.CheckedChanged += new System.EventHandler(this.rbKliente_CheckedChanged);
             // 
             // label1
             // 
@@ -225,18 +245,20 @@
             this.lblSoek.TabIndex = 0;
             this.lblSoek.Text = "Aankoop ID:";
             // 
-            // textBox1
+            // txtSoek
             // 
-            this.textBox1.Location = new System.Drawing.Point(160, 197);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtSoek.Location = new System.Drawing.Point(160, 197);
+            this.txtSoek.Name = "txtSoek";
+            this.txtSoek.Size = new System.Drawing.Size(201, 20);
+            this.txtSoek.TabIndex = 2;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 234);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(846, 54);
             this.dataGridView1.TabIndex = 3;
             // 
@@ -248,26 +270,108 @@
             this.btnSoek.TabIndex = 4;
             this.btnSoek.Text = "Soek";
             this.btnSoek.UseVisualStyleBackColor = true;
+            this.btnSoek.Click += new System.EventHandler(this.btnSoek_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Location = new System.Drawing.Point(18, 310);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(846, 426);
+            this.groupBox2.Size = new System.Drawing.Size(846, 261);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inligting";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(652, 195);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(212, 23);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Kanseleer Soektog";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(16, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 161);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 194);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 227);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "label8";
             // 
             // Opdateer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(892, 748);
+            this.ClientSize = new System.Drawing.Size(892, 583);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSoek);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSoek);
             this.Controls.Add(this.lblSoek);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -277,6 +381,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -299,9 +405,17 @@
         private System.Windows.Forms.RadioButton rbKliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSoek;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSoek;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnSoek;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

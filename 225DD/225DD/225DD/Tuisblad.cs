@@ -187,7 +187,8 @@ namespace _225DD
 
         private void opToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Opdateer opD = new Opdateer(conn);
+            opD.Show();
         }
     }
 }

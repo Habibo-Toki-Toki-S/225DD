@@ -34,7 +34,7 @@ namespace _225DD
 
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
             conn.Open();
-            OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM KledingstukOntvangs", conn);
+            OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM Kledingstuk_Transaksie", conn);
             adapt.Fill(ds);
             kID = (ds.Rows.Count) + 1;
             lblK_ID.Text = kID.ToString();
