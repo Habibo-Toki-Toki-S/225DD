@@ -1,0 +1,9 @@
+...................................225 Probleme.......................................
+
+1. Klient se ouderdom moet verander na geboorte datum in databasis
+2. Password mag nie wys by gebruikers verlag
+3. gbebruikers verslag moet oor gekyk word. IDs wys in plaas van data
+4. Opdateer moet gelink word aan databasis om te kan update
+5. Klere verslag se Ander verslae moet gecode word om alles wat in is, alles wat uit is sowel as als saam te kan toon
+6. Kledingstuk Invorder Aanvaar Button werk nie, Dink my query is op gevok of iets.
+7. Al die ander goed moet ook gelink word aan die data basis.

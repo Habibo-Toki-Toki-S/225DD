@@ -33,7 +33,6 @@
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblK_ID = new System.Windows.Forms.Label();
             this.lblDatum = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.lblGebruiker = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtBeskrywing = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +76,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.txtBeskrywing);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(6, 280);
@@ -86,25 +86,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kombers Inligting";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DisplayMember = "Tipe Kledingstuk";
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 21);
-            this.comboBox1.TabIndex = 3;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(17, 41);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 20);
+            this.label4.Size = new System.Drawing.Size(147, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Tipe Kombers:";
+            this.label4.Text = "Kombers beskrying:";
             // 
             // lblK_ID
             // 
@@ -172,6 +162,14 @@
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
             // 
+            // txtBeskrywing
+            // 
+            this.txtBeskrywing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBeskrywing.Location = new System.Drawing.Point(167, 43);
+            this.txtBeskrywing.Name = "txtBeskrywing";
+            this.txtBeskrywing.Size = new System.Drawing.Size(208, 20);
+            this.txtBeskrywing.TabIndex = 1;
+            // 
             // Kombers_In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,7 +205,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblK_ID;
         private System.Windows.Forms.Label lblDatum;
@@ -215,5 +212,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblGebruiker;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBeskrywing;
     }
 }

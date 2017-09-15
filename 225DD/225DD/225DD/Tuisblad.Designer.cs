@@ -57,8 +57,6 @@
             this.verslagToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byVoegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verwyderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kliëntBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -279,9 +277,7 @@
             // dataToolStripMenuItem
             // 
             this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opToolStripMenuItem,
-            this.byVoegToolStripMenuItem,
-            this.verwyderToolStripMenuItem});
+            this.opToolStripMenuItem});
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
             this.dataToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.dataToolStripMenuItem.Text = "Data";
@@ -292,18 +288,6 @@
             this.opToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.opToolStripMenuItem.Text = "Opdateer";
             this.opToolStripMenuItem.Click += new System.EventHandler(this.opToolStripMenuItem_Click);
-            // 
-            // byVoegToolStripMenuItem
-            // 
-            this.byVoegToolStripMenuItem.Name = "byVoegToolStripMenuItem";
-            this.byVoegToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.byVoegToolStripMenuItem.Text = "Byvoeg";
-            // 
-            // verwyderToolStripMenuItem
-            // 
-            this.verwyderToolStripMenuItem.Name = "verwyderToolStripMenuItem";
-            this.verwyderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.verwyderToolStripMenuItem.Text = "Verwyder";
             // 
             // kliëntBindingSource
             // 
@@ -425,8 +409,6 @@
         private System.Windows.Forms.ComboBox cmbVerslae;
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem byVoegToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verwyderToolStripMenuItem;
     }
 }
 

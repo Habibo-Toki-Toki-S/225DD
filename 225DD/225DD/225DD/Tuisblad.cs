@@ -48,11 +48,16 @@ namespace _225DD
         private void Tuisblad_Load(object sender, EventArgs e)
         {
             adminToolStripMenuItem.Visible = false;
+            dataToolStripMenuItem.Visible = false;
             OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM Login WHERE Admin = Yes AND userName = '" + username + "'", conn);
             DataTable ds = new DataTable();
             adapt.Fill(ds);
             if (ds.Rows.Count == 1)
+            {
                 adminToolStripMenuItem.Visible = true;
+                dataToolStripMenuItem.Visible = true;
+            }
+
             lblHeading.Visible = false;
             lblSearch.Visible = false;
             cmbVerslae.Visible = false;

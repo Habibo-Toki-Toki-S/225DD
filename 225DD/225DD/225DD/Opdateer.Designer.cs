@@ -48,14 +48,23 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnSoek = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.txt1 = new System.Windows.Forms.TextBox();
+            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txt4 = new System.Windows.Forms.TextBox();
+            this.txt5 = new System.Windows.Forms.TextBox();
+            this.txt6 = new System.Windows.Forms.TextBox();
+            this.txt7 = new System.Windows.Forms.TextBox();
+            this.btnKanseleer = new System.Windows.Forms.Button();
+            this.btnAanvaar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -274,19 +283,89 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txt7);
+            this.groupBox2.Controls.Add(this.txt6);
+            this.groupBox2.Controls.Add(this.txt5);
+            this.groupBox2.Controls.Add(this.txt4);
+            this.groupBox2.Controls.Add(this.txt3);
+            this.groupBox2.Controls.Add(this.txt2);
+            this.groupBox2.Controls.Add(this.txt1);
+            this.groupBox2.Controls.Add(this.lbl7);
+            this.groupBox2.Controls.Add(this.lbl6);
+            this.groupBox2.Controls.Add(this.lbl5);
+            this.groupBox2.Controls.Add(this.lbl1);
+            this.groupBox2.Controls.Add(this.lbl2);
+            this.groupBox2.Controls.Add(this.lbl3);
+            this.groupBox2.Controls.Add(this.lbl4);
             this.groupBox2.Location = new System.Drawing.Point(18, 310);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(846, 261);
+            this.groupBox2.Size = new System.Drawing.Size(563, 174);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inligting";
+            // 
+            // lbl7
+            // 
+            this.lbl7.AutoSize = true;
+            this.lbl7.Location = new System.Drawing.Point(325, 106);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(35, 13);
+            this.lbl7.TabIndex = 13;
+            this.lbl7.Text = "label8";
+            // 
+            // lbl6
+            // 
+            this.lbl6.AutoSize = true;
+            this.lbl6.Location = new System.Drawing.Point(325, 70);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(35, 13);
+            this.lbl6.TabIndex = 12;
+            this.lbl6.Text = "label7";
+            // 
+            // lbl5
+            // 
+            this.lbl5.AutoSize = true;
+            this.lbl5.Location = new System.Drawing.Point(325, 34);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(35, 13);
+            this.lbl5.TabIndex = 11;
+            this.lbl5.Text = "label6";
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(16, 34);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(44, 13);
+            this.lbl1.TabIndex = 7;
+            this.lbl1.Text = "Bedrag:";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(16, 70);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(56, 13);
+            this.lbl2.TabIndex = 8;
+            this.lbl2.Text = "Gebruiker:";
+            // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.Location = new System.Drawing.Point(16, 106);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(79, 13);
+            this.lbl3.TabIndex = 9;
+            this.lbl3.Text = "Kledingstuk ID:";
+            // 
+            // lbl4
+            // 
+            this.lbl4.AutoSize = true;
+            this.lbl4.Location = new System.Drawing.Point(16, 142);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(35, 13);
+            this.lbl4.TabIndex = 10;
+            this.lbl4.Text = "label5";
             // 
             // button1
             // 
@@ -298,75 +377,82 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // txt1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
+            this.txt1.Location = new System.Drawing.Point(105, 31);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(128, 20);
+            this.txt1.TabIndex = 14;
             // 
-            // label3
+            // txt2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
+            this.txt2.Location = new System.Drawing.Point(105, 67);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(128, 20);
+            this.txt2.TabIndex = 15;
             // 
-            // label4
+            // txt3
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 95);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "label4";
+            this.txt3.Location = new System.Drawing.Point(105, 103);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(128, 20);
+            this.txt3.TabIndex = 16;
             // 
-            // label5
+            // txt4
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 128);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
+            this.txt4.Location = new System.Drawing.Point(105, 139);
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(128, 20);
+            this.txt4.TabIndex = 17;
             // 
-            // label6
+            // txt5
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "label6";
+            this.txt5.Location = new System.Drawing.Point(414, 31);
+            this.txt5.Name = "txt5";
+            this.txt5.Size = new System.Drawing.Size(128, 20);
+            this.txt5.TabIndex = 18;
             // 
-            // label7
+            // txt6
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 194);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "label7";
+            this.txt6.Location = new System.Drawing.Point(414, 67);
+            this.txt6.Name = "txt6";
+            this.txt6.Size = new System.Drawing.Size(128, 20);
+            this.txt6.TabIndex = 19;
             // 
-            // label8
+            // txt7
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(16, 227);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 13);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "label8";
+            this.txt7.Location = new System.Drawing.Point(414, 103);
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(128, 20);
+            this.txt7.TabIndex = 20;
+            // 
+            // btnKanseleer
+            // 
+            this.btnKanseleer.Location = new System.Drawing.Point(597, 311);
+            this.btnKanseleer.Name = "btnKanseleer";
+            this.btnKanseleer.Size = new System.Drawing.Size(267, 79);
+            this.btnKanseleer.TabIndex = 7;
+            this.btnKanseleer.Text = "Kanseleer";
+            this.btnKanseleer.UseVisualStyleBackColor = true;
+            this.btnKanseleer.Click += new System.EventHandler(this.btnKanseleer_Click);
+            // 
+            // btnAanvaar
+            // 
+            this.btnAanvaar.Location = new System.Drawing.Point(597, 405);
+            this.btnAanvaar.Name = "btnAanvaar";
+            this.btnAanvaar.Size = new System.Drawing.Size(267, 79);
+            this.btnAanvaar.TabIndex = 8;
+            this.btnAanvaar.Text = "Aanvaar";
+            this.btnAanvaar.UseVisualStyleBackColor = true;
             // 
             // Opdateer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(892, 583);
+            this.ClientSize = new System.Drawing.Size(892, 494);
+            this.Controls.Add(this.btnAanvaar);
+            this.Controls.Add(this.btnKanseleer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSoek);
@@ -377,7 +463,7 @@
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Opdateer";
-            this.Text = "Opdateer";
+            this.Text = "Kanseleer";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -410,12 +496,21 @@
         private System.Windows.Forms.Button btnSoek;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.TextBox txt7;
+        private System.Windows.Forms.TextBox txt6;
+        private System.Windows.Forms.TextBox txt5;
+        private System.Windows.Forms.TextBox txt4;
+        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txt1;
+        private System.Windows.Forms.Button btnKanseleer;
+        private System.Windows.Forms.Button btnAanvaar;
     }
 }

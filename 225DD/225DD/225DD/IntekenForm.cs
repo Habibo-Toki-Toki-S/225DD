@@ -71,7 +71,7 @@ namespace _225DD
 
                     if (dt.Rows.Count == 1)
                     {
-                        MessageBox.Show("Login successful");
+                        MessageBox.Show("Suksesvol, Gaan gerus voort");
                         this.Hide();
                         Tuisblad tuisB = new Tuisblad(conn, name);
                         tuisB.ShowDialog();
@@ -79,12 +79,12 @@ namespace _225DD
                     }
                     else
                     {
-                        MessageBox.Show("User name or Password is invalid.");
+                        MessageBox.Show("Probeer Weer");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("User name or Password is invalid.");
+                    MessageBox.Show("Probeer Weer");
                 }
             }
         }

@@ -35,6 +35,7 @@ namespace _225DD
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
             conn.Open();
             OleDbDataAdapter adapt = new OleDbDataAdapter(@"SELECT * FROM Kledingstuk_Transaksie", conn);
+            DataTable ds = new DataTable();
             adapt.Fill(ds);
             kID = (ds.Rows.Count) + 1;
             lblK_ID.Text = kID.ToString();
@@ -56,7 +57,7 @@ namespace _225DD
 
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
-            insert("insert into KledingstukOntvangs ([KledingstukOntvangsID],[Datum],[UserUserID],[KledingstukID], [Beskrywing]) values ('" + kID + "','" + lblDatum.Text + "','" + user + "','" + kID + "','" + txtBeskrywing.Text + "')");
+            insert("insert into Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID],[Datum_Uit],[User_ID],[Klient_ID]) values ('" + lblDatum.Text + "','" + kID + "','" + user + "','" + kID + "','" + kID + "')");
         }
     }
 }

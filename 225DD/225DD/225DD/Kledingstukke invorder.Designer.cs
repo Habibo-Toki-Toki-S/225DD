@@ -38,15 +38,14 @@
             this.lblK_ID = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBeskrywing = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.geslagBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.geslagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kerkbankDataSet = new _225DD.KerkbankDataSet();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.geslagBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groottesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tipeKledingstukBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
@@ -54,19 +53,19 @@
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.tipeKledingstukBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kerkbankDataSet = new _225DD.KerkbankDataSet();
             this.kerkbankDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.geslagBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.geslagTableAdapter = new _225DD.KerkbankDataSetTableAdapters.GeslagTableAdapter();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groottesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipeKledingstukBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipeKledingstukBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,11 +126,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txtBeskrywing);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -152,30 +150,6 @@
             this.txtBeskrywing.Size = new System.Drawing.Size(191, 20);
             this.txtBeskrywing.TabIndex = 10;
             // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(306, 41);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(62, 17);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Skoene";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(177, 41);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(80, 17);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Kledingstuk";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -185,14 +159,6 @@
             this.label8.Size = new System.Drawing.Size(129, 20);
             this.label8.TabIndex = 7;
             this.label8.Text = "Tipe Kledingstuk:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(177, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 6;
             // 
             // comboBox3
             // 
@@ -205,9 +171,15 @@
             this.comboBox3.Size = new System.Drawing.Size(191, 21);
             this.comboBox3.TabIndex = 5;
             // 
-            // geslagBindingSource
+            // geslagBindingSource1
             // 
-            this.geslagBindingSource.DataMember = "Geslag";
+            this.geslagBindingSource1.DataMember = "Geslag";
+            this.geslagBindingSource1.DataSource = this.kerkbankDataSet;
+            // 
+            // kerkbankDataSet
+            // 
+            this.kerkbankDataSet.DataSetName = "KerkbankDataSet";
+            this.kerkbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -238,6 +210,10 @@
             this.label4.Size = new System.Drawing.Size(93, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Beskrywing:";
+            // 
+            // geslagBindingSource
+            // 
+            this.geslagBindingSource.DataMember = "Geslag";
             // 
             // tipeKledingstukBindingSource1
             // 
@@ -282,24 +258,32 @@
             this.btnKanseleer.Text = "Kanseleer";
             this.btnKanseleer.UseVisualStyleBackColor = true;
             // 
-            // kerkbankDataSet
-            // 
-            this.kerkbankDataSet.DataSetName = "KerkbankDataSet";
-            this.kerkbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // kerkbankDataSetBindingSource
             // 
             this.kerkbankDataSetBindingSource.DataSource = this.kerkbankDataSet;
             this.kerkbankDataSetBindingSource.Position = 0;
             // 
-            // geslagBindingSource1
-            // 
-            this.geslagBindingSource1.DataMember = "Geslag";
-            this.geslagBindingSource1.DataSource = this.kerkbankDataSet;
-            // 
             // geslagTableAdapter
             // 
             this.geslagTableAdapter.ClearBeforeFill = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(177, 40);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(191, 21);
+            this.comboBox1.TabIndex = 11;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(177, 133);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(191, 21);
+            this.comboBox2.TabIndex = 12;
             // 
             // Kledingstukke_invorder
             // 
@@ -324,14 +308,14 @@
             this.Load += new System.EventHandler(this.Kledingstukke_invorder_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groottesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipeKledingstukBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipeKledingstukBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,13 +343,12 @@
         private System.Windows.Forms.BindingSource tipeKledingstukBindingSource;
         private System.Windows.Forms.BindingSource tipeKledingstukBindingSource1;
         private System.Windows.Forms.TextBox txtBeskrywing;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.BindingSource kerkbankDataSetBindingSource;
         private KerkbankDataSet kerkbankDataSet;
         private System.Windows.Forms.BindingSource geslagBindingSource1;
         private KerkbankDataSetTableAdapters.GeslagTableAdapter geslagTableAdapter;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

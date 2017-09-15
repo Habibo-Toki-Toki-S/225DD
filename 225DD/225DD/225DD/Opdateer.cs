@@ -26,61 +26,292 @@ namespace _225DD
         private void rbGeslag_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Geslag:";
+            lbl1.Text = "Geslag:";
+
+            lbl1.Visible = true;
+            lbl2.Visible = false;
+            lbl3.Visible = false;
+            lbl4.Visible = false;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = false;
+            txt3.Visible = false;
+            txt4.Visible = false;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbAankope_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Aankoop ID:";
+            lbl1.Text = "Berag:";
+            lbl2.Text = "Gebruiker:";
+            lbl3.Text = "Kledingstuk ID:";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = false;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = false;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbGroottes_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Groottes:";
+            lbl1.Text = "Groottes:";
+
+            lbl1.Visible = true;
+            lbl2.Visible = false;
+            lbl3.Visible = false;
+            lbl4.Visible = false;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = false;
+            txt3.Visible = false;
+            txt4.Visible = false;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbKledingstukke_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Kledingstuk ID:";
+            lbl1.Text = "Tipe Kledingstuk:";
+            lbl2.Text = "Grootte:";
+            lbl3.Text = "Geslag";
+            lbl4.Text = "Beskrywing";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbK_Transaksies_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Kledingstuk Transaksie:";
+            lbl1.Text = "Datum In:";
+            lbl2.Text = "Kledingstuk ID:";
+            lbl3.Text = "Datum Uit:";
+            lbl4.Text = "Gebruiker:";
+            lbl5.Text = "Kliënt:";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = true;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = true;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbKomberse_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Kombers ID:";
+            lbl1.Text = "Beskrywing";
+
+            lbl1.Visible = true;
+            lbl2.Visible = false;
+            lbl3.Visible = false;
+            lbl4.Visible = false;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = false;
+            txt3.Visible = false;
+            txt4.Visible = false;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbKombers_Trans_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Kombers Transaksie:";
+            lbl1.Text = "Datum In:";
+            lbl2.Text = "Kombers ID:";
+            lbl3.Text = "Datum Uit:";
+            lbl4.Text = "Gebruiker:";
+            lbl5.Text = "Kliënt:";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = true;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = true;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbKontantDonasies_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Kontant Donasies:";
+            lbl1.Text = "Naam:";
+            lbl2.Text = "Van:";
+            lbl3.Text = "Bedrag:";
+            lbl4.Text = "Gebruiker";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbLogin_CheckedChanged(object sender, EventArgs e)
         {
-            lblSoek.Text = "Aanteken ID:";
+            lblSoek.Text = "Aanteken ID:"; //HELP
+            lbl1.Text = "Gebruiker:"; //HELP
+            lbl2.Text = "Wagwoord:"; //HELP
+            lbl3.Text = "Admin:"; //HELP
+            lbl4.Text = "Persoon ID:"; //HELP
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbPersoon_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Persoon ID:";
+            lbl1.Text = "Naam:";
+            lbl2.Text = "Van:";
+            lbl3.Text = "Adres";
+            lbl4.Text = "Telefoon Nr:";
+            lbl5.Text = "Kerkverband:";
+            lbl6.Text = "Geslag:";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = true;
+            lbl6.Visible = true;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = true;
+            txt6.Visible = true;
+            txt7.Visible = false;
         }
 
         private void rbKliente_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Kliënte ID:";
+            lbl1.Text = "Kleding Grootte:";
+            lbl2.Text = "Ouderdom";
+            lbl3.Text = "Persoon ID:";
+            lbl4.Text = "Epos Adress";
+
+            lbl1.Visible = true;
+            lbl2.Visible = true;
+            lbl3.Visible = true;
+            lbl4.Visible = true;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = true;
+            txt3.Visible = true;
+            txt4.Visible = true;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         private void rbTipeKledingstuk_CheckedChanged(object sender, EventArgs e)
         {
             lblSoek.Text = "Tipe Kledingstuk:";
+            lbl1.Text = "Tipe Kledingstuk";
+
+            lbl1.Visible = true;
+            lbl2.Visible = false;
+            lbl3.Visible = false;
+            lbl4.Visible = false;
+            lbl5.Visible = false;
+            lbl6.Visible = false;
+            lbl7.Visible = false;
+
+            txt1.Visible = true;
+            txt2.Visible = false;
+            txt3.Visible = false;
+            txt4.Visible = false;
+            txt5.Visible = false;
+            txt6.Visible = false;
+            txt7.Visible = false;
         }
 
         public void query(string sql)      //Check hier, n method om enige query te doen
@@ -165,6 +396,11 @@ namespace _225DD
         {
             txtSoek.Text = "";
             dataGridView1.DataBindings.Clear();
+        }
+
+        private void btnKanseleer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
