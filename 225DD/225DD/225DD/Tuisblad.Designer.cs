@@ -60,6 +60,12 @@
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewHoof = new System.Windows.Forms.DataGridView();
             this.lblHeading = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.cmbVerslae = new System.Windows.Forms.ComboBox();
+            this.dataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byVoegToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verwyderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -101,8 +107,8 @@
             this.verwyderGebruikerToolStripMenuItem,
             this.gebruikersVerslagToolStripMenuItem});
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.adminToolStripMenuItem.Text = "Admin";
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.adminToolStripMenuItem.Text = "Gebruikers";
             // 
             // klienteVerslagToolStripMenuItem
             // 
@@ -138,14 +144,14 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // raportToolStripMenuItem
             // 
             this.raportToolStripMenuItem.Name = "raportToolStripMenuItem";
-            this.raportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.raportToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.raportToolStripMenuItem.Text = "Tuisblad";
             this.raportToolStripMenuItem.Click += new System.EventHandler(this.raportToolStripMenuItem_Click);
             // 
@@ -168,6 +174,7 @@
             this.kombersToolStripMenuItem1,
             this.kontantToolStripMenuItem1,
             this.adminToolStripMenuItem,
+            this.dataToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -220,21 +227,21 @@
             // kombersInToolStripMenuItem
             // 
             this.kombersInToolStripMenuItem.Name = "kombersInToolStripMenuItem";
-            this.kombersInToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kombersInToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.kombersInToolStripMenuItem.Text = "Kombers In";
             this.kombersInToolStripMenuItem.Click += new System.EventHandler(this.kombersInToolStripMenuItem_Click);
             // 
             // kombersUitToolStripMenuItem
             // 
             this.kombersUitToolStripMenuItem.Name = "kombersUitToolStripMenuItem";
-            this.kombersUitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kombersUitToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.kombersUitToolStripMenuItem.Text = "Kombers Uit";
             this.kombersUitToolStripMenuItem.Click += new System.EventHandler(this.kombersUitToolStripMenuItem_Click);
             // 
             // verslagToolStripMenuItem
             // 
             this.verslagToolStripMenuItem.Name = "verslagToolStripMenuItem";
-            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.verslagToolStripMenuItem.Text = "Verslag";
             this.verslagToolStripMenuItem.Click += new System.EventHandler(this.verslagToolStripMenuItem_Click);
             // 
@@ -251,21 +258,21 @@
             // invorderToolStripMenuItem
             // 
             this.invorderToolStripMenuItem.Name = "invorderToolStripMenuItem";
-            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.invorderToolStripMenuItem.Text = "Invorder";
             this.invorderToolStripMenuItem.Click += new System.EventHandler(this.invorderToolStripMenuItem_Click_1);
             // 
             // aankopeToolStripMenuItem1
             // 
             this.aankopeToolStripMenuItem1.Name = "aankopeToolStripMenuItem1";
-            this.aankopeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.aankopeToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.aankopeToolStripMenuItem1.Text = "Aankope";
             this.aankopeToolStripMenuItem1.Click += new System.EventHandler(this.aankopeToolStripMenuItem1_Click);
             // 
             // verslagToolStripMenuItem1
             // 
             this.verslagToolStripMenuItem1.Name = "verslagToolStripMenuItem1";
-            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
             this.verslagToolStripMenuItem1.Text = "Verslag";
             this.verslagToolStripMenuItem1.Click += new System.EventHandler(this.verslagToolStripMenuItem1_Click);
             // 
@@ -299,9 +306,60 @@
             this.lblHeading.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeading.Location = new System.Drawing.Point(18, 63);
             this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(258, 46);
+            this.lblHeading.Size = new System.Drawing.Size(269, 46);
             this.lblHeading.TabIndex = 3;
-            this.lblHeading.Text = "Klere Verslag";
+            this.lblHeading.Text = "Klere Verslag:";
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.BackColor = System.Drawing.Color.Transparent;
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(697, 84);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(114, 20);
+            this.lblSearch.TabIndex = 4;
+            this.lblSearch.Text = "Ander Verslae:";
+            // 
+            // cmbVerslae
+            // 
+            this.cmbVerslae.FormattingEnabled = true;
+            this.cmbVerslae.Items.AddRange(new object[] {
+            "Volle Verslag",
+            "Kledingstukke IN",
+            "Kledingstukke UIT"});
+            this.cmbVerslae.Location = new System.Drawing.Point(817, 86);
+            this.cmbVerslae.Name = "cmbVerslae";
+            this.cmbVerslae.Size = new System.Drawing.Size(187, 21);
+            this.cmbVerslae.TabIndex = 5;
+            // 
+            // dataToolStripMenuItem
+            // 
+            this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.opToolStripMenuItem,
+            this.byVoegToolStripMenuItem,
+            this.verwyderToolStripMenuItem});
+            this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
+            this.dataToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.dataToolStripMenuItem.Text = "Data";
+            // 
+            // opToolStripMenuItem
+            // 
+            this.opToolStripMenuItem.Name = "opToolStripMenuItem";
+            this.opToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.opToolStripMenuItem.Text = "Opdateer";
+            // 
+            // byVoegToolStripMenuItem
+            // 
+            this.byVoegToolStripMenuItem.Name = "byVoegToolStripMenuItem";
+            this.byVoegToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.byVoegToolStripMenuItem.Text = "Byvoeg";
+            // 
+            // verwyderToolStripMenuItem
+            // 
+            this.verwyderToolStripMenuItem.Name = "verwyderToolStripMenuItem";
+            this.verwyderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.verwyderToolStripMenuItem.Text = "Verwyder";
             // 
             // Tuisblad
             // 
@@ -309,6 +367,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_225DD.Properties.Resources.Eastmanville_United_Reformed_Church__URCNA__Grand_Rapids_Michigan;
             this.ClientSize = new System.Drawing.Size(1178, 701);
+            this.Controls.Add(this.cmbVerslae);
+            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.dataGridViewHoof);
             this.Controls.Add(this.menuStrip1);
@@ -360,6 +420,12 @@
         private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem1;
         private System.Windows.Forms.DataGridView dataGridViewHoof;
         private System.Windows.Forms.Label lblHeading;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.ComboBox cmbVerslae;
+        private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem byVoegToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verwyderToolStripMenuItem;
     }
 }
 

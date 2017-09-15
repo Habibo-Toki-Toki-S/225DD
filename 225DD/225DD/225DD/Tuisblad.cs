@@ -54,6 +54,8 @@ namespace _225DD
             if (ds.Rows.Count == 1)
                 adminToolStripMenuItem.Visible = true;
             lblHeading.Visible = false;
+            lblSearch.Visible = false;
+            cmbVerslae.Visible = false;
         }
 
         private void verwyderKlientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -147,6 +149,8 @@ namespace _225DD
                   AND K.Grootte_ID = G.Grootte_ID;");*/
             lblHeading.Visible = true;
             lblHeading.Text = "Klere Verslag";
+            lblSearch.Visible = true;
+            cmbVerslae.Visible = true;
         }
 
         public void query(string sql)      //Check hier, n method om enige query te doen
