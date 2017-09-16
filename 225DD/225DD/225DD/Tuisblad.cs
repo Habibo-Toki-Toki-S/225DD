@@ -149,9 +149,9 @@ namespace _225DD
         {
             OleDbDataAdapter adapt = new OleDbDataAdapter(sql, conn);
             DataSet ds = new DataSet();
-            //adapt.Fill(ds);
+            adapt.Fill(ds);
             dataGridViewHoof.Visible = true;
-            dataGridViewHoof.DataSource = ds.Tables;
+            dataGridViewHoof.DataSource = ds.Tables[0];
             conn.Close();
         }
 
