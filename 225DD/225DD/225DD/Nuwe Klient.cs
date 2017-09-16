@@ -19,7 +19,7 @@ namespace _225DD
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

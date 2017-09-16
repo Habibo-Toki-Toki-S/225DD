@@ -93,5 +93,10 @@ namespace _225DD
         {
 
         }
+
+        private void btnKanseleer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

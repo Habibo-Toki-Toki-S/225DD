@@ -31,12 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nuwe_Klient));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.cbSkoenGrootte = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cbGeslag = new System.Windows.Forms.ComboBox();
             this.cbGrootte = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -59,43 +57,31 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.cbSkoenGrootte);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.cbGeslag);
             this.groupBox1.Controls.Add(this.cbGrootte);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Location = new System.Drawing.Point(12, 370);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(342, 160);
+            this.groupBox1.Size = new System.Drawing.Size(342, 131);
             this.groupBox1.TabIndex = 70;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inligting";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(113, 124);
+            this.dateTimePicker1.Location = new System.Drawing.Point(113, 96);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(212, 20);
             this.dateTimePicker1.TabIndex = 71;
-            // 
-            // cbSkoenGrootte
-            // 
-            this.cbSkoenGrootte.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.cbSkoenGrootte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSkoenGrootte.FormattingEnabled = true;
-            this.cbSkoenGrootte.Location = new System.Drawing.Point(113, 60);
-            this.cbSkoenGrootte.Name = "cbSkoenGrootte";
-            this.cbSkoenGrootte.Size = new System.Drawing.Size(212, 21);
-            this.cbSkoenGrootte.TabIndex = 25;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 96);
+            this.label9.Location = new System.Drawing.Point(17, 68);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(43, 13);
             this.label9.TabIndex = 24;
@@ -105,7 +91,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 129);
+            this.label8.Location = new System.Drawing.Point(17, 101);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(82, 13);
             this.label8.TabIndex = 23;
@@ -116,7 +102,7 @@
             this.cbGeslag.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.cbGeslag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGeslag.FormattingEnabled = true;
-            this.cbGeslag.Location = new System.Drawing.Point(113, 93);
+            this.cbGeslag.Location = new System.Drawing.Point(113, 65);
             this.cbGeslag.Name = "cbGeslag";
             this.cbGeslag.Size = new System.Drawing.Size(212, 21);
             this.cbGeslag.TabIndex = 10;
@@ -131,17 +117,6 @@
             this.cbGrootte.Size = new System.Drawing.Size(212, 21);
             this.cbGrootte.TabIndex = 9;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 63);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Skoen Grootte:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -155,7 +130,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(129, 538);
+            this.btnCancel.Location = new System.Drawing.Point(130, 507);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(109, 23);
             this.btnCancel.TabIndex = 64;
@@ -165,7 +140,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(244, 538);
+            this.btnAdd.Location = new System.Drawing.Point(245, 507);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(109, 23);
             this.btnAdd.TabIndex = 63;
@@ -290,7 +265,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(375, 569);
+            this.ClientSize = new System.Drawing.Size(367, 536);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAdres);
@@ -323,11 +298,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbGeslag;
         private System.Windows.Forms.ComboBox cbGrootte;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox cbSkoenGrootte;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;

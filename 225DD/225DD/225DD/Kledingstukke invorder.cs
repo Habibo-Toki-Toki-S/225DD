@@ -25,6 +25,10 @@ namespace _225DD
 
         private void Kledingstukke_invorder_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'kerkbankDataSet.Grootte' table. You can move, or remove it, as needed.
+            this.grootteTableAdapter.Fill(this.kerkbankDataSet.Grootte);
+            // TODO: This line of code loads data into the 'kerkbankDataSet.Tipe_Kledingstuk' table. You can move, or remove it, as needed.
+            this.tipe_KledingstukTableAdapter.Fill(this.kerkbankDataSet.Tipe_Kledingstuk);
             // TODO: This line of code loads data into the 'kerkbankDataSet.Geslag' table. You can move, or remove it, as needed.
             this.geslagTableAdapter.Fill(this.kerkbankDataSet.Geslag);
             //Set user and Date
@@ -58,6 +62,11 @@ namespace _225DD
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
             insert("insert into Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID],[Datum_Uit],[User_ID],[Klient_ID]) values ('" + lblDatum.Text + "','" + kID + "','" + user + "','" + kID + "','" + kID + "')");
+        }
+
+        private void btnKanseleer_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

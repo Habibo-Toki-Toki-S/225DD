@@ -118,6 +118,7 @@
             this.btnKanseleer.TabIndex = 7;
             this.btnKanseleer.Text = "Kanseleer";
             this.btnKanseleer.UseVisualStyleBackColor = true;
+            this.btnKanseleer.Click += new System.EventHandler(this.btnKanseleer_Click);
             // 
             // btnDB
             // 
