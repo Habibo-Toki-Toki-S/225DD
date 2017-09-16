@@ -113,7 +113,7 @@ namespace _225DD
 
         private void klienteVerslagToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            query(@"SELECT K.Klient_ID, P.Naam, P.Van, P.Adres, P.Telefoon_Nommer, P.Kerkverband, Ge.Geslag, G.Grootte_Size, K.Ouderdom, K.Email
+            query(@"SELECT K.Klient_ID, P.Naam, P.Van, P.Adres, P.Telefoon_Nommer, P.Kerkverband, Ge.Geslag, G.Grootte_Size, K.Geboorte_datum, K.Email
                   FROM (((Persoon AS P
                   LEFT JOIN  Geslag AS Ge
                   ON P.Geslag_ID = Ge.Geslag_ID)
@@ -171,7 +171,7 @@ namespace _225DD
 
         private void gebruikersVerslagToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            query(@"SELECT * 
+            query(@"SELECT P.Naam, P.Van, P.Adres, P.Telefoon_Nommer, P.Kerkverband, L.Username, L.Admin 
                     FROM Persoon P
                     INNER JOIN Login L
                     ON P.Persoon_ID = L.Persoon_ID;");
@@ -194,6 +194,11 @@ namespace _225DD
         {
             Opdateer opD = new Opdateer(conn);
             opD.Show();
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -107,6 +107,7 @@
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.adminToolStripMenuItem.Text = "Gebruikers";
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // klienteVerslagToolStripMenuItem
             // 
@@ -285,7 +286,7 @@
             // opToolStripMenuItem
             // 
             this.opToolStripMenuItem.Name = "opToolStripMenuItem";
-            this.opToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.opToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.opToolStripMenuItem.Text = "Opdateer";
             this.opToolStripMenuItem.Click += new System.EventHandler(this.opToolStripMenuItem_Click);
             // 

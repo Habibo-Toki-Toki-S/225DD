@@ -16,7 +16,7 @@ namespace _225DD
         static string user;
         OleDbConnection conn;
         DataTable ds = new DataTable();
-        int kID = 0;
+        int kID = 4;
 
         public Kledingstukke_invorder()
         {
@@ -61,7 +61,10 @@ namespace _225DD
 
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
-            insert("insert into Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID],[Datum_Uit],[User_ID],[Klient_ID]) values ('" + lblDatum.Text + "','" + kID + "','" + user + "','" + kID + "','" + kID + "')");
+            int user_id;
+            Int32.TryParse(user,out user_id);
+            insert("insert into Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID],[User_ID],[Klient_ID]) values ('"+DateTime.Now+"',"+kID+","+ user_id +","+kID+")");
+            //insert("insert into Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID],[Datum_Uit],[User_ID],[Klient_ID]) values ('" + DateTime.Now + "','" + kID + "','" + user + "','" + kID + "','" + kID + "')");
         }
 
         private void btnKanseleer_Click(object sender, EventArgs e)
