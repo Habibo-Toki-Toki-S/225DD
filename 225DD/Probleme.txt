@@ -7,3 +7,4 @@
 5. Klere verslag se Ander verslae moet gecode word om alles wat in is, alles wat uit is sowel as als saam te kan toon
 6. Kledingstuk Invorder Aanvaar Button werk nie, Dink my query is op gevok of iets.
 7. Al die ander goed moet ook gelink word aan die data basis.
+8. Die klere verslag werk nie, daars n error

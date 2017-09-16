@@ -33,9 +33,7 @@
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.lblK_ID = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblGebruiker = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
@@ -84,34 +82,14 @@
             this.label7.TabIndex = 66;
             this.label7.Text = "Kledingstuk Uitgee";
             // 
-            // lblK_ID
-            // 
-            this.lblK_ID.AutoSize = true;
-            this.lblK_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblK_ID.Location = new System.Drawing.Point(251, 89);
-            this.lblK_ID.Name = "lblK_ID";
-            this.lblK_ID.Size = new System.Drawing.Size(31, 13);
-            this.lblK_ID.TabIndex = 71;
-            this.lblK_ID.Text = "K_ID";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(186, 115);
+            this.label3.Location = new System.Drawing.Point(186, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 69;
             this.label3.Text = "Datum:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(186, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Kleding ID:";
             // 
             // lblGebruiker
             // 
@@ -154,7 +132,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(251, 115);
+            this.lblDate.Location = new System.Drawing.Point(251, 89);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(46, 13);
             this.lblDate.TabIndex = 76;
@@ -191,10 +169,8 @@
             this.Controls.Add(this.btnAanvaar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.lblK_ID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblGebruiker);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -212,9 +188,7 @@
         private System.Windows.Forms.Button btnAanvaar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblK_ID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblGebruiker;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox5;
