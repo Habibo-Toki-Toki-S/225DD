@@ -49,7 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblOrdersPlaceds = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -151,7 +151,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::_225DD.Properties.Resources.church1600;
-            this.pictureBox1.Location = new System.Drawing.Point(125, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(114, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,17 +248,15 @@
             this.label11.TabIndex = 91;
             this.label11.Text = "Naam";
             // 
-            // lblOrdersPlaceds
+            // label1
             // 
-            this.lblOrdersPlaceds.AutoSize = true;
-            this.lblOrdersPlaceds.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrdersPlaceds.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblOrdersPlaceds.Location = new System.Drawing.Point(116, 158);
-            this.lblOrdersPlaceds.Name = "lblOrdersPlaceds";
-            this.lblOrdersPlaceds.Size = new System.Drawing.Size(152, 25);
-            this.lblOrdersPlaceds.TabIndex = 90;
-            this.lblOrdersPlaceds.Text = "Nuwe Gebruiker";
-            this.lblOrdersPlaceds.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(123, 159);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 25);
+            this.label1.TabIndex = 106;
+            this.label1.Text = "Nuwe Kliënt";
             // 
             // Nuwe_Klient
             // 
@@ -266,6 +264,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(367, 536);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAdres);
@@ -277,7 +276,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.lblOrdersPlaceds);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
@@ -313,6 +311,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblOrdersPlaceds;
+        private System.Windows.Forms.Label label1;
     }
 }
