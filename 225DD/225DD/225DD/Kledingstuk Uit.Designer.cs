@@ -36,17 +36,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblGebruiker = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lblDate = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtKID = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnKanseleer
             // 
-            this.btnKanseleer.Location = new System.Drawing.Point(475, 132);
+            this.btnKanseleer.Location = new System.Drawing.Point(452, 132);
             this.btnKanseleer.Name = "btnKanseleer";
             this.btnKanseleer.Size = new System.Drawing.Size(115, 29);
             this.btnKanseleer.TabIndex = 75;
@@ -61,6 +61,7 @@
             this.btnAanvaar.TabIndex = 74;
             this.btnAanvaar.Text = "Aanvaar";
             this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
             // 
             // pictureBox1
             // 
@@ -109,16 +110,6 @@
             this.label1.TabIndex = 65;
             this.label1.Text = "Gebruiker: ";
             // 
-            // comboBox5
-            // 
-            this.comboBox5.DisplayMember = "Tipe Kledingstuk";
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(526, 60);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(191, 21);
-            this.comboBox5.TabIndex = 10;
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -155,16 +146,23 @@
             this.txtKID.Size = new System.Drawing.Size(191, 20);
             this.txtKID.TabIndex = 77;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(526, 58);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(191, 20);
+            this.textBox1.TabIndex = 78;
+            // 
             // Kledingstuk_Uit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(742, 179);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtKID);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox5);
             this.Controls.Add(this.btnKanseleer);
             this.Controls.Add(this.btnAanvaar);
             this.Controls.Add(this.pictureBox1);
@@ -191,10 +189,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblGebruiker;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtKID;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
