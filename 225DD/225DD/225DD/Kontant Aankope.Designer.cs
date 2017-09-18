@@ -36,7 +36,7 @@
             this.lblGebruiker = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtGeld = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblOrdersPlaceds = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -121,13 +121,13 @@
             this.label3.TabIndex = 112;
             this.label3.Text = "Bedrag:";
             // 
-            // txtTel
+            // txtGeld
             // 
-            this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel.Location = new System.Drawing.Point(94, 270);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(71, 20);
-            this.txtTel.TabIndex = 115;
+            this.txtGeld.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGeld.Location = new System.Drawing.Point(94, 270);
+            this.txtGeld.Name = "txtGeld";
+            this.txtGeld.Size = new System.Drawing.Size(71, 20);
+            this.txtGeld.TabIndex = 115;
             // 
             // label1
             // 
@@ -282,7 +282,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(415, 568);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtTel);
+            this.Controls.Add(this.txtGeld);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblK_ID);
@@ -315,7 +315,7 @@
         private System.Windows.Forms.Label lblGebruiker;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtGeld;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblOrdersPlaceds;

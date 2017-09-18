@@ -23,6 +23,7 @@ namespace _225DD
             string gebruiker = lblGebruiker.Text;
             string kombersID = lblK_ID.Text;
             string datum = lblDatum.Text;
+            string bedrag = txtGeld.Text;
             int Grootte_ID = comboBox2.SelectedIndex + 1;
             int Geslag_ID = comboBox3.SelectedIndex + 1;
             int Tipe_Kledingstuk_ID = comboBox1.SelectedIndex + 1;

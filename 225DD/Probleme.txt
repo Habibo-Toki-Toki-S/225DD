@@ -22,3 +22,10 @@ Queries:
 15. Verwyder Klient
 16. Verwyder Gebruiker
 17. Kledingstuk uit
+
+18. Nuwe Klient
+19. Nuwe Gebruiker
+20. Kombers in
+
+21. Kontant in
+22. Kontant aankope 
