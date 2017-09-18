@@ -4,13 +4,13 @@
 2. Password mag nie wys by gebruikers verlag*---
 3. gbebruikers verslag moet oor gekyk word. IDs wys in plaas van data*---
 4. Opdateer moet gelink word aan databasis om te kan update
-5. Klere verslag se Ander verslae moet gecode word om alles wat in is, alles wat uit is sowel as als saam te kan toon* Kyk by 11
-6. Kledingstuk Invorder Aanvaar Button werk nie, Dink my query is op gevok of iets. *kyk by 11
+5. Klere verslag se Ander verslae moet gecode word om alles wat in is, alles wat uit is sowel as als saam te kan toon**
+6. Kledingstuk Invorder Aanvaar Button werk nie, Dink my query is op gevok of iets. **
 7. Al die ander goed moet ook gelink word aan die data basis.
 8. Die klere verslag werk nie, daars n error*---
-9. By kleding verslag, moet die datum in en datum uit by gevoeg word. *kyk by 11
-10. By kleding Verslag moet ons kledingstuk_Transaksies display, ek dink op die oomblik display ons kledingstuk * kyk by 11
-11. Kledinstuk transaksie moet geadd word, invorder moet gemodify word om bestaande kledingstukke in die db te kan sit of n nuwe ding in te sit en die transaksie aab te dui
+9. By kleding verslag, moet die datum in en datum uit by gevoeg word. **
+10. By kleding Verslag moet ons kledingstuk_Transaksies display, ek dink op die oomblik display ons kledingstuk **
+11. Kledinstuk transaksie moet geadd word, invorder moet gemodify word om bestaande kledingstukke in die db te kan sit of n nuwe ding in te sit en die transaksie aab te dui**
 12. Nuwe klient - Grootte en geslag dropdown moet gepopulate word
 13. Kombers Verslag moet ook kan kies - Komberse IN, Komberse UIT, Volledige Verslag (Net soos met kledingstuk Verslag)
 14. Kontant en Aankope verslag moet die User_ID net verander na Gebruiker.
