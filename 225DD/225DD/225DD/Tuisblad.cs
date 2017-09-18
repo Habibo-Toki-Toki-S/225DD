@@ -139,7 +139,22 @@ namespace _225DD
                   ON K.Grootte_ID = G.Grootte_ID)
                   INNER JOIN  Geslag AS Ge
                   ON K.Geslag_ID = Ge.Geslag_ID);");*/
-            query(@"SELECT * from Kledingstuk_Transaksie");
+            query(@"SELECT KT.Kledingstuk_Transaksie_ID, KT.Datum_In, KT.Datum_Uit,KL.Klient_ID,P.Naam, L.User_Id, L.Username, K.Kledingstuk_ID, K.Beskrywing, T.Tipe_Kledingstuk,G.Grootte_Size, Ge.Geslag
+                    FROM (((((((Kledingstuk_Transaksie KT
+                    INNER JOIN Kledingstuk K
+                    ON KT.Kledingstuk_ID = K.Kledingstuk_ID)
+                    INNER JOIN Login L
+                    ON KT.User_ID = L.User_ID)
+                    INNER JOIN Klient KL
+                    ON KT.Klient_ID = KL.Klient_ID)
+                    INNER JOIN Persoon P
+                    ON KL.Persoon_ID = P.Persoon_ID)
+                    INNER JOIN  Tipe_Kledingstuk AS T
+                    ON K.Tipe_Kledingstuk_ID = T.Tipe_Kledingstuk_ID)
+                    INNER JOIN  Grootte AS G
+                    ON K.Grootte_ID = G.Grootte_ID)
+                    INNER JOIN  Geslag AS Ge
+                    ON K.Geslag_ID = Ge.Geslag_ID);");
             lblHeading.Visible = true;
             lblHeading.Text = "Klere Verslag";
             lblSearch.Visible = true;
