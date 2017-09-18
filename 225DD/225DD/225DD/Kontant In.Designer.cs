@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kontant_In));
-            this.txtTel = new System.Windows.Forms.TextBox();
+            this.txtGeld = new System.Windows.Forms.TextBox();
             this.txtVan = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,14 +51,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtTel
+            // txtGeld
             // 
-            this.txtTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel.Location = new System.Drawing.Point(82, 107);
-            this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(71, 20);
-            this.txtTel.TabIndex = 115;
-            this.txtTel.TextChanged += new System.EventHandler(this.txtTel_TextChanged);
+            this.txtGeld.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGeld.Location = new System.Drawing.Point(82, 107);
+            this.txtGeld.Name = "txtGeld";
+            this.txtGeld.Size = new System.Drawing.Size(71, 20);
+            this.txtGeld.TabIndex = 115;
+            this.txtGeld.TextChanged += new System.EventHandler(this.txtTel_TextChanged);
             // 
             // txtVan
             // 
@@ -128,6 +128,7 @@
             this.btnCancel.TabIndex = 107;
             this.btnCancel.Text = "Kanseleer";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAdd
             // 
@@ -137,6 +138,7 @@
             this.btnAdd.TabIndex = 106;
             this.btnAdd.Text = "Aanvaar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label1
             // 
@@ -156,7 +158,7 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtUsername);
-            this.groupBox1.Controls.Add(this.txtTel);
+            this.groupBox1.Controls.Add(this.txtGeld);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(15, 273);
@@ -263,7 +265,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtTel;
+        private System.Windows.Forms.TextBox txtGeld;
         private System.Windows.Forms.TextBox txtVan;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label3;
