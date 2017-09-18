@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Nuwe_Klient));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -50,8 +51,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.kerkbankDataSet = new _225DD.KerkbankDataSet();
+            this.grootteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.grootteTableAdapter = new _225DD.KerkbankDataSetTableAdapters.GrootteTableAdapter();
+            this.geslagBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.geslagTableAdapter = new _225DD.KerkbankDataSetTableAdapters.GeslagTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grootteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -100,6 +109,8 @@
             // cbGeslag
             // 
             this.cbGeslag.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cbGeslag.DataSource = this.geslagBindingSource;
+            this.cbGeslag.DisplayMember = "Geslag";
             this.cbGeslag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGeslag.FormattingEnabled = true;
             this.cbGeslag.Location = new System.Drawing.Point(113, 65);
@@ -110,6 +121,8 @@
             // cbGrootte
             // 
             this.cbGrootte.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.cbGrootte.DataSource = this.grootteBindingSource;
+            this.cbGrootte.DisplayMember = "Grootte_Size";
             this.cbGrootte.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbGrootte.FormattingEnabled = true;
             this.cbGrootte.Location = new System.Drawing.Point(113, 27);
@@ -258,6 +271,29 @@
             this.label1.TabIndex = 106;
             this.label1.Text = "Nuwe Kliënt";
             // 
+            // kerkbankDataSet
+            // 
+            this.kerkbankDataSet.DataSetName = "KerkbankDataSet";
+            this.kerkbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // grootteBindingSource
+            // 
+            this.grootteBindingSource.DataMember = "Grootte";
+            this.grootteBindingSource.DataSource = this.kerkbankDataSet;
+            // 
+            // grootteTableAdapter
+            // 
+            this.grootteTableAdapter.ClearBeforeFill = true;
+            // 
+            // geslagBindingSource
+            // 
+            this.geslagBindingSource.DataMember = "Geslag";
+            this.geslagBindingSource.DataSource = this.kerkbankDataSet;
+            // 
+            // geslagTableAdapter
+            // 
+            this.geslagTableAdapter.ClearBeforeFill = true;
+            // 
             // Nuwe_Klient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,9 +318,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Nuwe_Klient";
             this.Text = "Nuwe_Klient";
+            this.Load += new System.EventHandler(this.Nuwe_Klient_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grootteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.geslagBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +352,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
+        private KerkbankDataSet kerkbankDataSet;
+        private System.Windows.Forms.BindingSource grootteBindingSource;
+        private KerkbankDataSetTableAdapters.GrootteTableAdapter grootteTableAdapter;
+        private System.Windows.Forms.BindingSource geslagBindingSource;
+        private KerkbankDataSetTableAdapters.GeslagTableAdapter geslagTableAdapter;
     }
 }

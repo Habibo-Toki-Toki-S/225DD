@@ -59,8 +59,6 @@ namespace _225DD
             }
 
             lblHeading.Visible = false;
-            lblSearch.Visible = false;
-            cmbVerslae.Visible = false;
         }
 
         private void verwyderKlientToolStripMenuItem_Click(object sender, EventArgs e)
@@ -251,8 +249,6 @@ namespace _225DD
                     ON K.Geslag_ID = Ge.Geslag_ID);");
             lblHeading.Visible = true;
             lblHeading.Text = "Transaksie Verslag";
-            lblSearch.Visible = true;
-            cmbVerslae.Visible = true;
         }
 
         private void klereInStoorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -270,8 +266,6 @@ namespace _225DD
                   WHERE KT.User_ID = 0;");
             lblHeading.Visible = true;
             lblHeading.Text = "Klere in stoor Verslag";
-            lblSearch.Visible = true;
-            cmbVerslae.Visible = true;
         }
     }
 }

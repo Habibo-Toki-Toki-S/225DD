@@ -10,10 +10,10 @@ Klaar:
 9. By kleding verslag, moet die datum in en datum uit by gevoeg word.*---
 10. By kleding Verslag moet ons kledingstuk_Transaksies display, ek dink op die oomblik display ons kledingstuk*---
 11. Kledinstuk transaksie moet geadd word, invorder moet gemodify word om bestaande kledingstukke in die db te kan sit of n nuwe ding in te sit en die transaksie aab te dui*---
+12. Nuwe klient - Grootte en geslag dropdown moet gepopulate word*---
 
 Besig:
 4. Opdateer moet gelink word aan databasis om te kan update
 7. Al die ander goed moet ook gelink word aan die data basis.
-12. Nuwe klient - Grootte en geslag dropdown moet gepopulate word
 13. Kombers Verslag moet ook kan kies - Komberse IN, Komberse UIT, Volledige Verslag (Net soos met kledingstuk Verslag)
 14. Kontant en Aankope verslag moet die User_ID net verander na Gebruiker.

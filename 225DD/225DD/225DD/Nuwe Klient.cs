@@ -26,5 +26,14 @@ namespace _225DD
         {
 
         }
+
+        private void Nuwe_Klient_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'kerkbankDataSet.Geslag' table. You can move, or remove it, as needed.
+            this.geslagTableAdapter.Fill(this.kerkbankDataSet.Geslag);
+            // TODO: This line of code loads data into the 'kerkbankDataSet.Grootte' table. You can move, or remove it, as needed.
+            this.grootteTableAdapter.Fill(this.kerkbankDataSet.Grootte);
+
+        }
     }
 }

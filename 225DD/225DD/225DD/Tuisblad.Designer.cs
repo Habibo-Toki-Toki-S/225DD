@@ -47,6 +47,8 @@
             this.invorderToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.uitgeeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.verslagToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaksiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.klereInStoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kombersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.kombersInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kombersUitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,10 +64,6 @@
             this.kliëntBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewHoof = new System.Windows.Forms.DataGridView();
             this.lblHeading = new System.Windows.Forms.Label();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.cmbVerslae = new System.Windows.Forms.ComboBox();
-            this.transaksiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.klereInStoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -197,14 +195,14 @@
             // invorderToolStripMenuItem3
             // 
             this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
-            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
             this.invorderToolStripMenuItem3.Text = "Invorder";
             this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
             // 
             // uitgeeToolStripMenuItem2
             // 
             this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
-            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
             this.uitgeeToolStripMenuItem2.Text = "Uitgee";
             this.uitgeeToolStripMenuItem2.Click += new System.EventHandler(this.uitgeeToolStripMenuItem2_Click);
             // 
@@ -214,9 +212,23 @@
             this.transaksiesToolStripMenuItem,
             this.klereInStoorToolStripMenuItem});
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
-            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
             this.verslagToolStripMenuItem3.Click += new System.EventHandler(this.verslagToolStripMenuItem3_Click);
+            // 
+            // transaksiesToolStripMenuItem
+            // 
+            this.transaksiesToolStripMenuItem.Name = "transaksiesToolStripMenuItem";
+            this.transaksiesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.transaksiesToolStripMenuItem.Text = "Transaksies";
+            this.transaksiesToolStripMenuItem.Click += new System.EventHandler(this.transaksiesToolStripMenuItem_Click);
+            // 
+            // klereInStoorToolStripMenuItem
+            // 
+            this.klereInStoorToolStripMenuItem.Name = "klereInStoorToolStripMenuItem";
+            this.klereInStoorToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.klereInStoorToolStripMenuItem.Text = "Klere in stoor";
+            this.klereInStoorToolStripMenuItem.Click += new System.EventHandler(this.klereInStoorToolStripMenuItem_Click);
             // 
             // kombersToolStripMenuItem1
             // 
@@ -330,51 +342,12 @@
             this.lblHeading.Text = "Klere Verslag:";
             this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
             // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.BackColor = System.Drawing.Color.Transparent;
-            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSearch.Location = new System.Drawing.Point(697, 84);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(114, 20);
-            this.lblSearch.TabIndex = 4;
-            this.lblSearch.Text = "Ander Verslae:";
-            // 
-            // cmbVerslae
-            // 
-            this.cmbVerslae.FormattingEnabled = true;
-            this.cmbVerslae.Items.AddRange(new object[] {
-            "Volle Verslag",
-            "Kledingstukke IN",
-            "Kledingstukke UIT"});
-            this.cmbVerslae.Location = new System.Drawing.Point(817, 86);
-            this.cmbVerslae.Name = "cmbVerslae";
-            this.cmbVerslae.Size = new System.Drawing.Size(187, 21);
-            this.cmbVerslae.TabIndex = 5;
-            // 
-            // transaksiesToolStripMenuItem
-            // 
-            this.transaksiesToolStripMenuItem.Name = "transaksiesToolStripMenuItem";
-            this.transaksiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.transaksiesToolStripMenuItem.Text = "Transaksies";
-            this.transaksiesToolStripMenuItem.Click += new System.EventHandler(this.transaksiesToolStripMenuItem_Click);
-            // 
-            // klereInStoorToolStripMenuItem
-            // 
-            this.klereInStoorToolStripMenuItem.Name = "klereInStoorToolStripMenuItem";
-            this.klereInStoorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.klereInStoorToolStripMenuItem.Text = "Klere in stoor";
-            this.klereInStoorToolStripMenuItem.Click += new System.EventHandler(this.klereInStoorToolStripMenuItem_Click);
-            // 
             // Tuisblad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::_225DD.Properties.Resources.Eastmanville_United_Reformed_Church__URCNA__Grand_Rapids_Michigan;
             this.ClientSize = new System.Drawing.Size(1178, 701);
-            this.Controls.Add(this.cmbVerslae);
-            this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.lblHeading);
             this.Controls.Add(this.dataGridViewHoof);
             this.Controls.Add(this.menuStrip1);
@@ -426,8 +399,6 @@
         private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem1;
         private System.Windows.Forms.DataGridView dataGridViewHoof;
         private System.Windows.Forms.Label lblHeading;
-        private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.ComboBox cmbVerslae;
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transaksiesToolStripMenuItem;

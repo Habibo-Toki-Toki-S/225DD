@@ -307,7 +307,7 @@
             // btnKanseleer
             // 
             this.btnKanseleer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKanseleer.Location = new System.Drawing.Point(12, 798);
+            this.btnKanseleer.Location = new System.Drawing.Point(12, 786);
             this.btnKanseleer.Name = "btnKanseleer";
             this.btnKanseleer.Size = new System.Drawing.Size(598, 29);
             this.btnKanseleer.TabIndex = 64;
@@ -381,7 +381,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(631, 835);
+            this.ClientSize = new System.Drawing.Size(631, 580);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnKanseleer);
             this.Controls.Add(this.pictureBox1);
