@@ -48,7 +48,7 @@ namespace _225DD
             int Klient_ID = Convert.ToInt32(textBox1.Text);
             int Kledingstuk_ID = Convert.ToInt32(txtKID.Text);
 
-            insert("Update Kledingstuk_Transaksie ([Datum_Uit],[User_ID],[Klient_ID]) SET ('" + DateTime.Now + "'," + User_ID + "," + Klient_ID + ") WHERE Kledingstuk_ID = "+Kledingstuk_ID+";");
+            insert("Update Kledingstuk_Transaksie SET Datum_Uit = '" + DateTime.Now + "',User_ID = " + User_ID + ",Klient_ID = " + Klient_ID + " WHERE Kledingstuk_ID = " + Kledingstuk_ID + ";"); // SET ('" + DateTime.Now + "'," + User_ID + "," + Klient_ID + ") WHERE Kledingstuk_ID = "+Kledingstuk_ID+";");
             MessageBox.Show("Kledingstuk is uit");
         }
 
