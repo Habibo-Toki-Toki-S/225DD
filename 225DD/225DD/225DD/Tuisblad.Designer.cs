@@ -64,6 +64,8 @@
             this.lblHeading = new System.Windows.Forms.Label();
             this.lblSearch = new System.Windows.Forms.Label();
             this.cmbVerslae = new System.Windows.Forms.ComboBox();
+            this.transaksiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.klereInStoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kliëntBindingSource2)).BeginInit();
@@ -208,6 +210,9 @@
             // 
             // verslagToolStripMenuItem3
             // 
+            this.verslagToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.transaksiesToolStripMenuItem,
+            this.klereInStoorToolStripMenuItem});
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
             this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
@@ -323,6 +328,7 @@
             this.lblHeading.Size = new System.Drawing.Size(269, 46);
             this.lblHeading.TabIndex = 3;
             this.lblHeading.Text = "Klere Verslag:";
+            this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
             // 
             // lblSearch
             // 
@@ -346,6 +352,20 @@
             this.cmbVerslae.Name = "cmbVerslae";
             this.cmbVerslae.Size = new System.Drawing.Size(187, 21);
             this.cmbVerslae.TabIndex = 5;
+            // 
+            // transaksiesToolStripMenuItem
+            // 
+            this.transaksiesToolStripMenuItem.Name = "transaksiesToolStripMenuItem";
+            this.transaksiesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.transaksiesToolStripMenuItem.Text = "Transaksies";
+            this.transaksiesToolStripMenuItem.Click += new System.EventHandler(this.transaksiesToolStripMenuItem_Click);
+            // 
+            // klereInStoorToolStripMenuItem
+            // 
+            this.klereInStoorToolStripMenuItem.Name = "klereInStoorToolStripMenuItem";
+            this.klereInStoorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.klereInStoorToolStripMenuItem.Text = "Klere in stoor";
+            this.klereInStoorToolStripMenuItem.Click += new System.EventHandler(this.klereInStoorToolStripMenuItem_Click);
             // 
             // Tuisblad
             // 
@@ -410,6 +430,8 @@
         private System.Windows.Forms.ComboBox cmbVerslae;
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transaksiesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem klereInStoorToolStripMenuItem;
     }
 }
 
