@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Verwyder_Gebruiker));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.txtK_ID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAanvaar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,16 +47,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(208, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 25);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Verwyder Gerbruiker";
             // 
             // btnKanseleer
             // 
@@ -92,14 +82,24 @@
             this.btnAanvaar.Text = "Aanvaar";
             this.btnAanvaar.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(208, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(191, 25);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Verwyder Gberuiker:";
+            // 
             // Verwyder_Gebruiker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(448, 185);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnKanseleer);
             this.Controls.Add(this.txtK_ID);
             this.Controls.Add(this.label1);
@@ -116,10 +116,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnKanseleer;
         private System.Windows.Forms.TextBox txtK_ID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAanvaar;
+        private System.Windows.Forms.Label label2;
     }
 }

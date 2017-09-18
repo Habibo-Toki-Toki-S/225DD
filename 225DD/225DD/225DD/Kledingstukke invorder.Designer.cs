@@ -43,6 +43,7 @@
             this.kerkbankDataSet = new _225DD.KerkbankDataSet();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.tipeKledingstukBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnAanvaar = new System.Windows.Forms.Button();
             this.txtBeskrywing = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -55,7 +56,6 @@
             this.tipeKledingstukBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnAanvaar = new System.Windows.Forms.Button();
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.tipeKledingstukBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.geslagTableAdapter = new _225DD.KerkbankDataSetTableAdapters.GeslagTableAdapter();
@@ -63,9 +63,9 @@
             this.grootteTableAdapter = new _225DD.KerkbankDataSetTableAdapters.GrootteTableAdapter();
             this.dataGridViewKledingstuk_invorder = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grootteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kerkbankDataSetBindingSource)).BeginInit();
@@ -202,6 +202,16 @@
             this.tipeKledingstukBindingSource2.DataMember = "Tipe_Kledingstuk";
             this.tipeKledingstukBindingSource2.DataSource = this.kerkbankDataSetBindingSource;
             // 
+            // btnAanvaar
+            // 
+            this.btnAanvaar.Location = new System.Drawing.Point(16, 219);
+            this.btnAanvaar.Name = "btnAanvaar";
+            this.btnAanvaar.Size = new System.Drawing.Size(560, 29);
+            this.btnAanvaar.TabIndex = 63;
+            this.btnAanvaar.Text = "Voeg nuwe tipe item by na stoor";
+            this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
+            // 
             // txtBeskrywing
             // 
             this.txtBeskrywing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -294,16 +304,6 @@
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 
-            // btnAanvaar
-            // 
-            this.btnAanvaar.Location = new System.Drawing.Point(16, 219);
-            this.btnAanvaar.Name = "btnAanvaar";
-            this.btnAanvaar.Size = new System.Drawing.Size(560, 29);
-            this.btnAanvaar.TabIndex = 63;
-            this.btnAanvaar.Text = "Voeg nuwe tipe item by na stoor";
-            this.btnAanvaar.UseVisualStyleBackColor = true;
-            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
-            // 
             // btnKanseleer
             // 
             this.btnKanseleer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -349,22 +349,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "As daar al so tipe kledingstuk in die klerebank was:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(381, 213);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 26);
-            this.textBox1.TabIndex = 66;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(18, 216);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(337, 20);
-            this.label9.TabIndex = 67;
-            this.label9.Text = "Kledingstuk ID van item wat bygevoeg word:";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(22, 260);
@@ -375,10 +359,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(18, 216);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(337, 20);
+            this.label9.TabIndex = 67;
+            this.label9.Text = "Kledingstuk ID van item wat bygevoeg word:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(381, 213);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(195, 26);
+            this.textBox1.TabIndex = 66;
+            // 
             // Kledingstukke_invorder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(631, 835);
             this.Controls.Add(this.groupBox2);
