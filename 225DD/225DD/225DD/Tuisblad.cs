@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace _225DD
 {
@@ -266,6 +267,16 @@ namespace _225DD
                   WHERE KT.User_ID = 0;");
             lblHeading.Visible = true;
             lblHeading.Text = "Klere in stoor Verslag";
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                System.Diagnostics.Process.Start(openFileDialog1.FileName);
+            }
         }
     }
 }
