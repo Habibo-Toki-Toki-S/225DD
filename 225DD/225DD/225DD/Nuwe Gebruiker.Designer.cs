@@ -117,6 +117,7 @@
             this.btnCancel.TabIndex = 80;
             this.btnCancel.Text = "Kanseleer";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAdd
             // 
@@ -126,6 +127,7 @@
             this.btnAdd.TabIndex = 79;
             this.btnAdd.Text = "Aanvaar";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label4
             // 

@@ -33,6 +33,7 @@
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBeskrywing = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblK_ID = new System.Windows.Forms.Label();
             this.lblDatum = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.lblGebruiker = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtBeskrywing = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +54,7 @@
             this.btnKanseleer.TabIndex = 75;
             this.btnKanseleer.Text = "Kanseleer";
             this.btnKanseleer.UseVisualStyleBackColor = true;
+            this.btnKanseleer.Click += new System.EventHandler(this.btnKanseleer_Click);
             // 
             // btnAanvaar
             // 
@@ -63,6 +64,7 @@
             this.btnAanvaar.TabIndex = 74;
             this.btnAanvaar.Text = "Aanvaar";
             this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
             // 
             // label7
             // 
@@ -85,6 +87,14 @@
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kombers Inligting";
+            // 
+            // txtBeskrywing
+            // 
+            this.txtBeskrywing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBeskrywing.Location = new System.Drawing.Point(167, 43);
+            this.txtBeskrywing.Name = "txtBeskrywing";
+            this.txtBeskrywing.Size = new System.Drawing.Size(208, 20);
+            this.txtBeskrywing.TabIndex = 1;
             // 
             // label4
             // 
@@ -161,14 +171,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 73;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtBeskrywing
-            // 
-            this.txtBeskrywing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBeskrywing.Location = new System.Drawing.Point(167, 43);
-            this.txtBeskrywing.Name = "txtBeskrywing";
-            this.txtBeskrywing.Size = new System.Drawing.Size(208, 20);
-            this.txtBeskrywing.TabIndex = 1;
             // 
             // Kombers_In
             // 

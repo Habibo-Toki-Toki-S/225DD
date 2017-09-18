@@ -17,3 +17,8 @@ Besig:
 7. Al die ander goed moet ook gelink word aan die data basis.
 13. Kombers Verslag moet ook kan kies - Komberse IN, Komberse UIT, Volledige Verslag (Net soos met kledingstuk Verslag)
 14. Kontant en Aankope verslag moet die User_ID net verander na Gebruiker.
+
+Queries:
+15. Verwyder Klient
+16. Verwyder Gebruiker
+17. Kledingstuk uit
