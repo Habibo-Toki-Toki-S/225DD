@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Verwyder_Klient));
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtK_ID = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,12 +57,12 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Klient ID: ";
             // 
-            // txtK_ID
+            // txtID
             // 
-            this.txtK_ID.Location = new System.Drawing.Point(275, 57);
-            this.txtK_ID.Name = "txtK_ID";
-            this.txtK_ID.Size = new System.Drawing.Size(149, 20);
-            this.txtK_ID.TabIndex = 2;
+            this.txtID.Location = new System.Drawing.Point(275, 57);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(149, 20);
+            this.txtID.TabIndex = 2;
             // 
             // btnKanseleer
             // 
@@ -103,7 +103,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnKanseleer);
-            this.Controls.Add(this.txtK_ID);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAanvaar);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -122,7 +122,7 @@
 
         private System.Windows.Forms.Button btnAanvaar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtK_ID;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button btnKanseleer;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

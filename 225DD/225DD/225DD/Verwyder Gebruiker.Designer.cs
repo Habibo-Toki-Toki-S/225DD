@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Verwyder_Gebruiker));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKanseleer = new System.Windows.Forms.Button();
-            this.txtK_ID = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -57,12 +57,12 @@
             this.btnKanseleer.Text = "Kanseleer";
             this.btnKanseleer.UseVisualStyleBackColor = true;
             // 
-            // txtK_ID
+            // txtID
             // 
-            this.txtK_ID.Location = new System.Drawing.Point(289, 57);
-            this.txtK_ID.Name = "txtK_ID";
-            this.txtK_ID.Size = new System.Drawing.Size(135, 20);
-            this.txtK_ID.TabIndex = 8;
+            this.txtID.Location = new System.Drawing.Point(289, 57);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(135, 20);
+            this.txtID.TabIndex = 8;
             // 
             // label1
             // 
@@ -81,6 +81,7 @@
             this.btnAanvaar.TabIndex = 6;
             this.btnAanvaar.Text = "Aanvaar";
             this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
             // 
             // label2
             // 
@@ -101,7 +102,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnKanseleer);
-            this.Controls.Add(this.txtK_ID);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAanvaar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -117,7 +118,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnKanseleer;
-        private System.Windows.Forms.TextBox txtK_ID;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAanvaar;
         private System.Windows.Forms.Label label2;
