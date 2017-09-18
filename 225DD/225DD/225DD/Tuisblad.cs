@@ -130,7 +130,7 @@ namespace _225DD
 
         private void verslagToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            //query(@"SELECT Grootte_Size FROM Grootte");
+            /*query(@"SELECT Grootte_Size FROM Grootte");
             query(@"SELECT K.Kledingstuk_ID, K.Beskrywing, T.Tipe_Kledingstuk,G.Grootte_Size, Ge.Geslag
                   FROM (((Kledingstuk AS K
                   INNER JOIN  Tipe_Kledingstuk AS T
@@ -138,7 +138,8 @@ namespace _225DD
                   INNER JOIN  Grootte AS G
                   ON K.Grootte_ID = G.Grootte_ID)
                   INNER JOIN  Geslag AS Ge
-                  ON K.Geslag_ID = Ge.Geslag_ID);");
+                  ON K.Geslag_ID = Ge.Geslag_ID);");*/
+            query(@"SELECT * from Kledingstuk_Transaksie");
             lblHeading.Visible = true;
             lblHeading.Text = "Klere Verslag";
             lblSearch.Visible = true;
