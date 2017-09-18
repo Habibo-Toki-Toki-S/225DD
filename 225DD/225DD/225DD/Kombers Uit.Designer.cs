@@ -34,14 +34,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtKombersID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblK_ID = new System.Windows.Forms.Label();
             this.lblDatum = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblGebruiker = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtKlientID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,7 @@
             this.btnKanseleer.TabIndex = 86;
             this.btnKanseleer.Text = "Kanseleer";
             this.btnKanseleer.UseVisualStyleBackColor = true;
+            this.btnKanseleer.Click += new System.EventHandler(this.btnKanseleer_Click);
             // 
             // btnAanvaar
             // 
@@ -63,6 +64,7 @@
             this.btnAanvaar.TabIndex = 85;
             this.btnAanvaar.Text = "Aanvaar";
             this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
             // 
             // pictureBox1
             // 
@@ -86,40 +88,40 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtKlientID);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtKombersID);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(8, 280);
+            this.groupBox1.Location = new System.Drawing.Point(8, 250);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(387, 82);
+            this.groupBox1.Size = new System.Drawing.Size(387, 112);
             this.groupBox1.TabIndex = 83;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kombers Inligting";
+            // 
+            // txtKombersID
+            // 
+            this.txtKombersID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKombersID.Location = new System.Drawing.Point(147, 38);
+            this.txtKombersID.Name = "txtKombersID";
+            this.txtKombersID.Size = new System.Drawing.Size(223, 20);
+            this.txtKombersID.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 41);
+            this.label4.Location = new System.Drawing.Point(17, 36);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Kombers ID:";
             // 
-            // lblK_ID
-            // 
-            this.lblK_ID.AutoSize = true;
-            this.lblK_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblK_ID.Location = new System.Drawing.Point(91, 224);
-            this.lblK_ID.Name = "lblK_ID";
-            this.lblK_ID.Size = new System.Drawing.Size(31, 13);
-            this.lblK_ID.TabIndex = 82;
-            this.lblK_ID.Text = "K_ID";
-            // 
             // lblDatum
             // 
             this.lblDatum.AutoSize = true;
-            this.lblDatum.Location = new System.Drawing.Point(91, 250);
+            this.lblDatum.Location = new System.Drawing.Point(91, 225);
             this.lblDatum.Name = "lblDatum";
             this.lblDatum.Size = new System.Drawing.Size(46, 13);
             this.lblDatum.TabIndex = 81;
@@ -128,21 +130,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 250);
+            this.label3.Location = new System.Drawing.Point(26, 225);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 80;
             this.label3.Text = "Datum:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(26, 224);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 79;
-            this.label2.Text = "Kombers ID:";
             // 
             // lblGebruiker
             // 
@@ -162,13 +154,23 @@
             this.label1.TabIndex = 76;
             this.label1.Text = "Gebruiker: ";
             // 
-            // textBox1
+            // txtKlientID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(147, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(223, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtKlientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKlientID.Location = new System.Drawing.Point(147, 76);
+            this.txtKlientID.Name = "txtKlientID";
+            this.txtKlientID.Size = new System.Drawing.Size(223, 20);
+            this.txtKlientID.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(17, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Kliënt ID:";
             // 
             // Kombers_Uit
             // 
@@ -181,10 +183,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblK_ID);
             this.Controls.Add(this.lblDatum);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblGebruiker);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -206,12 +206,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblK_ID;
         private System.Windows.Forms.Label lblDatum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblGebruiker;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtKombersID;
+        private System.Windows.Forms.TextBox txtKlientID;
+        private System.Windows.Forms.Label label2;
     }
 }

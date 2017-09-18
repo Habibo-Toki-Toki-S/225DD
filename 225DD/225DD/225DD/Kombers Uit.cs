@@ -16,5 +16,15 @@ namespace _225DD
         {
             InitializeComponent();
         }
+
+        private void btnKanseleer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAanvaar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

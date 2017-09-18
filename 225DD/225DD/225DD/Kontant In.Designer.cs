@@ -200,9 +200,9 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(12, 219);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 13);
+            this.label12.Size = new System.Drawing.Size(61, 13);
             this.label12.TabIndex = 129;
-            this.label12.Text = "Kleding ID:";
+            this.label12.Text = "Kontant ID:";
             // 
             // lblGebruiker
             // 
