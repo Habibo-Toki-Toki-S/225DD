@@ -508,6 +508,11 @@ namespace _225DD
 
             insert(@"Delete FROM " + soek + " WHERE " + id + " = " + txtSoek.Text);
         }
+
+        private void btnAanvaar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

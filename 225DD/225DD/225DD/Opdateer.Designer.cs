@@ -445,6 +445,7 @@
             this.btnAanvaar.TabIndex = 8;
             this.btnAanvaar.Text = "Insert/Update\r\n(Los ID oop vir Insert)";
             this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
             // 
             // button2
             // 
