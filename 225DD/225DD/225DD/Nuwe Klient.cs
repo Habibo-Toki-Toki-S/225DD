@@ -43,7 +43,7 @@ namespace _225DD
         {
             string naam = txtUsername.Text;
             string van = txtVan.Text;
-            int tel = Convert.ToInt32(txtTel.Text);
+            int tel;
             string kerk = txtKerk.Text;
             string adres = txtAdres.Text;
             int Grootte_ID = cbGrootte.SelectedIndex + 1;
@@ -51,10 +51,45 @@ namespace _225DD
             DateTime geboorte = dateTimePicker1.Value;
             string email = txtEmail.Text;
 
-            insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband],[Geslag_ID]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + "'," + Geslag_ID + ")");
-            int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
-            insert("INSERT INTO Klient ([Klere_Grootte_ID],[Geboorte_datum],[Persoon_ID],[Email]) values (" + Grootte_ID +  ",'" + geboorte + "'," + Persoon_ID + ",'" + email  + "' )");
-            MessageBox.Show("Klient suskesvol bygevoeg!");
+            if (IsAllLetters(naam) == true)
+            {
+                if (IsAllLetters(van) == true)
+                {
+                    if (IsAllLetters(kerk) == true)
+                    {
+                        if (IsAllLetters(adres) == true)
+                        {
+                            if (int.TryParse(txtTel.Text, out tel))
+                            {
+                                insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband],[Geslag_ID]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + "'," + Geslag_ID + ")");
+                                int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
+                                insert("INSERT INTO Klient ([Klere_Grootte_ID],[Geboorte_datum],[Persoon_ID],[Email]) values (" + Grootte_ID + ",'" + geboorte + "'," + Persoon_ID + ",'" + email + "' )");
+                                MessageBox.Show("Klient suskesvol bygevoeg!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please enter a number for tel number");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Slegs letters by adres asseblief");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Slegs letters by Kerk verband asseblief");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Slegs letters by Van asseblief");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Slegs letters by Naam asseblief");
+            }
         }
 
         public void insert(string sql)
@@ -77,6 +112,16 @@ namespace _225DD
             // TODO: This line of code loads data into the 'kerkbankDataSet.Grootte' table. You can move, or remove it, as needed.
             this.grootteTableAdapter.Fill(this.kerkbankDataSet.Grootte);
 
+        }
+
+        public static bool IsAllLetters(string s)
+        {
+            foreach (char c in s)
+            {
+                if (!Char.IsLetter(c))
+                    return false;
+            }
+            return true;
         }
     }
 }
