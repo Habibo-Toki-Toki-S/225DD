@@ -23,8 +23,34 @@ namespace _225DD
             conn = con;
         }
 
+        public void query(string sql)
+        {
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbDataAdapter adapt = new OleDbDataAdapter(sql, conn);
+            DataSet ds = new DataSet();
+            adapt.Fill(ds);
+            dataGridViewAlles.Visible = true;
+            dataGridViewAlles.DataSource = ds.Tables[0];
+            conn.Close();
+        }
+
+        public void insert(string sql)
+        {
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
         private void rbGeslag_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Geslag");
+
             lblSoek.Text = "Geslag:";
             lbl1.Text = "Geslag:";
 
@@ -47,6 +73,8 @@ namespace _225DD
 
         private void rbAankope_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Aankope");
+
             lblSoek.Text = "Aankoop ID:";
             lbl1.Text = "Berag:";
             lbl2.Text = "Gebruiker:";
@@ -71,6 +99,8 @@ namespace _225DD
 
         private void rbGroottes_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Grootte");
+
             lblSoek.Text = "Groottes:";
             lbl1.Text = "Groottes:";
 
@@ -93,6 +123,8 @@ namespace _225DD
 
         private void rbKledingstukke_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Kledingstuk");
+
             lblSoek.Text = "Kledingstuk ID:";
             lbl1.Text = "Tipe Kledingstuk:";
             lbl2.Text = "Grootte:";
@@ -118,6 +150,8 @@ namespace _225DD
 
         private void rbK_Transaksies_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Kledingstuk_Transaksie");
+
             lblSoek.Text = "Kledingstuk Transaksie:";
             lbl1.Text = "Datum In:";
             lbl2.Text = "Kledingstuk ID:";
@@ -144,6 +178,8 @@ namespace _225DD
 
         private void rbKomberse_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Kombers");
+
             lblSoek.Text = "Kombers ID:";
             lbl1.Text = "Beskrywing";
 
@@ -166,6 +202,8 @@ namespace _225DD
 
         private void rbKombers_Trans_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Kombers_transaksie");
+
             lblSoek.Text = "Kombers Transaksie:";
             lbl1.Text = "Datum In:";
             lbl2.Text = "Kombers ID:";
@@ -192,6 +230,8 @@ namespace _225DD
 
         private void rbKontantDonasies_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Kontant_donasies");
+
             lblSoek.Text = "Kontant Donasies:";
             lbl1.Text = "Naam:";
             lbl2.Text = "Van:";
@@ -217,6 +257,8 @@ namespace _225DD
 
         private void rbLogin_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Login");
+
             lblSoek.Text = "Aanteken ID:"; //HELP
             lbl1.Text = "Gebruiker:"; //HELP
             lbl2.Text = "Wagwoord:"; //HELP
@@ -242,6 +284,8 @@ namespace _225DD
 
         private void rbPersoon_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Persoon");
+
             lblSoek.Text = "Persoon ID:";
             lbl1.Text = "Naam:";
             lbl2.Text = "Van:";
@@ -269,6 +313,8 @@ namespace _225DD
 
         private void rbKliente_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Klient");
+
             lblSoek.Text = "Kliënte ID:";
             lbl1.Text = "Kleding Grootte:";
             lbl2.Text = "Ouderdom";
@@ -294,6 +340,8 @@ namespace _225DD
 
         private void rbTipeKledingstuk_CheckedChanged(object sender, EventArgs e)
         {
+            query("Select * from Tipe_Kledingstuk");
+
             lblSoek.Text = "Tipe Kledingstuk:";
             lbl1.Text = "Tipe Kledingstuk";
 
@@ -312,16 +360,6 @@ namespace _225DD
             txt5.Visible = false;
             txt6.Visible = false;
             txt7.Visible = false;
-        }
-
-        public void query(string sql)      //Check hier, n method om enige query te doen
-        {
-            OleDbDataAdapter adapt = new OleDbDataAdapter(sql, conn);
-            DataSet ds = new DataSet();
-            adapt.Fill(ds);
-            dataGridView1.Visible = true;
-            dataGridView1.DataSource = ds.Tables[0];
-            conn.Close();
         }
 
         private void btnSoek_Click(object sender, EventArgs e)
@@ -395,12 +433,81 @@ namespace _225DD
         private void button1_Click(object sender, EventArgs e)
         {
             txtSoek.Text = "";
-            dataGridView1.DataBindings.Clear();
+            dataGridViewAlles.DataBindings.Clear();
         }
 
         private void btnKanseleer_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (rbAankope.Checked)
+            {
+                soek = "Aankope";
+                id = "Aankoop_ID";
+            }
+            else if (rbGeslag.Checked)
+            {
+                soek = "Geslag";
+                id = "Geslag_ID";
+            }
+            else if (rbGroottes.Checked)
+            {
+                soek = "Grootte";
+                id = "Grootte_Size";
+            }
+            else if (rbKledingstukke.Checked)
+            {
+                soek = "Kledingstuk";
+                id = "Kledingstuk_ID";
+            }
+            else if (rbK_Transaksies.Checked)
+            {
+                soek = "Kledingstuk_Transaksie";
+                id = "Kledingstuk_Transaksie_ID";
+            }
+            else if (rbKomberse.Checked)
+            {
+                soek = "Komberse";
+                id = "Klient_ID";
+            }
+            else if (rbKombers_Trans.Checked)
+            {
+                soek = "Kombers_Transaksie";
+                id = "Kombers_Transaksie_";
+            }
+            else if (rbKontantDonasies.Checked)
+            {
+                soek = "Kontant_Donasies";
+                id = "Kontant_Donasies_ID";
+            }
+            else if (rbLogin.Checked)
+            {
+                soek = "Login";
+                id = "Username";
+            }
+            else if (rbPersoon.Checked)
+            {
+                soek = "Persoon";
+                id = "Persoon_ID";
+            }
+            else if (rbKliente.Checked)
+            {
+                soek = "Klient";
+                id = "Klient_ID";
+            }
+            else if (rbTipeKledingstuk.Checked)
+            {
+                soek = "Tipe_Kledingstuk";
+                id = "Tipe_Kledingstuk_ID";
+            }
+            else
+                MessageBox.Show("Probeer weer");
+
+            insert(@"Delete FROM " + soek + " WHERE " + id + " = " + txtSoek.Text);
+        }
     }
+    
 }
