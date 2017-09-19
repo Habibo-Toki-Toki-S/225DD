@@ -30,6 +30,10 @@ namespace _225DD
             int tel = Convert.ToInt32(txtTel.Text);
             string kerk = txtKerk.Text;
             string adres = txtAdres.Text;
+            String username = textBox1.Text;
+            String password = textBox2.Text;
+
+
             bool admin;
 
             if (radioButton1.Checked == true)
@@ -41,9 +45,9 @@ namespace _225DD
                 admin = false;
             }
 
-            insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + ")");
+            insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + "')");
             int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
-            insert("INSERT INTO Klient ([Klere_Grootte_ID],[Geboorte_datum],[Persoon_ID],[Email]) values (" + Grootte_ID + ",'" + geboorte + "'," + Persoon_ID + ",'" + email + "' )");
+            insert("INSERT INTO LOGIN ([Username],[Password],[Admin],[Persoon_ID]) values ('" + username + "','" + password + "','" + admin + "'," + Persoon_ID + " )");
             MessageBox.Show("Gebruiker suskesvol bygevoeg!");
         }
 
