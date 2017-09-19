@@ -35,6 +35,18 @@ namespace _225DD
             conn.Close();
         }
 
+        public void insert(string sql)
+        {
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
         private void rbGeslag_CheckedChanged(object sender, EventArgs e)
         {
             query("Select * from Geslag");
@@ -428,5 +440,74 @@ namespace _225DD
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (rbAankope.Checked)
+            {
+                soek = "Aankope";
+                id = "Aankoop_ID";
+            }
+            else if (rbGeslag.Checked)
+            {
+                soek = "Geslag";
+                id = "Geslag_ID";
+            }
+            else if (rbGroottes.Checked)
+            {
+                soek = "Grootte";
+                id = "Grootte_Size";
+            }
+            else if (rbKledingstukke.Checked)
+            {
+                soek = "Kledingstuk";
+                id = "Kledingstuk_ID";
+            }
+            else if (rbK_Transaksies.Checked)
+            {
+                soek = "Kledingstuk_Transaksie";
+                id = "Kledingstuk_Transaksie_ID";
+            }
+            else if (rbKomberse.Checked)
+            {
+                soek = "Komberse";
+                id = "Klient_ID";
+            }
+            else if (rbKombers_Trans.Checked)
+            {
+                soek = "Kombers_Transaksie";
+                id = "Kombers_Transaksie_";
+            }
+            else if (rbKontantDonasies.Checked)
+            {
+                soek = "Kontant_Donasies";
+                id = "Kontant_Donasies_ID";
+            }
+            else if (rbLogin.Checked)
+            {
+                soek = "Login";
+                id = "Username";
+            }
+            else if (rbPersoon.Checked)
+            {
+                soek = "Persoon";
+                id = "Persoon_ID";
+            }
+            else if (rbKliente.Checked)
+            {
+                soek = "Klient";
+                id = "Klient_ID";
+            }
+            else if (rbTipeKledingstuk.Checked)
+            {
+                soek = "Tipe_Kledingstuk";
+                id = "Tipe_Kledingstuk_ID";
+            }
+            else
+                MessageBox.Show("Probeer weer");
+
+            insert(@"Delete FROM " + soek + " WHERE " + id + " = " + txtSoek.Text);
+        }
     }
+    
 }

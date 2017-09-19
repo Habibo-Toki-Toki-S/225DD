@@ -65,6 +65,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.btnAanvaar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlles)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -268,14 +269,14 @@
             this.dataGridViewAlles.Location = new System.Drawing.Point(18, 234);
             this.dataGridViewAlles.Name = "dataGridViewAlles";
             this.dataGridViewAlles.ReadOnly = true;
-            this.dataGridViewAlles.Size = new System.Drawing.Size(846, 54);
+            this.dataGridViewAlles.Size = new System.Drawing.Size(846, 172);
             this.dataGridViewAlles.TabIndex = 3;
             // 
             // btnSoek
             // 
-            this.btnSoek.Location = new System.Drawing.Point(367, 195);
+            this.btnSoek.Location = new System.Drawing.Point(384, 194);
             this.btnSoek.Name = "btnSoek";
-            this.btnSoek.Size = new System.Drawing.Size(75, 23);
+            this.btnSoek.Size = new System.Drawing.Size(116, 23);
             this.btnSoek.TabIndex = 4;
             this.btnSoek.Text = "Soek";
             this.btnSoek.UseVisualStyleBackColor = true;
@@ -297,7 +298,7 @@
             this.groupBox2.Controls.Add(this.lbl2);
             this.groupBox2.Controls.Add(this.lbl3);
             this.groupBox2.Controls.Add(this.lbl4);
-            this.groupBox2.Location = new System.Drawing.Point(18, 310);
+            this.groupBox2.Location = new System.Drawing.Point(18, 427);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(563, 174);
             this.groupBox2.TabIndex = 5;
@@ -420,7 +421,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(652, 195);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 23);
+            this.button1.Size = new System.Drawing.Size(116, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "Kanseleer Soektog";
             this.button1.UseVisualStyleBackColor = true;
@@ -428,7 +429,7 @@
             // 
             // btnKanseleer
             // 
-            this.btnKanseleer.Location = new System.Drawing.Point(597, 311);
+            this.btnKanseleer.Location = new System.Drawing.Point(597, 428);
             this.btnKanseleer.Name = "btnKanseleer";
             this.btnKanseleer.Size = new System.Drawing.Size(267, 79);
             this.btnKanseleer.TabIndex = 7;
@@ -438,19 +439,30 @@
             // 
             // btnAanvaar
             // 
-            this.btnAanvaar.Location = new System.Drawing.Point(597, 405);
+            this.btnAanvaar.Location = new System.Drawing.Point(597, 522);
             this.btnAanvaar.Name = "btnAanvaar";
             this.btnAanvaar.Size = new System.Drawing.Size(267, 79);
             this.btnAanvaar.TabIndex = 8;
             this.btnAanvaar.Text = "Aanvaar";
             this.btnAanvaar.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(517, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(116, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Verwyder(Delete)";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Opdateer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(892, 494);
+            this.ClientSize = new System.Drawing.Size(905, 613);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAanvaar);
             this.Controls.Add(this.btnKanseleer);
             this.Controls.Add(this.button1);
@@ -512,5 +524,6 @@
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Button btnKanseleer;
         private System.Windows.Forms.Button btnAanvaar;
+        private System.Windows.Forms.Button button2;
     }
 }
