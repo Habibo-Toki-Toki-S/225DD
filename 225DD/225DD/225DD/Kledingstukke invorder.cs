@@ -121,10 +121,18 @@ namespace _225DD
             int Grootte_ID = comboBox2.SelectedIndex + 1;
             int Geslag_ID = comboBox3.SelectedIndex + 1;
             int Tipe_Kledingstuk_ID = comboBox1.SelectedIndex + 1;
-            String Beskrywing = txtBeskrywing.Text;
-            insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "') ");
-            insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");
-            MessageBox.Show("An Item has been successfully added");
+            string Beskrywing = txtBeskrywing.Text;
+
+            if (IsAllLettersOrDigitsOrUnderscores(Beskrywing) == true)
+            {
+                insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "') ");
+                insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");
+                MessageBox.Show("Kledingstuk suksesvol by gevoeg");
+            }
+            else
+            {
+                MessageBox.Show("Slegs letters in beskrywing asseblief");
+            }
         }
 
         private void btnKanseleer_Click(object sender, EventArgs e)
@@ -139,10 +147,26 @@ namespace _225DD
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            int Kledingstuk_ID = 0;
-            Kledingstuk_ID = Convert.ToInt32(textBox1.Text);
-            insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now  + "'," + Kledingstuk_ID + ")");
-           
+            int Kledingstuk_ID;
+            if (int.TryParse(textBox1.Text, out Kledingstuk_ID))
+            {
+                insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + Kledingstuk_ID + ")");
+                MessageBox.Show("Kledingstuk suksesvol by gevoeg!");
+            }
+            else
+            {
+                MessageBox.Show("Please enter a number");
+            }
+        }
+
+        public static bool IsAllLettersOrDigitsOrUnderscores(string s)
+        {
+            foreach (char c in s)
+            {
+                if (!Char.IsLetter(c))
+                    return false;
+            }
+            return true;
         }
     }
 }
