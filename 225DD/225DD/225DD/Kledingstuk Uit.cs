@@ -45,11 +45,25 @@ namespace _225DD
 
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
-            int Klient_ID = Convert.ToInt32(textBox1.Text);
-            int Kledingstuk_ID = Convert.ToInt32(txtKID.Text);
+            int Klient_ID; // = Convert.ToInt32(textBox1.Text);
+            int Kledingstuk_ID; // = Convert.ToInt32(txtKID.Text);
 
-            insert("Update Kledingstuk_Transaksie SET Datum_Uit = '" + DateTime.Now + "',User_ID = " + User_ID + ",Klient_ID = " + Klient_ID + " WHERE Kledingstuk_ID = " + Kledingstuk_ID + ";"); // SET ('" + DateTime.Now + "'," + User_ID + "," + Klient_ID + ") WHERE Kledingstuk_ID = "+Kledingstuk_ID+";");
-            MessageBox.Show("Kledingstuk is uit");
+            if (int.TryParse(textBox1.Text, out Klient_ID))
+            {
+                if (int.TryParse(txtKID.Text, out Kledingstuk_ID))
+                {
+                    insert("Update Kledingstuk_Transaksie SET Datum_Uit = '" + DateTime.Now + "',User_ID = " + User_ID + ",Klient_ID = " + Klient_ID + " WHERE Kledingstuk_ID = " + Kledingstuk_ID + ";"); // SET ('" + DateTime.Now + "'," + User_ID + "," + Klient_ID + ") WHERE Kledingstuk_ID = "+Kledingstuk_ID+";");
+                    MessageBox.Show("Kledingstuk is uit");
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a number");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a number");
+            }
         }
 
         public void insert(string sql)
