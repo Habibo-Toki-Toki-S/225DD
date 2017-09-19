@@ -45,9 +45,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblSoek = new System.Windows.Forms.Label();
             this.txtSoek = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewAlles = new System.Windows.Forms.DataGridView();
             this.btnSoek = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt7 = new System.Windows.Forms.TextBox();
+            this.txt6 = new System.Windows.Forms.TextBox();
+            this.txt5 = new System.Windows.Forms.TextBox();
+            this.txt4 = new System.Windows.Forms.TextBox();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txt1 = new System.Windows.Forms.TextBox();
             this.lbl7 = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
             this.lbl5 = new System.Windows.Forms.Label();
@@ -56,17 +63,10 @@
             this.lbl3 = new System.Windows.Forms.Label();
             this.lbl4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt1 = new System.Windows.Forms.TextBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
-            this.txt3 = new System.Windows.Forms.TextBox();
-            this.txt4 = new System.Windows.Forms.TextBox();
-            this.txt5 = new System.Windows.Forms.TextBox();
-            this.txt6 = new System.Windows.Forms.TextBox();
-            this.txt7 = new System.Windows.Forms.TextBox();
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlles)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -261,15 +261,15 @@
             this.txtSoek.Size = new System.Drawing.Size(201, 20);
             this.txtSoek.TabIndex = 2;
             // 
-            // dataGridView1
+            // dataGridViewAlles
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 234);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(846, 54);
-            this.dataGridView1.TabIndex = 3;
+            this.dataGridViewAlles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAlles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAlles.Location = new System.Drawing.Point(18, 234);
+            this.dataGridViewAlles.Name = "dataGridViewAlles";
+            this.dataGridViewAlles.ReadOnly = true;
+            this.dataGridViewAlles.Size = new System.Drawing.Size(846, 54);
+            this.dataGridViewAlles.TabIndex = 3;
             // 
             // btnSoek
             // 
@@ -303,6 +303,55 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Inligting";
+            // 
+            // txt7
+            // 
+            this.txt7.Location = new System.Drawing.Point(414, 103);
+            this.txt7.Name = "txt7";
+            this.txt7.Size = new System.Drawing.Size(128, 20);
+            this.txt7.TabIndex = 20;
+            // 
+            // txt6
+            // 
+            this.txt6.Location = new System.Drawing.Point(414, 67);
+            this.txt6.Name = "txt6";
+            this.txt6.Size = new System.Drawing.Size(128, 20);
+            this.txt6.TabIndex = 19;
+            // 
+            // txt5
+            // 
+            this.txt5.Location = new System.Drawing.Point(414, 31);
+            this.txt5.Name = "txt5";
+            this.txt5.Size = new System.Drawing.Size(128, 20);
+            this.txt5.TabIndex = 18;
+            // 
+            // txt4
+            // 
+            this.txt4.Location = new System.Drawing.Point(105, 139);
+            this.txt4.Name = "txt4";
+            this.txt4.Size = new System.Drawing.Size(128, 20);
+            this.txt4.TabIndex = 17;
+            // 
+            // txt3
+            // 
+            this.txt3.Location = new System.Drawing.Point(105, 103);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(128, 20);
+            this.txt3.TabIndex = 16;
+            // 
+            // txt2
+            // 
+            this.txt2.Location = new System.Drawing.Point(105, 67);
+            this.txt2.Name = "txt2";
+            this.txt2.Size = new System.Drawing.Size(128, 20);
+            this.txt2.TabIndex = 15;
+            // 
+            // txt1
+            // 
+            this.txt1.Location = new System.Drawing.Point(105, 31);
+            this.txt1.Name = "txt1";
+            this.txt1.Size = new System.Drawing.Size(128, 20);
+            this.txt1.TabIndex = 14;
             // 
             // lbl7
             // 
@@ -377,55 +426,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txt1
-            // 
-            this.txt1.Location = new System.Drawing.Point(105, 31);
-            this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(128, 20);
-            this.txt1.TabIndex = 14;
-            // 
-            // txt2
-            // 
-            this.txt2.Location = new System.Drawing.Point(105, 67);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(128, 20);
-            this.txt2.TabIndex = 15;
-            // 
-            // txt3
-            // 
-            this.txt3.Location = new System.Drawing.Point(105, 103);
-            this.txt3.Name = "txt3";
-            this.txt3.Size = new System.Drawing.Size(128, 20);
-            this.txt3.TabIndex = 16;
-            // 
-            // txt4
-            // 
-            this.txt4.Location = new System.Drawing.Point(105, 139);
-            this.txt4.Name = "txt4";
-            this.txt4.Size = new System.Drawing.Size(128, 20);
-            this.txt4.TabIndex = 17;
-            // 
-            // txt5
-            // 
-            this.txt5.Location = new System.Drawing.Point(414, 31);
-            this.txt5.Name = "txt5";
-            this.txt5.Size = new System.Drawing.Size(128, 20);
-            this.txt5.TabIndex = 18;
-            // 
-            // txt6
-            // 
-            this.txt6.Location = new System.Drawing.Point(414, 67);
-            this.txt6.Name = "txt6";
-            this.txt6.Size = new System.Drawing.Size(128, 20);
-            this.txt6.TabIndex = 19;
-            // 
-            // txt7
-            // 
-            this.txt7.Location = new System.Drawing.Point(414, 103);
-            this.txt7.Name = "txt7";
-            this.txt7.Size = new System.Drawing.Size(128, 20);
-            this.txt7.TabIndex = 20;
-            // 
             // btnKanseleer
             // 
             this.btnKanseleer.Location = new System.Drawing.Point(597, 311);
@@ -456,7 +456,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSoek);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewAlles);
             this.Controls.Add(this.txtSoek);
             this.Controls.Add(this.lblSoek);
             this.Controls.Add(this.label1);
@@ -466,7 +466,7 @@
             this.Text = "Kanseleer";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlles)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -492,7 +492,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblSoek;
         private System.Windows.Forms.TextBox txtSoek;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAlles;
         private System.Windows.Forms.Button btnSoek;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button1;
