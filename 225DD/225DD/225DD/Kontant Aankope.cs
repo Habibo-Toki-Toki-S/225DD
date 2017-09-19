@@ -40,21 +40,11 @@ namespace _225DD
             //String Grootte_Size = readString(1, "Select Grootte_Size FROM Grootte  Where Grootte_ID = " + Convert.ToString(Grootte_ID) + "");
             //String Geslag = readString(1, "Select Geslag FROM Geslag Where Geslag_ID = " + Convert.ToString(Tipe_Kledingstuk_ID) + "");
 
-            int Grootte_ID = comboBox2.SelectedIndex + 1;
-            int Geslag_ID = comboBox3.SelectedIndex + 1;
-            int Tipe_Kledingstuk_ID = comboBox1.SelectedIndex + 1;
-            string Beskrywing = txtBeskrywing.Text;
-
-            if (IsAllLettersOrDigitsOrUnderscores(Beskrywing) == true)
-            {
+            
                 insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "') ");
-                insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");
+                //insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");
                 MessageBox.Show("Kledingstuk suksesvol by gevoeg");
-            }
-            else
-            {
-                MessageBox.Show("Slegs letters in beskrywing asseblief");
-            }
+           
         }
 
         public void insert(string sql)
