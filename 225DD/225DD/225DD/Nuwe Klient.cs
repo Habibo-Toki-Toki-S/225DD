@@ -23,20 +23,41 @@ namespace _225DD
             this.Close();
         }
 
+        public int readInt(int kol, string sql)
+        {
+            int result = 0;
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand(sql, conn);
+            OleDbDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                result = Convert.ToInt32(reader.GetValue(kol));
+            }
+
+            return result;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string naam = txtUsername.Text;
             string van = txtVan.Text;
-            string tel = txtTel.Text;
+            int tel = Convert.ToInt32(txtTel.Text);
             string kerk = txtKerk.Text;
             string adres = txtAdres.Text;
             int Grootte_ID = cbGrootte.SelectedIndex + 1;
             int Geslag_ID = cbGeslag.SelectedIndex + 1;
-            string geboorte = dateTimePicker1.Text;
+            DateTime geboorte = dateTimePicker1.Value;
+            string email = txtEmail.Text;
 
-            insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Grootte_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Grootte_ID + "') ");
-            insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + Grootte_ID + ")");
-            MessageBox.Show("Klient suskesvol by gevoeg!");
+            insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband],[Geslag_ID]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + "'," + Geslag_ID + ")");
+            int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
+
+            
+            label9.Text = Convert.ToString(Persoon_ID);
+            insert("INSERT INTO Klient ([Klere_Grootte_ID],[Geboorte_datum],[Persoon_ID],[Email]) values (" + Grootte_ID +  ",'" + geboorte + "'," + Persoon_ID + ",'" + email  + "' )");
+            MessageBox.Show("Klient suskesvol bygevoeg!");
         }
 
         public void insert(string sql)
