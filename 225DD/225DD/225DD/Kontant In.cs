@@ -13,8 +13,10 @@ namespace _225DD
 {
     public partial class Kontant_In : Form
     {
+        static string user; 
         public Kontant_In()
         {
+            user = IntekenForm.name;
             InitializeComponent();
         }
 
@@ -50,10 +52,10 @@ namespace _225DD
             string datum = lblDatum.Text;
             string naam = txtUsername.Text;
             string van = txtVan.Text;
-            string bedrag = txtGeld.Text;
+            int bedrag = Convert.ToInt32(txtGeld.Text);
 
-            /*insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "') ");
-            insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");*/
+            insert("INSERT INTO Kontant_Donasies ([Naam],[Van],[Bedrag],[User_ID]) values ('" + naam + "','" + van + "'," + bedrag + "," + user + ") ");
+            //insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");*/
             MessageBox.Show("Kontant suksesvol by gevoeg");
         }
 

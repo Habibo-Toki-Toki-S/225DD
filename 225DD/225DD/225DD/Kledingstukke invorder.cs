@@ -13,7 +13,7 @@ namespace _225DD
 {
     public partial class Kledingstukke_invorder : Form
     {
-        static string user;
+        static string user; 
         OleDbConnection conn;
         DataTable ds = new DataTable();
         int iKledingstuk_ID = 0;
