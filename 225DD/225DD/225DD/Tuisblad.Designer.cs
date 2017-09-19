@@ -49,10 +49,6 @@
             this.verslagToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.transaksiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.klereInStoorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kombersToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.kombersInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kombersUitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verslagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kontantToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.invorderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aankopeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -171,7 +167,6 @@
             this.menuToolStripMenuItem,
             this.kledingstukToolStripMenuItem,
             this.klienteToolStripMenuItem,
-            this.kombersToolStripMenuItem1,
             this.kontantToolStripMenuItem1,
             this.adminToolStripMenuItem,
             this.dataToolStripMenuItem,
@@ -196,14 +191,14 @@
             // invorderToolStripMenuItem3
             // 
             this.invorderToolStripMenuItem3.Name = "invorderToolStripMenuItem3";
-            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.invorderToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem3.Text = "Invorder";
             this.invorderToolStripMenuItem3.Click += new System.EventHandler(this.invorderToolStripMenuItem3_Click);
             // 
             // uitgeeToolStripMenuItem2
             // 
             this.uitgeeToolStripMenuItem2.Name = "uitgeeToolStripMenuItem2";
-            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(118, 22);
+            this.uitgeeToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.uitgeeToolStripMenuItem2.Text = "Uitgee";
             this.uitgeeToolStripMenuItem2.Click += new System.EventHandler(this.uitgeeToolStripMenuItem2_Click);
             // 
@@ -213,7 +208,7 @@
             this.transaksiesToolStripMenuItem,
             this.klereInStoorToolStripMenuItem});
             this.verslagToolStripMenuItem3.Name = "verslagToolStripMenuItem3";
-            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(118, 22);
+            this.verslagToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem3.Text = "Verslag";
             this.verslagToolStripMenuItem3.Click += new System.EventHandler(this.verslagToolStripMenuItem3_Click);
             // 
@@ -231,37 +226,6 @@
             this.klereInStoorToolStripMenuItem.Text = "Klere in stoor";
             this.klereInStoorToolStripMenuItem.Click += new System.EventHandler(this.klereInStoorToolStripMenuItem_Click);
             // 
-            // kombersToolStripMenuItem1
-            // 
-            this.kombersToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kombersInToolStripMenuItem,
-            this.kombersUitToolStripMenuItem,
-            this.verslagToolStripMenuItem});
-            this.kombersToolStripMenuItem1.Name = "kombersToolStripMenuItem1";
-            this.kombersToolStripMenuItem1.Size = new System.Drawing.Size(66, 20);
-            this.kombersToolStripMenuItem1.Text = "Kombers";
-            // 
-            // kombersInToolStripMenuItem
-            // 
-            this.kombersInToolStripMenuItem.Name = "kombersInToolStripMenuItem";
-            this.kombersInToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.kombersInToolStripMenuItem.Text = "Kombers In";
-            this.kombersInToolStripMenuItem.Click += new System.EventHandler(this.kombersInToolStripMenuItem_Click);
-            // 
-            // kombersUitToolStripMenuItem
-            // 
-            this.kombersUitToolStripMenuItem.Name = "kombersUitToolStripMenuItem";
-            this.kombersUitToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.kombersUitToolStripMenuItem.Text = "Kombers Uit";
-            this.kombersUitToolStripMenuItem.Click += new System.EventHandler(this.kombersUitToolStripMenuItem_Click);
-            // 
-            // verslagToolStripMenuItem
-            // 
-            this.verslagToolStripMenuItem.Name = "verslagToolStripMenuItem";
-            this.verslagToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
-            this.verslagToolStripMenuItem.Text = "Verslag";
-            this.verslagToolStripMenuItem.Click += new System.EventHandler(this.verslagToolStripMenuItem_Click);
-            // 
             // kontantToolStripMenuItem1
             // 
             this.kontantToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -275,21 +239,21 @@
             // invorderToolStripMenuItem
             // 
             this.invorderToolStripMenuItem.Name = "invorderToolStripMenuItem";
-            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.invorderToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.invorderToolStripMenuItem.Text = "Invorder";
             this.invorderToolStripMenuItem.Click += new System.EventHandler(this.invorderToolStripMenuItem_Click_1);
             // 
             // aankopeToolStripMenuItem1
             // 
             this.aankopeToolStripMenuItem1.Name = "aankopeToolStripMenuItem1";
-            this.aankopeToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.aankopeToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.aankopeToolStripMenuItem1.Text = "Aankope";
             this.aankopeToolStripMenuItem1.Click += new System.EventHandler(this.aankopeToolStripMenuItem1_Click);
             // 
             // verslagToolStripMenuItem1
             // 
             this.verslagToolStripMenuItem1.Name = "verslagToolStripMenuItem1";
-            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+            this.verslagToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.verslagToolStripMenuItem1.Text = "Verslag";
             this.verslagToolStripMenuItem1.Click += new System.EventHandler(this.verslagToolStripMenuItem1_Click);
             // 
@@ -304,7 +268,7 @@
             // opToolStripMenuItem
             // 
             this.opToolStripMenuItem.Name = "opToolStripMenuItem";
-            this.opToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.opToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.opToolStripMenuItem.Text = "Opdateer";
             this.opToolStripMenuItem.Click += new System.EventHandler(this.opToolStripMenuItem_Click);
             // 
@@ -390,10 +354,6 @@
         private System.Windows.Forms.ToolStripMenuItem invorderToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem uitgeeToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem kombersToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem kombersInToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kombersUitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verslagToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kontantToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem invorderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aankopeToolStripMenuItem1;

@@ -33,13 +33,11 @@
             this.rbAankope = new System.Windows.Forms.RadioButton();
             this.rbGeslag = new System.Windows.Forms.RadioButton();
             this.rbTipeKledingstuk = new System.Windows.Forms.RadioButton();
-            this.rbKombers_Trans = new System.Windows.Forms.RadioButton();
             this.rbPersoon = new System.Windows.Forms.RadioButton();
             this.rbKontantDonasies = new System.Windows.Forms.RadioButton();
             this.rbLogin = new System.Windows.Forms.RadioButton();
             this.rbGroottes = new System.Windows.Forms.RadioButton();
             this.rbKledingstukke = new System.Windows.Forms.RadioButton();
-            this.rbKomberse = new System.Windows.Forms.RadioButton();
             this.rbK_Transaksies = new System.Windows.Forms.RadioButton();
             this.rbKliente = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,6 +64,7 @@
             this.btnKanseleer = new System.Windows.Forms.Button();
             this.btnAanvaar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAlles)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -76,13 +75,11 @@
             this.groupBox1.Controls.Add(this.rbAankope);
             this.groupBox1.Controls.Add(this.rbGeslag);
             this.groupBox1.Controls.Add(this.rbTipeKledingstuk);
-            this.groupBox1.Controls.Add(this.rbKombers_Trans);
             this.groupBox1.Controls.Add(this.rbPersoon);
             this.groupBox1.Controls.Add(this.rbKontantDonasies);
             this.groupBox1.Controls.Add(this.rbLogin);
             this.groupBox1.Controls.Add(this.rbGroottes);
             this.groupBox1.Controls.Add(this.rbKledingstukke);
-            this.groupBox1.Controls.Add(this.rbKomberse);
             this.groupBox1.Controls.Add(this.rbK_Transaksies);
             this.groupBox1.Controls.Add(this.rbKliente);
             this.groupBox1.Location = new System.Drawing.Point(18, 67);
@@ -119,7 +116,7 @@
             // rbTipeKledingstuk
             // 
             this.rbTipeKledingstuk.AutoSize = true;
-            this.rbTipeKledingstuk.Location = new System.Drawing.Point(713, 70);
+            this.rbTipeKledingstuk.Location = new System.Drawing.Point(557, 69);
             this.rbTipeKledingstuk.Name = "rbTipeKledingstuk";
             this.rbTipeKledingstuk.Size = new System.Drawing.Size(104, 17);
             this.rbTipeKledingstuk.TabIndex = 13;
@@ -128,22 +125,10 @@
             this.rbTipeKledingstuk.UseVisualStyleBackColor = true;
             this.rbTipeKledingstuk.CheckedChanged += new System.EventHandler(this.rbTipeKledingstuk_CheckedChanged);
             // 
-            // rbKombers_Trans
-            // 
-            this.rbKombers_Trans.AutoSize = true;
-            this.rbKombers_Trans.Location = new System.Drawing.Point(19, 70);
-            this.rbKombers_Trans.Name = "rbKombers_Trans";
-            this.rbKombers_Trans.Size = new System.Drawing.Size(126, 17);
-            this.rbKombers_Trans.TabIndex = 5;
-            this.rbKombers_Trans.TabStop = true;
-            this.rbKombers_Trans.Text = "Kombers Transaksies";
-            this.rbKombers_Trans.UseVisualStyleBackColor = true;
-            this.rbKombers_Trans.CheckedChanged += new System.EventHandler(this.rbKombers_Trans_CheckedChanged);
-            // 
             // rbPersoon
             // 
             this.rbPersoon.AutoSize = true;
-            this.rbPersoon.Location = new System.Drawing.Point(499, 70);
+            this.rbPersoon.Location = new System.Drawing.Point(295, 69);
             this.rbPersoon.Name = "rbPersoon";
             this.rbPersoon.Size = new System.Drawing.Size(64, 17);
             this.rbPersoon.TabIndex = 11;
@@ -155,7 +140,7 @@
             // rbKontantDonasies
             // 
             this.rbKontantDonasies.AutoSize = true;
-            this.rbKontantDonasies.Location = new System.Drawing.Point(190, 70);
+            this.rbKontantDonasies.Location = new System.Drawing.Point(19, 69);
             this.rbKontantDonasies.Name = "rbKontantDonasies";
             this.rbKontantDonasies.Size = new System.Drawing.Size(109, 17);
             this.rbKontantDonasies.TabIndex = 7;
@@ -167,7 +152,7 @@
             // rbLogin
             // 
             this.rbLogin.AutoSize = true;
-            this.rbLogin.Location = new System.Drawing.Point(344, 70);
+            this.rbLogin.Location = new System.Drawing.Point(147, 69);
             this.rbLogin.Name = "rbLogin";
             this.rbLogin.Size = new System.Drawing.Size(110, 17);
             this.rbLogin.TabIndex = 9;
@@ -179,7 +164,7 @@
             // rbGroottes
             // 
             this.rbGroottes.AutoSize = true;
-            this.rbGroottes.Location = new System.Drawing.Point(265, 29);
+            this.rbGroottes.Location = new System.Drawing.Point(295, 29);
             this.rbGroottes.Name = "rbGroottes";
             this.rbGroottes.Size = new System.Drawing.Size(65, 17);
             this.rbGroottes.TabIndex = 4;
@@ -191,7 +176,7 @@
             // rbKledingstukke
             // 
             this.rbKledingstukke.AutoSize = true;
-            this.rbKledingstukke.Location = new System.Drawing.Point(390, 29);
+            this.rbKledingstukke.Location = new System.Drawing.Point(426, 29);
             this.rbKledingstukke.Name = "rbKledingstukke";
             this.rbKledingstukke.Size = new System.Drawing.Size(92, 17);
             this.rbKledingstukke.TabIndex = 6;
@@ -200,22 +185,10 @@
             this.rbKledingstukke.UseVisualStyleBackColor = true;
             this.rbKledingstukke.CheckedChanged += new System.EventHandler(this.rbKledingstukke_CheckedChanged);
             // 
-            // rbKomberse
-            // 
-            this.rbKomberse.AutoSize = true;
-            this.rbKomberse.Location = new System.Drawing.Point(742, 29);
-            this.rbKomberse.Name = "rbKomberse";
-            this.rbKomberse.Size = new System.Drawing.Size(72, 17);
-            this.rbKomberse.TabIndex = 12;
-            this.rbKomberse.TabStop = true;
-            this.rbKomberse.Text = "Komberse";
-            this.rbKomberse.UseVisualStyleBackColor = true;
-            this.rbKomberse.CheckedChanged += new System.EventHandler(this.rbKomberse_CheckedChanged);
-            // 
             // rbK_Transaksies
             // 
             this.rbK_Transaksies.AutoSize = true;
-            this.rbK_Transaksies.Location = new System.Drawing.Point(542, 29);
+            this.rbK_Transaksies.Location = new System.Drawing.Point(557, 29);
             this.rbK_Transaksies.Name = "rbK_Transaksies";
             this.rbK_Transaksies.Size = new System.Drawing.Size(140, 17);
             this.rbK_Transaksies.TabIndex = 8;
@@ -227,7 +200,7 @@
             // rbKliente
             // 
             this.rbKliente.AutoSize = true;
-            this.rbKliente.Location = new System.Drawing.Point(608, 70);
+            this.rbKliente.Location = new System.Drawing.Point(426, 69);
             this.rbKliente.Name = "rbKliente";
             this.rbKliente.Size = new System.Drawing.Size(57, 17);
             this.rbKliente.TabIndex = 10;
@@ -429,7 +402,7 @@
             // 
             // btnKanseleer
             // 
-            this.btnKanseleer.Location = new System.Drawing.Point(597, 522);
+            this.btnKanseleer.Location = new System.Drawing.Point(597, 511);
             this.btnKanseleer.Name = "btnKanseleer";
             this.btnKanseleer.Size = new System.Drawing.Size(267, 79);
             this.btnKanseleer.TabIndex = 7;
@@ -441,10 +414,11 @@
             // 
             this.btnAanvaar.Location = new System.Drawing.Point(597, 427);
             this.btnAanvaar.Name = "btnAanvaar";
-            this.btnAanvaar.Size = new System.Drawing.Size(267, 79);
+            this.btnAanvaar.Size = new System.Drawing.Size(267, 36);
             this.btnAanvaar.TabIndex = 8;
-            this.btnAanvaar.Text = "Insert/Update\r\n(Los ID oop vir Insert)";
+            this.btnAanvaar.Text = "Insert (Los ID oop)";
             this.btnAanvaar.UseVisualStyleBackColor = true;
+            this.btnAanvaar.Click += new System.EventHandler(this.btnAanvaar_Click);
             // 
             // button2
             // 
@@ -456,12 +430,23 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(597, 469);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(267, 36);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Update";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Opdateer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(905, 613);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnAanvaar);
             this.Controls.Add(this.btnKanseleer);
@@ -492,13 +477,11 @@
         private System.Windows.Forms.RadioButton rbAankope;
         private System.Windows.Forms.RadioButton rbGeslag;
         private System.Windows.Forms.RadioButton rbTipeKledingstuk;
-        private System.Windows.Forms.RadioButton rbKombers_Trans;
         private System.Windows.Forms.RadioButton rbPersoon;
         private System.Windows.Forms.RadioButton rbKontantDonasies;
         private System.Windows.Forms.RadioButton rbLogin;
         private System.Windows.Forms.RadioButton rbGroottes;
         private System.Windows.Forms.RadioButton rbKledingstukke;
-        private System.Windows.Forms.RadioButton rbKomberse;
         private System.Windows.Forms.RadioButton rbK_Transaksies;
         private System.Windows.Forms.RadioButton rbKliente;
         private System.Windows.Forms.Label label1;
@@ -525,5 +508,6 @@
         private System.Windows.Forms.Button btnKanseleer;
         private System.Windows.Forms.Button btnAanvaar;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
