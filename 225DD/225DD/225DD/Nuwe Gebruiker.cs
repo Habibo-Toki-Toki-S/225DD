@@ -41,9 +41,9 @@ namespace _225DD
                 admin = false;
             }
 
-            /*insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "') ");
-            insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");*/
-            MessageBox.Show("Gebruiker suksesvol bygevoeg");
+            insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + ")");
+            int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
+            MessageBox.Show("Gebruiker suskesvol bygevoeg!");
         }
 
         public void insert(string sql)
@@ -57,6 +57,22 @@ namespace _225DD
             cmd.ExecuteNonQuery();
             conn.Close();
             this.Close();
+        }
+
+        public int readInt(int kol, string sql)
+        {
+            int result = 0;
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand(sql, conn);
+            OleDbDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                result = Convert.ToInt32(reader.GetValue(kol));
+            }
+
+            return result;
         }
     }
 }

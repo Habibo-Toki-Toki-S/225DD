@@ -58,19 +58,19 @@ namespace _225DD
             //String Geslag = readString(1, "Select Geslag FROM Geslag Where Geslag_ID = " + Convert.ToString(Tipe_Kledingstuk_ID) + "");
 
             
-<<<<<<< HEAD
+//<<<<<<< HEAD
                 //insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "') ");
                 //insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");
                 MessageBox.Show("Kledingstuk suksesvol by gevoeg");
            
-=======
+//=======
             //insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[Geslag_ID],[Beskrywing]) values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + beskrywing + "') ");
             //iKledingstuk_ID = readInt(0, "Select Kledingstuk_ID FROM Kledingstuk_ID Where Beskrywing = '" + beskrywing + "'");
             //insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");
             insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) values (" + bedrag + "," + User_ID + "," + iKledingstuk_ID + ")");
             //MessageBox.Show("Kledingstuk suksesvol by gevoeg");
             MessageBox.Show("Kontant aankope suksesvol by gevoeg");
->>>>>>> develop
+//>>>>>>> develop
         }
 
         public void insert(string sql)
