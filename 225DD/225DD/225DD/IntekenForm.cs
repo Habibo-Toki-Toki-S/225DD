@@ -87,6 +87,10 @@ namespace _225DD
                     MessageBox.Show("Probeer Weer");
                 }
             }
+            else
+            {
+                MessageBox.Show("Probeer Weer");
+            }
         }
 
         private void txtNaam_TextChanged(object sender, EventArgs e)
