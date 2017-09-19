@@ -42,100 +42,96 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtBeskrywing = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblK_ID
             // 
             this.lblK_ID.AutoSize = true;
-            this.lblK_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblK_ID.Location = new System.Drawing.Point(80, 219);
+            this.lblK_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblK_ID.Location = new System.Drawing.Point(108, 219);
             this.lblK_ID.Name = "lblK_ID";
-            this.lblK_ID.Size = new System.Drawing.Size(31, 13);
+            this.lblK_ID.Size = new System.Drawing.Size(46, 20);
             this.lblK_ID.TabIndex = 143;
             this.lblK_ID.Text = "K_ID";
             // 
             // lblDatum
             // 
             this.lblDatum.AutoSize = true;
-            this.lblDatum.Location = new System.Drawing.Point(80, 245);
+            this.lblDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatum.Location = new System.Drawing.Point(108, 247);
             this.lblDatum.Name = "lblDatum";
-            this.lblDatum.Size = new System.Drawing.Size(46, 13);
+            this.lblDatum.Size = new System.Drawing.Size(69, 20);
             this.lblDatum.TabIndex = 142;
             this.lblDatum.Text = "DATUM";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(10, 245);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 13);
+            this.label7.Size = new System.Drawing.Size(64, 20);
             this.label7.TabIndex = 141;
             this.label7.Text = "Datum:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(10, 219);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(59, 13);
+            this.label12.Size = new System.Drawing.Size(91, 20);
             this.label12.TabIndex = 140;
             this.label12.Text = "Kleding ID:";
             // 
             // lblGebruiker
             // 
             this.lblGebruiker.AutoSize = true;
-            this.lblGebruiker.Location = new System.Drawing.Point(80, 193);
+            this.lblGebruiker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGebruiker.Location = new System.Drawing.Point(108, 193);
             this.lblGebruiker.Name = "lblGebruiker";
-            this.lblGebruiker.Size = new System.Drawing.Size(36, 13);
+            this.lblGebruiker.Size = new System.Drawing.Size(56, 20);
             this.lblGebruiker.TabIndex = 139;
             this.lblGebruiker.Text = "Admin";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(10, 193);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 13);
+            this.label13.Size = new System.Drawing.Size(92, 20);
             this.label13.TabIndex = 138;
             this.label13.Text = "Gebruiker: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(10, 273);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 112;
             this.label3.Text = "Bedrag:";
             // 
             // txtGeld
             // 
             this.txtGeld.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGeld.Location = new System.Drawing.Point(94, 270);
+            this.txtGeld.Location = new System.Drawing.Point(137, 270);
             this.txtGeld.Name = "txtGeld";
-            this.txtGeld.Size = new System.Drawing.Size(71, 20);
+            this.txtGeld.Size = new System.Drawing.Size(192, 20);
             this.txtGeld.TabIndex = 115;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 273);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(108, 273);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 13);
+            this.label1.Size = new System.Drawing.Size(21, 20);
             this.label1.TabIndex = 125;
             this.label1.Text = "R";
             // 
@@ -153,18 +149,18 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(178, 531);
+            this.btnCancel.Location = new System.Drawing.Point(12, 345);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(109, 23);
+            this.btnCancel.Size = new System.Drawing.Size(152, 23);
             this.btnCancel.TabIndex = 134;
             this.btnCancel.Text = "Kanseleer";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(293, 531);
+            this.btnAdd.Location = new System.Drawing.Point(177, 345);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(109, 23);
+            this.btnAdd.Size = new System.Drawing.Size(152, 23);
             this.btnAdd.TabIndex = 133;
             this.btnAdd.Text = "Aanvaar";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -180,110 +176,34 @@
             this.pictureBox1.TabIndex = 136;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox2
+            // textBox1
             // 
-            this.groupBox2.Controls.Add(this.txtBeskrywing);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(13, 305);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(387, 216);
-            this.groupBox2.TabIndex = 144;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kledingstuk Inligting";
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(138, 304);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(191, 20);
+            this.textBox1.TabIndex = 146;
             // 
-            // txtBeskrywing
+            // label2
             // 
-            this.txtBeskrywing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBeskrywing.Location = new System.Drawing.Point(177, 86);
-            this.txtBeskrywing.Name = "txtBeskrywing";
-            this.txtBeskrywing.Size = new System.Drawing.Size(191, 20);
-            this.txtBeskrywing.TabIndex = 8;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(177, 133);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(191, 21);
-            this.comboBox2.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 131);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 20);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Kledingstuk Grootte:";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DisplayMember = "Geslag";
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(177, 179);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(191, 21);
-            this.comboBox3.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DisplayMember = "Tipe Kledingstuk";
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 21);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 177);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 20);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Geslag:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 84);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Beskrywing:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 41);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Tipe Kledingstuk:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(9, 305);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 20);
+            this.label2.TabIndex = 145;
+            this.label2.Text = "Kledingstuk_ID:";
             // 
             // Kontant_Aankope
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(415, 568);
+            this.ClientSize = new System.Drawing.Size(383, 400);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtGeld);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblK_ID);
             this.Controls.Add(this.lblDatum);
@@ -300,8 +220,6 @@
             this.Text = "Kontant_Aankope";
             this.Load += new System.EventHandler(this.Kontant_Aankope_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,14 +240,7 @@
         private System.Windows.Forms.Label lblOrdersPlaceds;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtBeskrywing;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
