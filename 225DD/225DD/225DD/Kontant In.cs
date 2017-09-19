@@ -45,6 +45,22 @@ namespace _225DD
             this.Close();
         }
 
+        public int readInt(int kol, string sql)
+        {
+            int result = 0;
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand(sql, conn);
+            OleDbDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                result = Convert.ToInt32(reader.GetValue(kol));
+            }
+
+            return result;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string gebruiker = lblGebruiker.Text;
@@ -54,7 +70,9 @@ namespace _225DD
             string van = txtVan.Text;
             int bedrag = Convert.ToInt32(txtGeld.Text);
 
-            insert("INSERT INTO Kontant_Donasies ([Naam],[Van],[Bedrag],[User_ID]) values ('" + naam + "','" + van + "'," + bedrag + "," + user + ") ");
+            label1.Text = user;
+            int User_ID = readInt(0, ("Select User_ID FROM Login Where Username = '" + user + "'"));
+            insert("INSERT INTO Kontant_Donasies ([Naam],[Van],[Bedrag],[User_ID]) values ('" + naam + "','" + van + "'," + bedrag + "," + User_ID + ") ");
             //insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID]) values ('" + DateTime.Now + "'," + iKledingstuk_ID + ")");*/
             MessageBox.Show("Kontant suksesvol by gevoeg");
         }
@@ -70,6 +88,11 @@ namespace _225DD
             cmd.ExecuteNonQuery();
             conn.Close();
             this.Close();
+        }
+
+        private void Kontant_In_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

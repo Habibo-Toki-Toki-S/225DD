@@ -298,6 +298,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Kontant_Aankope";
             this.Text = "Kontant_Aankope";
+            this.Load += new System.EventHandler(this.Kontant_Aankope_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
