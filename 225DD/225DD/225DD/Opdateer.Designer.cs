@@ -429,7 +429,7 @@
             // 
             // btnKanseleer
             // 
-            this.btnKanseleer.Location = new System.Drawing.Point(597, 428);
+            this.btnKanseleer.Location = new System.Drawing.Point(597, 522);
             this.btnKanseleer.Name = "btnKanseleer";
             this.btnKanseleer.Size = new System.Drawing.Size(267, 79);
             this.btnKanseleer.TabIndex = 7;
@@ -439,11 +439,11 @@
             // 
             // btnAanvaar
             // 
-            this.btnAanvaar.Location = new System.Drawing.Point(597, 522);
+            this.btnAanvaar.Location = new System.Drawing.Point(597, 427);
             this.btnAanvaar.Name = "btnAanvaar";
             this.btnAanvaar.Size = new System.Drawing.Size(267, 79);
             this.btnAanvaar.TabIndex = 8;
-            this.btnAanvaar.Text = "Aanvaar";
+            this.btnAanvaar.Text = "Insert/Update\r\n(Los ID oop vir Insert)";
             this.btnAanvaar.UseVisualStyleBackColor = true;
             // 
             // button2

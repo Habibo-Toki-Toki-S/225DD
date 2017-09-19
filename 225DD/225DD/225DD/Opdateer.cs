@@ -51,7 +51,7 @@ namespace _225DD
         {
             query("Select * from Geslag");
 
-            lblSoek.Text = "Geslag:";
+            lblSoek.Text = "Geslag_ID:";
             lbl1.Text = "Geslag:";
 
             lbl1.Visible = true;
@@ -76,7 +76,7 @@ namespace _225DD
             query("Select * from Aankope");
 
             lblSoek.Text = "Aankoop ID:";
-            lbl1.Text = "Berag:";
+            lbl1.Text = "Bedrag:";
             lbl2.Text = "Gebruiker:";
             lbl3.Text = "Kledingstuk ID:";
 
@@ -99,7 +99,7 @@ namespace _225DD
 
         private void rbGroottes_CheckedChanged(object sender, EventArgs e)
         {
-            query("Select * from Grootte");
+            query("Select * from Grootte_ID");
 
             lblSoek.Text = "Groottes:";
             lbl1.Text = "Groottes:";
@@ -152,7 +152,7 @@ namespace _225DD
         {
             query("Select * from Kledingstuk_Transaksie");
 
-            lblSoek.Text = "Kledingstuk Transaksie:";
+            lblSoek.Text = "Kledingstuk Transaksie_ID:";
             lbl1.Text = "Datum In:";
             lbl2.Text = "Kledingstuk ID:";
             lbl3.Text = "Datum Uit:";
@@ -204,7 +204,7 @@ namespace _225DD
         {
             query("Select * from Kombers_transaksie");
 
-            lblSoek.Text = "Kombers Transaksie:";
+            lblSoek.Text = "Kombers Transaksie_ID:";
             lbl1.Text = "Datum In:";
             lbl2.Text = "Kombers ID:";
             lbl3.Text = "Datum Uit:";
@@ -232,7 +232,7 @@ namespace _225DD
         {
             query("Select * from Kontant_donasies");
 
-            lblSoek.Text = "Kontant Donasies:";
+            lblSoek.Text = "Kontant Donasies_ID:";
             lbl1.Text = "Naam:";
             lbl2.Text = "Van:";
             lbl3.Text = "Bedrag:";
@@ -342,7 +342,7 @@ namespace _225DD
         {
             query("Select * from Tipe_Kledingstuk");
 
-            lblSoek.Text = "Tipe Kledingstuk:";
+            lblSoek.Text = "Tipe Kledingstuk_ID:";
             lbl1.Text = "Tipe Kledingstuk";
 
             lbl1.Visible = true;
