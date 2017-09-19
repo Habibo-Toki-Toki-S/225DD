@@ -59,22 +59,31 @@ namespace _225DD
 
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
+
+
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
 
             conn.Open();
             if (txtID.Text != "")
             {
-                int Geb_ID = Convert.ToInt32(txtID.Text);
-                if (MessageBox.Show("Is u seker u wil hierdie klient verwyder: " + Geb_ID + "?", "Bevestig", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                int Geb_ID;
+                if (int.TryParse(txtID.Text, out Geb_ID))
                 {
-                    // user clicked yes
-                    //OleDbCommand cmd = new OleDbCommand(@"DELETE FROM Klient WHERE Klient_ID = '" + Geb_ID + "'", conn);
-                    insert("Delete from Klient WHERE Klient_ID = "+Geb_ID+"");
-                    //int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
-                    //OleDbCommand cmd1 = new OleDbCommand(@"DELETE FROM Klient WHERE Persoon_ID = '" + Geb_ID + "'", conn);
-                    //////cmd.ExecuteNonQuery();
-                    //cmd1.ExecuteNonQuery();
-                    MessageBox.Show("Klient " + Geb_ID + " is verwyder!!");
+                    if (MessageBox.Show("Is u seker u wil hierdie klient verwyder: " + Geb_ID + "?", "Bevestig", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        // user clicked yes
+                        //OleDbCommand cmd = new OleDbCommand(@"DELETE FROM Klient WHERE Klient_ID = '" + Geb_ID + "'", conn);
+                        insert("Delete from Klient WHERE Klient_ID = " + Geb_ID + "");
+                        //int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
+                        //OleDbCommand cmd1 = new OleDbCommand(@"DELETE FROM Klient WHERE Persoon_ID = '" + Geb_ID + "'", conn);
+                        //////cmd.ExecuteNonQuery();
+                        //cmd1.ExecuteNonQuery();
+                        MessageBox.Show("Klient " + Geb_ID + " is verwyder!!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vul asb n nommer in");
                 }
             }
             else

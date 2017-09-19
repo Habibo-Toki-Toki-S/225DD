@@ -68,7 +68,7 @@ namespace _225DD
                             }
                             else
                             {
-                                MessageBox.Show("Please enter a number for tel number");
+                                MessageBox.Show("Vul asb n nommer in vir Telefoon");
                             }
                         }
                         else

@@ -57,12 +57,12 @@ namespace _225DD
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a number");
+                    MessageBox.Show("Vul asb n nommer in");
                 }
             }
             else
             {
-                MessageBox.Show("Please enter a number");
+                MessageBox.Show("Vul asb n nommer in");
             }
         }
 
