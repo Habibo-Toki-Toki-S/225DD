@@ -53,9 +53,6 @@ namespace _225DD
 
             insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband],[Geslag_ID]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + "'," + Geslag_ID + ")");
             int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
-
-            
-            label9.Text = Convert.ToString(Persoon_ID);
             insert("INSERT INTO Klient ([Klere_Grootte_ID],[Geboorte_datum],[Persoon_ID],[Email]) values (" + Grootte_ID +  ",'" + geboorte + "'," + Persoon_ID + ",'" + email  + "' )");
             MessageBox.Show("Klient suskesvol bygevoeg!");
         }

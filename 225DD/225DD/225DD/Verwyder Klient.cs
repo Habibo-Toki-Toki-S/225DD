@@ -28,6 +28,35 @@ namespace _225DD
 
         }
 
+        public void insert(string sql)
+        {
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = sql;
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            this.Close();
+        }
+
+        public int readInt(int kol, string sql)
+        {
+            int result = 0;
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand(sql, conn);
+            OleDbDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                result = Convert.ToInt32(reader.GetValue(kol));
+            }
+
+            return result;
+        }
+
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=  " + IntekenForm.spath);
@@ -39,8 +68,12 @@ namespace _225DD
                 if (MessageBox.Show("Is u seker u wil hierdie klient verwyder: " + Geb_ID + "?", "Bevestig", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     // user clicked yes
-                    OleDbCommand cmd = new OleDbCommand(@"DELETE FROM Persoon WHERE Persoon_ID = '" + Geb_ID + "'", conn);
-                    cmd.ExecuteNonQuery();
+                    //OleDbCommand cmd = new OleDbCommand(@"DELETE FROM Klient WHERE Klient_ID = '" + Geb_ID + "'", conn);
+                    insert("Delete from Klient WHERE Klient_ID = "+Geb_ID+"");
+                    //int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
+                    //OleDbCommand cmd1 = new OleDbCommand(@"DELETE FROM Klient WHERE Persoon_ID = '" + Geb_ID + "'", conn);
+                    //////cmd.ExecuteNonQuery();
+                    //cmd1.ExecuteNonQuery();
                     MessageBox.Show("Klient " + Geb_ID + " is verwyder!!");
                 }
             }
