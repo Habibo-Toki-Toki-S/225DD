@@ -54,6 +54,9 @@ namespace _225DD
             lblSoek.Text = "Geslag_ID:";
             lbl1.Text = "Geslag:";
 
+            int Geslag_ID = Convert.ToInt32(txtSoek.Text);
+            String Geslag = txt1.Text;
+
             lbl1.Visible = true;
             lbl2.Visible = false;
             lbl3.Visible = false;
@@ -80,6 +83,11 @@ namespace _225DD
             lbl2.Text = "Gebruiker:";
             lbl3.Text = "Kledingstuk ID:";
 
+            int Aankoop_ID = Convert.ToInt32(txtSoek.Text);
+            int Bedrag = Convert.ToInt32(txt1.Text);
+            int User_Id = Convert.ToInt32(txt2.Text);
+            int Kledingstuk_ID = Convert.ToInt32(txt3.Text);
+
             lbl1.Visible = true;
             lbl2.Visible = true;
             lbl3.Visible = true;
@@ -103,6 +111,9 @@ namespace _225DD
 
             lblSoek.Text = "Groottes:";
             lbl1.Text = "Groottes:";
+
+            int Grootte_ID = Convert.ToInt32(txtSoek.Text);
+            String Grootte_Size = txt1.Text;
 
             lbl1.Visible = true;
             lbl2.Visible = false;
@@ -131,6 +142,12 @@ namespace _225DD
             lbl3.Text = "Geslag";
             lbl4.Text = "Beskrywing";
 
+            int Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+            int Tipe_Kledingstuk_ID = Convert.ToInt32(txt1.Text);
+            int Grootte_ID = Convert.ToInt32(txt2.Text);
+            int Geslag_ID = Convert.ToInt32(txt3.Text);
+            String Beskrywing = txt4.Text;
+
             lbl1.Visible = true;
             lbl2.Visible = true;
             lbl3.Visible = true;
@@ -158,6 +175,13 @@ namespace _225DD
             lbl3.Text = "Datum Uit:";
             lbl4.Text = "Gebruiker:";
             lbl5.Text = "Kliënt:";
+
+            int Kledingstuk_Transaksie_ID = Convert.ToInt32(txtSoek.Text);
+            String Datum_In = txt1.Text;
+            int Kledingstuk_ID = Convert.ToInt32(txt2.Text);
+            String Datum_Uit = txt3.Text ;
+            int User_ID = Convert.ToInt32(txt4.Text);
+            int Klient_ID = Convert.ToInt32(txt5.Text);
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -238,6 +262,12 @@ namespace _225DD
             lbl3.Text = "Bedrag:";
             lbl4.Text = "Gebruiker";
 
+            int Kontant_ID = Convert.ToInt32(txtSoek.Text);
+            String Naam = txt1.Text;
+            String Van = txt2.Text;
+            int Bedrag = Convert.ToInt32(txt3.Text);
+            int User_ID = Convert.ToInt32(txt4.Text);
+
             lbl1.Visible = true;
             lbl2.Visible = true;
             lbl3.Visible = true;
@@ -264,6 +294,12 @@ namespace _225DD
             lbl2.Text = "Wagwoord:"; //HELP
             lbl3.Text = "Admin:"; //HELP
             lbl4.Text = "Persoon ID:"; //HELP
+
+            int User_ID = Convert.ToInt32(txtSoek.Text);
+            String Username = txt1.Text;
+            String Password = txt2.Text;
+            //Boolean Admin = txt3.Text;
+            int Persoon_ID = Convert.ToInt32(txt4.Text);
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -294,6 +330,14 @@ namespace _225DD
             lbl5.Text = "Kerkverband:";
             lbl6.Text = "Geslag:";
 
+            int Persoon_ID = Convert.ToInt32(txtSoek.Text);
+            String Naam = txt1.Text;
+            String Van = txt2.Text;
+            String Adres = txt3.Text;
+            int Telefoon_Nommer = Convert.ToInt32(txt4.Text);
+            String KerkVerband = txt5.Text;
+            int Geslag_ID = Convert.ToInt32(txt6.Text);
+
             lbl1.Visible = true;
             lbl2.Visible = true;
             lbl3.Visible = true;
@@ -321,6 +365,12 @@ namespace _225DD
             lbl3.Text = "Persoon ID:";
             lbl4.Text = "Epos Adress";
 
+            int Klient_ID = Convert.ToInt32(txtSoek.Text);
+            int Klere_Grootte_ID = Convert.ToInt32(txt1.Text);
+            String Geboorte_Datum = txt2.Text;
+            int Persoon_ID = Convert.ToInt32(txt3.Text);
+            String Email = txt4.Text;
+
             lbl1.Visible = true;
             lbl2.Visible = true;
             lbl3.Visible = true;
@@ -344,6 +394,9 @@ namespace _225DD
 
             lblSoek.Text = "Tipe Kledingstuk_ID:";
             lbl1.Text = "Tipe Kledingstuk";
+
+            int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+            String Tipe_Kledingstuk = txt1.Text;
 
             lbl1.Visible = true;
             lbl2.Visible = false;
@@ -388,16 +441,6 @@ namespace _225DD
             {
                 soek = "Kledingstuk_Transaksie";
                 id = "Kledingstuk_Transaksie_ID";
-            }
-            else if (rbKomberse.Checked)
-            {
-                soek = "Komberse";
-                id = "Klient_ID";
-            }
-            else if (rbKombers_Trans.Checked)
-            {
-                soek = "Kombers_Transaksie";
-                id = "Kombers_Transaksie_";
             }
             else if (rbKontantDonasies.Checked)
             {
@@ -468,16 +511,6 @@ namespace _225DD
                 soek = "Kledingstuk_Transaksie";
                 id = "Kledingstuk_Transaksie_ID";
             }
-            else if (rbKomberse.Checked)
-            {
-                soek = "Komberse";
-                id = "Klient_ID";
-            }
-            else if (rbKombers_Trans.Checked)
-            {
-                soek = "Kombers_Transaksie";
-                id = "Kombers_Transaksie_";
-            }
             else if (rbKontantDonasies.Checked)
             {
                 soek = "Kontant_Donasies";
@@ -509,9 +542,29 @@ namespace _225DD
             insert(@"Delete FROM " + soek + " WHERE " + id + " = " + txtSoek.Text);
         }
 
+<<<<<<< HEAD
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
 
+=======
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAanvaar_Click(object sender, EventArgs e)
+        {
+            if (soek == "Aankope")
+            {
+                //insert(@"INSERT INTO " + soek + " ([],[],[],[]) Values " + id + " = " + txtSoek.Text);
+            }
+            else if (soek == "Aankope")
+            {
+
+            }
+
+                insert(@"INSERT INTO "+ soek + "  " + soek + " WHERE " + id + " = " + txtSoek.Text);
+>>>>>>> develop
         }
     }
     
