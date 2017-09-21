@@ -47,7 +47,7 @@ namespace _225DD
 
             insert("INSERT INTO Persoon ([Naam],[Van],[Adres],[Telefoon_Nommer],[Kerkverband]) VALUES ('" + naam + "','" + van + "','" + adres + "'," + tel + ",'" + kerk + "')");
             int Persoon_ID = readInt(0, "Select Persoon_ID FROM Persoon Where Persoon.Naam = '" + naam + "'");
-            insert("INSERT INTO LOGIN ([Username],[Password],[Admin],[Persoon_ID]) values ('" + username + "','" + password + "','" + admin + "'," + Persoon_ID + " )");
+            insert("INSERT INTO LOGIN ([Username],[Password],[Persoon_ID]) values ('" + username + "','" + password +  "," + Persoon_ID + " )");
             MessageBox.Show("Gebruiker suskesvol bygevoeg!");
         }
 

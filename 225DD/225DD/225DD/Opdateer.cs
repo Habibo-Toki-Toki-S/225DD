@@ -54,9 +54,6 @@ namespace _225DD
             lblSoek.Text = "Geslag_ID:";
             lbl1.Text = "Geslag:";
 
-            int Geslag_ID = Convert.ToInt32(txtSoek.Text);
-            String Geslag = txt1.Text;
-
             lbl1.Visible = true;
             lbl2.Visible = false;
             lbl3.Visible = false;
@@ -83,10 +80,10 @@ namespace _225DD
             lbl2.Text = "Gebruiker:";
             lbl3.Text = "Kledingstuk ID:";
 
-            int Aankoop_ID = Convert.ToInt32(txtSoek.Text);
-            int Bedrag = Convert.ToInt32(txt1.Text);
-            int User_Id = Convert.ToInt32(txt2.Text);
-            int Kledingstuk_ID = Convert.ToInt32(txt3.Text);
+            //int Aankoop_ID = Convert.ToInt32(txtSoek.Text);
+            //int Bedrag = Convert.ToInt32(txt1.Text);
+           //// int User_Id = Convert.ToInt32(txt2.Text);
+            //int Kledingstuk_ID = Convert.ToInt32(txt3.Text);
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -112,8 +109,7 @@ namespace _225DD
             lblSoek.Text = "Groottes:";
             lbl1.Text = "Groottes:";
 
-            int Grootte_ID = Convert.ToInt32(txtSoek.Text);
-            String Grootte_Size = txt1.Text;
+            
 
             lbl1.Visible = true;
             lbl2.Visible = false;
@@ -142,11 +138,7 @@ namespace _225DD
             lbl3.Text = "Geslag";
             lbl4.Text = "Beskrywing";
 
-            int Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
-            int Tipe_Kledingstuk_ID = Convert.ToInt32(txt1.Text);
-            int Grootte_ID = Convert.ToInt32(txt2.Text);
-            int Geslag_ID = Convert.ToInt32(txt3.Text);
-            String Beskrywing = txt4.Text;
+            
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -176,12 +168,7 @@ namespace _225DD
             lbl4.Text = "Gebruiker:";
             lbl5.Text = "Kliënt:";
 
-            int Kledingstuk_Transaksie_ID = Convert.ToInt32(txtSoek.Text);
-            String Datum_In = txt1.Text;
-            int Kledingstuk_ID = Convert.ToInt32(txt2.Text);
-            String Datum_Uit = txt3.Text ;
-            int User_ID = Convert.ToInt32(txt4.Text);
-            int Klient_ID = Convert.ToInt32(txt5.Text);
+            
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -262,11 +249,7 @@ namespace _225DD
             lbl3.Text = "Bedrag:";
             lbl4.Text = "Gebruiker";
 
-            int Kontant_ID = Convert.ToInt32(txtSoek.Text);
-            String Naam = txt1.Text;
-            String Van = txt2.Text;
-            int Bedrag = Convert.ToInt32(txt3.Text);
-            int User_ID = Convert.ToInt32(txt4.Text);
+            
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -295,11 +278,7 @@ namespace _225DD
             lbl3.Text = "Admin:"; //HELP
             lbl4.Text = "Persoon ID:"; //HELP
 
-            int User_ID = Convert.ToInt32(txtSoek.Text);
-            String Username = txt1.Text;
-            String Password = txt2.Text;
-            //Boolean Admin = txt3.Text;
-            int Persoon_ID = Convert.ToInt32(txt4.Text);
+            
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -330,13 +309,7 @@ namespace _225DD
             lbl5.Text = "Kerkverband:";
             lbl6.Text = "Geslag:";
 
-            int Persoon_ID = Convert.ToInt32(txtSoek.Text);
-            String Naam = txt1.Text;
-            String Van = txt2.Text;
-            String Adres = txt3.Text;
-            int Telefoon_Nommer = Convert.ToInt32(txt4.Text);
-            String KerkVerband = txt5.Text;
-            int Geslag_ID = Convert.ToInt32(txt6.Text);
+            
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -365,11 +338,7 @@ namespace _225DD
             lbl3.Text = "Persoon ID:";
             lbl4.Text = "Epos Adress";
 
-            int Klient_ID = Convert.ToInt32(txtSoek.Text);
-            int Klere_Grootte_ID = Convert.ToInt32(txt1.Text);
-            String Geboorte_Datum = txt2.Text;
-            int Persoon_ID = Convert.ToInt32(txt3.Text);
-            String Email = txt4.Text;
+            
 
             lbl1.Visible = true;
             lbl2.Visible = true;
@@ -395,8 +364,7 @@ namespace _225DD
             lblSoek.Text = "Tipe Kledingstuk_ID:";
             lbl1.Text = "Tipe Kledingstuk";
 
-            int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
-            String Tipe_Kledingstuk = txt1.Text;
+            
 
             lbl1.Visible = true;
             lbl2.Visible = false;
@@ -540,31 +508,335 @@ namespace _225DD
                 MessageBox.Show("Probeer weer");
 
             insert(@"Delete FROM " + soek + " WHERE " + id + " = " + txtSoek.Text);
+
+            MessageBox.Show("Ry suksesvol by gevoeg");
+
         }
 
-<<<<<<< HEAD
-        private void btnAanvaar_Click(object sender, EventArgs e)
-        {
 
-=======
+       
         private void button3_Click(object sender, EventArgs e)
         {
+            if (rbAankope.Checked)
+            {
+                soek = "Aankope";
+                id = "Aankoop_ID";
+            }
+            else if (rbGeslag.Checked)
+            {
+                soek = "Geslag";
+                id = "Geslag_ID";
+            }
+            else if (rbGroottes.Checked)
+            {
+                soek = "Grootte";
+                id = "Grootte_Size";
+            }
+            else if (rbKledingstukke.Checked)
+            {
+                soek = "Kledingstuk";
+                id = "Kledingstuk_ID";
+            }
+            else if (rbK_Transaksies.Checked)
+            {
+                soek = "Kledingstuk_Transaksie";
+                id = "Kledingstuk_Transaksie_ID";
+            }
+            else if (rbKontantDonasies.Checked)
+            {
+                soek = "Kontant_Donasies";
+                id = "Kontant_Donasies_ID";
+            }
+            else if (rbLogin.Checked)
+            {
+                soek = "Login";
+                id = "Username";
+            }
+            else if (rbPersoon.Checked)
+            {
+                soek = "Persoon";
+                id = "Persoon_ID";
+            }
+            else if (rbKliente.Checked)
+            {
+                soek = "Klient";
+                id = "Klient_ID";
+            }
+            else if (rbTipeKledingstuk.Checked)
+            {
+                soek = "Tipe_Kledingstuk";
+                id = "Tipe_Kledingstuk_ID";
+            }
+            else
+                MessageBox.Show("Probeer weer");
 
+
+            if (soek == "Aankope")
+            {
+                int Bedrag = Convert.ToInt32(txt1.Text);
+                int User_Id = Convert.ToInt32(txt2.Text);
+                int Kledingstuk_ID = Convert.ToInt32(txt3.Text);
+                insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Geslag")
+            {
+                int Geslag_ID = Convert.ToInt32(txtSoek.Text);
+                String Geslag = txt1.Text;
+
+                insert("UPDATE Geslag SET [Geslag] =  ('" + Geslag + "') Where Geslag_ID = " + Geslag_ID +"");
+                MessageBox.Show("Ry suksesvol verander");
+            }
+            else if (soek == "Grootte")
+            {
+                int Grootte_ID = Convert.ToInt32(txtSoek.Text);
+                String Grootte_Size = txt1.Text;
+                insert("UPDATE Grootte SET [Grootte] =  ('" + Grootte_Size + "') Where Grootte_ID = " + Grootte_ID + "");
+                MessageBox.Show("Ry suksesvol verander");
+
+            }
+            else if (soek == "Kledingstuk")
+            {
+                //int Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+                int Tipe_Kledingstuk_ID = Convert.ToInt32(txt1.Text);
+                int Grootte_ID = Convert.ToInt32(txt2.Text);
+                int Geslag_ID = Convert.ToInt32(txt3.Text);
+                String Beskrywing = txt4.Text;
+
+                insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[GeslagID],[Beskrywing]) Values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "' )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Kledingstuk_Transaksie")
+            {
+                //int Kledingstuk_Transaksie_ID = Convert.ToInt32(txtSoek.Text);
+                String Datum_In = txt1.Text;
+                int Kledingstuk_ID = Convert.ToInt32(txt2.Text);
+                String Datum_Uit = txt3.Text;
+                int User_ID = Convert.ToInt32(txt4.Text);
+                int Klient_ID = Convert.ToInt32(txt5.Text);
+
+                //insert("INSERT INTO Kledingstuk_Transaksie ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Kontant_Donasies")
+            {
+                //int Kontant_ID = Convert.ToInt32(txtSoek.Text);
+                String Naam = txt1.Text;
+                String Van = txt2.Text;
+                int Bedrag = Convert.ToInt32(txt3.Text);
+                int User_ID = Convert.ToInt32(txt4.Text);
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Login")
+            {
+                //int User_ID = Convert.ToInt32(txtSoek.Text);
+                String Username = txt1.Text;
+                String Password = txt2.Text;
+                //Boolean Admin = txt3.Text;
+                int Persoon_ID = Convert.ToInt32(txt4.Text);
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Persoon")
+            {
+                //int Persoon_ID = Convert.ToInt32(txtSoek.Text);
+                String Naam = txt1.Text;
+                String Van = txt2.Text;
+                String Adres = txt3.Text;
+                int Telefoon_Nommer = Convert.ToInt32(txt4.Text);
+                String KerkVerband = txt5.Text;
+                int Geslag_ID = Convert.ToInt32(txt6.Text);
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Klient")
+            {
+                //int Klient_ID = Convert.ToInt32(txtSoek.Text);
+                int Klere_Grootte_ID = Convert.ToInt32(txt1.Text);
+                String Geboorte_Datum = txt2.Text;
+                int Persoon_ID = Convert.ToInt32(txt3.Text);
+                String Email = txt4.Text;
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Tipe_Kledingstuk")
+            {
+                //int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+                String Tipe_Kledingstuk = txt1.Text;
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else
+                MessageBox.Show("Hy wil nie werk nie");
         }
 
         private void btnAanvaar_Click(object sender, EventArgs e)
         {
+            if (rbAankope.Checked)
+            {
+                soek = "Aankope";
+                id = "Aankoop_ID";
+            }
+            else if (rbGeslag.Checked)
+            {
+                soek = "Geslag";
+                id = "Geslag_ID";
+            }
+            else if (rbGroottes.Checked)
+            {
+                soek = "Grootte";
+                id = "Grootte_Size";
+            }
+            else if (rbKledingstukke.Checked)
+            {
+                soek = "Kledingstuk";
+                id = "Kledingstuk_ID";
+            }
+            else if (rbK_Transaksies.Checked)
+            {
+                soek = "Kledingstuk_Transaksie";
+                id = "Kledingstuk_Transaksie_ID";
+            }
+            else if (rbKontantDonasies.Checked)
+            {
+                soek = "Kontant_Donasies";
+                id = "Kontant_Donasies_ID";
+            }
+            else if (rbLogin.Checked)
+            {
+                soek = "Login";
+                id = "Username";
+            }
+            else if (rbPersoon.Checked)
+            {
+                soek = "Persoon";
+                id = "Persoon_ID";
+            }
+            else if (rbKliente.Checked)
+            {
+                soek = "Klient";
+                id = "Klient_ID";
+            }
+            else if (rbTipeKledingstuk.Checked)
+            {
+                soek = "Tipe_Kledingstuk";
+                id = "Tipe_Kledingstuk_ID";
+            }
+            else
+                MessageBox.Show("Probeer weer");
+
+
             if (soek == "Aankope")
             {
-                //insert(@"INSERT INTO " + soek + " ([],[],[],[]) Values " + id + " = " + txtSoek.Text);
+                int Bedrag = Convert.ToInt32(txt1.Text);
+                int User_Id = Convert.ToInt32(txt2.Text);
+                int Kledingstuk_ID = Convert.ToInt32(txt3.Text);
+                insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," +User_Id + "," +Kledingstuk_ID + " )" );
+                MessageBox.Show("Ry suksesvol by gevoeg");
             }
-            else if (soek == "Aankope")
+            else if (soek == "Geslag")
             {
+                //int Geslag_ID = Convert.ToInt32(txtSoek.Text);
+                String Geslag = txt1.Text;
+
+                insert("INSERT INTO Geslag ([Geslag]) Values ('" + Geslag + "')");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Grootte")
+            {
+                //int Grootte_ID = Convert.ToInt32(txtSoek.Text);
+                String Grootte_Size = txt1.Text;
+                insert("INSERT INTO Grootte ([Grootte]) Values ('" + Grootte_Size + "')");
+                MessageBox.Show("Ry suksesvol by gevoeg");
 
             }
+            else if (soek == "Kledingstuk")
+            {
+                //int Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+                int Tipe_Kledingstuk_ID = Convert.ToInt32(txt1.Text);
+                int Grootte_ID = Convert.ToInt32(txt2.Text);
+                int Geslag_ID = Convert.ToInt32(txt3.Text);
+                String Beskrywing = txt4.Text;
 
-                insert(@"INSERT INTO "+ soek + "  " + soek + " WHERE " + id + " = " + txtSoek.Text);
->>>>>>> develop
+                insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[GeslagID],[Beskrywing]) Values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "' )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Kledingstuk_Transaksie")
+            {
+                //int Kledingstuk_Transaksie_ID = Convert.ToInt32(txtSoek.Text);
+                String Datum_In = txt1.Text;
+                int Kledingstuk_ID = Convert.ToInt32(txt2.Text);
+                String Datum_Uit = txt3.Text;
+                int User_ID = Convert.ToInt32(txt4.Text);
+                int Klient_ID = Convert.ToInt32(txt5.Text);
+
+                //insert("INSERT INTO Kledingstuk_Transaksie ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Kontant_Donasies")
+            {
+                //int Kontant_ID = Convert.ToInt32(txtSoek.Text);
+                String Naam = txt1.Text;
+                String Van = txt2.Text;
+                int Bedrag = Convert.ToInt32(txt3.Text);
+                int User_ID = Convert.ToInt32(txt4.Text);
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Login")
+            {
+                //int User_ID = Convert.ToInt32(txtSoek.Text);
+                String Username = txt1.Text;
+                String Password = txt2.Text;
+                //Boolean Admin = txt3.Text;
+                int Persoon_ID = Convert.ToInt32(txt4.Text);
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Persoon")
+            {
+                //int Persoon_ID = Convert.ToInt32(txtSoek.Text);
+                String Naam = txt1.Text;
+                String Van = txt2.Text;
+                String Adres = txt3.Text;
+                int Telefoon_Nommer = Convert.ToInt32(txt4.Text);
+                String KerkVerband = txt5.Text;
+                int Geslag_ID = Convert.ToInt32(txt6.Text);
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Klient")
+            {
+                //int Klient_ID = Convert.ToInt32(txtSoek.Text);
+                int Klere_Grootte_ID = Convert.ToInt32(txt1.Text);
+                String Geboorte_Datum = txt2.Text;
+                int Persoon_ID = Convert.ToInt32(txt3.Text);
+                String Email = txt4.Text;
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else if (soek == "Tipe_Kledingstuk")
+            {
+                //int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+                String Tipe_Kledingstuk = txt1.Text;
+
+                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                MessageBox.Show("Ry suksesvol by gevoeg");
+            }
+            else
+            MessageBox.Show("Hy wil nie werk nie");
+            //insert(@"INSERT INTO "+ soek + "  " + soek + " WHERE " + id + " = " + txtSoek.Text);
+
         }
     }
     
