@@ -615,7 +615,7 @@ namespace _225DD
                 int User_ID = Convert.ToInt32(txt4.Text);
                 int Klient_ID = Convert.ToInt32(txt5.Text);
 
-                insert("UPDATE Kledingstuk_Transaksie SET [Tipe_Kledingstuk_ID] = (" + Tipe_Kledingstuk_ID + "),[Grootte_ID] = (" + Grootte_ID + "),[Geslag_ID] = (" + Geslag_ID + "),[Beskrywing] = ('" + Beskrywing + "'), [Beskrywing] = ('" + Beskrywing + "') ");
+                insert("UPDATE Kledingstuk_Transaksie SET [Datum_In] = ('" + Datum_In + "'),[Kledingstuk_ID] = (" + Kledingstuk_ID + "),[Datum_Uit] = ('" + Datum_Uit + "'),[User_ID] = (" + User_ID + "), [Klient_ID] = (" + Klient_ID + ") ");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Kontant_Donasies")
