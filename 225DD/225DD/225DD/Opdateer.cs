@@ -104,7 +104,7 @@ namespace _225DD
 
         private void rbGroottes_CheckedChanged(object sender, EventArgs e)
         {
-            query("Select * from Grootte_ID");
+            query("Select * from Grootte");
 
             lblSoek.Text = "Groottes:";
             lbl1.Text = "Groottes:";
@@ -573,10 +573,12 @@ namespace _225DD
 
             if (soek == "Aankope")
             {
+                int Aankoop_ID = Convert.ToInt32(txtSoek.Text);
                 int Bedrag = Convert.ToInt32(txt1.Text);
                 int User_Id = Convert.ToInt32(txt2.Text);
                 int Kledingstuk_ID = Convert.ToInt32(txt3.Text);
-                insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+
+                insert("UPDATE Aankope SET [Bedrag] = (" + Bedrag + "),[User_Id] = (" + User_Id + "),[Kledingstuk_ID] = (" + Kledingstuk_ID + ") Where Aankoop_ID = " + Aankoop_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Geslag")
@@ -608,41 +610,41 @@ namespace _225DD
             }
             else if (soek == "Kledingstuk_Transaksie")
             {
-                //int Kledingstuk_Transaksie_ID = Convert.ToInt32(txtSoek.Text);
+                int Kledingstuk_Transaksie_ID = Convert.ToInt32(txtSoek.Text);
                 String Datum_In = txt1.Text;
                 int Kledingstuk_ID = Convert.ToInt32(txt2.Text);
                 String Datum_Uit = txt3.Text;
                 int User_ID = Convert.ToInt32(txt4.Text);
                 int Klient_ID = Convert.ToInt32(txt5.Text);
 
-                insert("UPDATE Kledingstuk_Transaksie SET [Datum_In] = ('" + Datum_In + "'),[Kledingstuk_ID] = (" + Kledingstuk_ID + "),[Datum_Uit] = ('" + Datum_Uit + "'),[User_ID] = (" + User_ID + "), [Klient_ID] = (" + Klient_ID + ") ");
+                insert("UPDATE Kledingstuk_Transaksie SET [Datum_In] = ('" + Datum_In + "'),[Kledingstuk_ID] = (" + Kledingstuk_ID + "),[Datum_Uit] = ('" + Datum_Uit + "'),[User_ID] = (" + User_ID + "), [Klient_ID] = (" + Klient_ID + ") Where Kledingstuk_Transaksie_ID = " + Kledingstuk_Transaksie_ID + " ");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Kontant_Donasies")
             {
-                //int Kontant_ID = Convert.ToInt32(txtSoek.Text);
+                int Kontant_ID = Convert.ToInt32(txtSoek.Text);
                 String Naam = txt1.Text;
                 String Van = txt2.Text;
                 int Bedrag = Convert.ToInt32(txt3.Text);
                 int User_ID = Convert.ToInt32(txt4.Text);
 
-                //insert("INSERT INTO Kontant_Donasies ([Naam],[Van],[Bedrag],[User_ID]) Values ('" + Naam + "','" + Van + "'," + Bedrag + "," + User_ID + ")");
+                insert("UPDATE Kontant_Donasies SET [Naam] = ('" + Naam + "'),[Van] = ('" + Van + "'),[Bedrag] = (" + Bedrag + "),[User_ID] = (" + User_ID + ")  Where Kontant_ID = " + Kontant_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Login")
             {
-                //int User_ID = Convert.ToInt32(txtSoek.Text);
+                int User_ID = Convert.ToInt32(txtSoek.Text);
                 String Username = txt1.Text;
                 String Password = txt2.Text;
-                //Boolean Admin = txt3.Text;
+                String Admin = txt3.Text;
                 int Persoon_ID = Convert.ToInt32(txt4.Text);
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("UPDATE Login SET [Username] = ('" + Username + "'),[Password] = ('" + Password + "'),[Admin] = ('" + Admin + "'),[Persoon_ID] = (" + Persoon_ID + ")  Where User_ID = " + User_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Persoon")
             {
-                //int Persoon_ID = Convert.ToInt32(txtSoek.Text);
+                int Persoon_ID = Convert.ToInt32(txtSoek.Text);
                 String Naam = txt1.Text;
                 String Van = txt2.Text;
                 String Adres = txt3.Text;
@@ -650,26 +652,26 @@ namespace _225DD
                 String KerkVerband = txt5.Text;
                 int Geslag_ID = Convert.ToInt32(txt6.Text);
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("UPDATE Persoon SET [Naam] = ('" + Naam + "'),[Van] = ('" + Van + "'),[Adres] = ('" + Adres + "'),[Telefoon_Nommer] = (" + Telefoon_Nommer + "),[KerkVerband] = ('" + KerkVerband + "'),[Geslag_ID] = (" + Geslag_ID + ")  Where Persoon_ID = " + Persoon_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Klient")
             {
-                //int Klient_ID = Convert.ToInt32(txtSoek.Text);
+                int Klient_ID = Convert.ToInt32(txtSoek.Text);
                 int Klere_Grootte_ID = Convert.ToInt32(txt1.Text);
                 String Geboorte_Datum = txt2.Text;
                 int Persoon_ID = Convert.ToInt32(txt3.Text);
                 String Email = txt4.Text;
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("UPDATE Klient SET [Klere_Grootte_ID] = (" + Klere_Grootte_ID + "),[Geboorte_Datum] = ('" + Geboorte_Datum + "'),[Persoon_ID] = (" + Persoon_ID + "),[Email] = ('" + Email + "')  Where Klient_ID = " + Klient_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Tipe_Kledingstuk")
             {
-                //int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+                int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
                 String Tipe_Kledingstuk = txt1.Text;
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("UPDATE Tipe_Kledingstuk SET [Tipe_Kledingstuk] =  ('" + Tipe_Kledingstuk + "') Where Tipe_Kledingstuk_ID = " + Tipe_Kledingstuk_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else
