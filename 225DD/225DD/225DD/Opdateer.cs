@@ -597,13 +597,13 @@ namespace _225DD
             }
             else if (soek == "Kledingstuk")
             {
-                //int Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
+                int Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
                 int Tipe_Kledingstuk_ID = Convert.ToInt32(txt1.Text);
                 int Grootte_ID = Convert.ToInt32(txt2.Text);
                 int Geslag_ID = Convert.ToInt32(txt3.Text);
                 String Beskrywing = txt4.Text;
 
-                insert("INSERT INTO Kledingstuk ([Tipe_Kledingstuk_ID],[Grootte_ID],[GeslagID],[Beskrywing]) Values (" + Tipe_Kledingstuk_ID + "," + Grootte_ID + "," + Geslag_ID + ",'" + Beskrywing + "' )");
+                insert("UPDATE Kledingstuk SET [Tipe_Kledingstuk_ID] = (" + Tipe_Kledingstuk_ID + "),[Grootte_ID] = (" + Grootte_ID + "),[Geslag_ID] = (" + Geslag_ID + "),[Beskrywing] = ('" + Beskrywing + "')  Where Kledingstuk_ID = " + Kledingstuk_ID + "");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Kledingstuk_Transaksie")
@@ -615,7 +615,7 @@ namespace _225DD
                 int User_ID = Convert.ToInt32(txt4.Text);
                 int Klient_ID = Convert.ToInt32(txt5.Text);
 
-                //insert("INSERT INTO Kledingstuk_Transaksie ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("UPDATE Kledingstuk_Transaksie SET [Tipe_Kledingstuk_ID] = (" + Tipe_Kledingstuk_ID + "),[Grootte_ID] = (" + Grootte_ID + "),[Geslag_ID] = (" + Geslag_ID + "),[Beskrywing] = ('" + Beskrywing + "'), [Beskrywing] = ('" + Beskrywing + "') ");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Kontant_Donasies")
@@ -626,7 +626,7 @@ namespace _225DD
                 int Bedrag = Convert.ToInt32(txt3.Text);
                 int User_ID = Convert.ToInt32(txt4.Text);
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                //insert("INSERT INTO Kontant_Donasies ([Naam],[Van],[Bedrag],[User_ID]) Values ('" + Naam + "','" + Van + "'," + Bedrag + "," + User_ID + ")");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Login")
@@ -776,7 +776,7 @@ namespace _225DD
                 int User_ID = Convert.ToInt32(txt4.Text);
                 int Klient_ID = Convert.ToInt32(txt5.Text);
 
-                //insert("INSERT INTO Kledingstuk_Transaksie ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("INSERT INTO Kledingstuk_Transaksie ([Datum_In],[Kledingstuk_ID],[Datum_Uit],[User_ID],[Klient_ID]) Values ('" + Datum_In + "'," + Kledingstuk_ID + ",'" + Datum_Uit + "'," + User_ID + "," + Klient_ID + " )");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Kontant_Donasies")
@@ -787,7 +787,7 @@ namespace _225DD
                 int Bedrag = Convert.ToInt32(txt3.Text);
                 int User_ID = Convert.ToInt32(txt4.Text);
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("INSERT INTO Kontant_Donasies ([Naam],[Van],[Bedrag],[User_ID]) Values ('" + Naam + "','" + Van + "'," + Bedrag + ","+ User_ID + " )");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Login")
@@ -795,10 +795,10 @@ namespace _225DD
                 //int User_ID = Convert.ToInt32(txtSoek.Text);
                 String Username = txt1.Text;
                 String Password = txt2.Text;
-                //Boolean Admin = txt3.Text;
+                String Admin = txt3.Text;
                 int Persoon_ID = Convert.ToInt32(txt4.Text);
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("INSERT INTO Login ([Username],[Password],[Admin],[Persoon_ID]) Values ('" + Username + "','" + Password + "','" + Admin + "',"+ Persoon_ID + " )");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Persoon")
@@ -811,7 +811,7 @@ namespace _225DD
                 String KerkVerband = txt5.Text;
                 int Geslag_ID = Convert.ToInt32(txt6.Text);
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("INSERT INTO Persoon_ID ([Naam],[Van],[Datum_Uit],[Telefoon_Nommer],[KerkVerband],[Geslag_ID]) Values ('" + Naam + "','" + Van + "','" + Adres + "'," + Telefoon_Nommer + ",'" + KerkVerband + "',"+ Geslag_ID + " )");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Klient")
@@ -822,7 +822,7 @@ namespace _225DD
                 int Persoon_ID = Convert.ToInt32(txt3.Text);
                 String Email = txt4.Text;
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("INSERT INTO Klient ([Klere_Grootte_ID],[Geboorte_Datum],[Persoon_ID],[Email]) Values (" + Klere_Grootte_ID + ",'" + Geboorte_Datum + "'," + Persoon_ID + ",'"+ Email + "' )");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else if (soek == "Tipe_Kledingstuk")
@@ -830,7 +830,7 @@ namespace _225DD
                 //int Tipe_Kledingstuk_ID = Convert.ToInt32(txtSoek.Text);
                 String Tipe_Kledingstuk = txt1.Text;
 
-                //insert("INSERT INTO Aankope ([Bedrag],[User_ID],[Kledingstuk_ID]) Values (" + Bedrag + "," + User_Id + "," + Kledingstuk_ID + " )");
+                insert("INSERT INTO Tipe_Kledingstuk ([Tipe_Kledingstuk]) Values ('" + Tipe_Kledingstuk +" )");
                 MessageBox.Show("Ry suksesvol by gevoeg");
             }
             else
